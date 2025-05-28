@@ -28,7 +28,7 @@ u16 get_bat(void)
 
 
 // #define bat_task_id 		14
-// #define bat_task_ms		    1000
+// #define bat_task_ms		1000
 // #define bat_task_max		0
 
 //2s  0
