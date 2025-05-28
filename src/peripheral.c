@@ -31,7 +31,11 @@ void gpio_init(void)
     #endif    
     FVRCON=0x01;//1.2v
 
+    #if ioi
     IOCUR=0xff;
+    #else
+    IOCUR=0x00;
+    #endif
     ADIP=0;
     #if bug_a1
 	TRISA1=0;

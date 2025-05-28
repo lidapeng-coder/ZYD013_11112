@@ -131,7 +131,7 @@ void find_task(task* task_)
         ui_smoing(task_);//50ms 0
         break;
     case 5:
-        ui_dl_getup(task_);//50ms 73
+        ui_smoend_dl_getup(task_);//50ms 73
         break;
     case 6:
         ui_kl(task_);//250ms 10
@@ -167,7 +167,7 @@ void find_task(task* task_)
         ui_begin(task_);//200ms  0
         break;
     case 17:
-        ui_smoend(task_);//200ms  0
+        //ui_smoend(task_);//200ms  0
         break;
     default:
         //sleep_task(task_);//200ms  0

@@ -10,9 +10,11 @@ u8 timout=0;
 u8 smoing=0;
 u32 pw_t=30;
 u8 kl_init=0;
-u8 lowbat_flag=0;
+//u8 lowbat_flag=0;
 u8 lowbat_init=0;
+#if kuai_8ms
 u8 timout_cnt=0;
+#endif
 extern u8 cfg_flag;
 extern u8 pwm_cnt;
 void si_mic_task(task* task_)
@@ -89,7 +91,9 @@ void si_mic_task(task* task_)
 	}
 	else if(si_mic_state.o==1 && SI_MIC==0)
 	{
+		#if kuai_8ms
 		timout_cnt=0;
+		#endif
 		task_->sucCnt=0;
 		if(smoing)
 		{
@@ -202,8 +206,8 @@ void si_mic_task(task* task_)
 			if(task_->sucCnt>=250)
 			{
 				task_->sucCnt=0;
-				timout_cnt++;
 				#if kuai_8ms
+				timout_cnt++;
 				if(timout_cnt>=5)
 				{
 					timout_cnt=0;
@@ -227,7 +231,9 @@ void si_mic_task(task* task_)
 	else
 	{
 		cfg_flag=1;
+		#if kuai_8ms
 		timout_cnt=0;
+		#endif
 		smoing=0;
 		task_->sucCnt=0;
 		pwm.duty=0;

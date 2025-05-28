@@ -3,6 +3,8 @@
 
 #define ioi             1
 
+#define chrg_g          0
+
 #define od		        1
 #define doubled		    0
 #define bug             0
@@ -117,6 +119,41 @@
 #define vu16 	volatile signed int  
 #define vu32 	volatile signed long 
 #endif
+
+typedef union ui_buff_{		//共用体变量类型（8bit）
+   //0
+    struct {
+		unsigned char buf;
+    };
+//1
+    struct {
+		unsigned	a		: 1;	//bit0 显示8
+		unsigned	b		: 1;
+		unsigned	c		: 1;
+		unsigned	d		: 1;
+		unsigned	e		: 1;
+		unsigned	f		: 1;
+		unsigned	g		: 1;
+		unsigned	h		: 1;
+    };
+
+    struct {
+		unsigned	j0      	: 1;	 //bit0 显示8
+		unsigned	j1			: 1;
+		unsigned	j2			: 1;
+		unsigned	j3			: 1;
+		unsigned	j4			: 1;
+		unsigned	j5			: 1;
+		unsigned	j6	  		: 1;
+		unsigned	j7	  		: 1;
+    };	
+
+	struct {
+		unsigned	j8      	: 1;	 //bit0 显示8
+		unsigned	j9			: 1;
+    };	
+
+}ui_buff_;
 
 void cmp0_init(void);
 void gpio_init(void);

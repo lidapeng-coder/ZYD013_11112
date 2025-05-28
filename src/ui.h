@@ -20,45 +20,11 @@
 #define ledon   1
 #define ledoff  0
 
-typedef union ui_buff_{		//共用体变量类型（8bit）
-   //0
-    struct {
-		unsigned char buf;
-    };
-//1
-    struct {
-		unsigned	a		: 1;	//bit0 显示8
-		unsigned	b		: 1;
-		unsigned	c		: 1;
-		unsigned	d		: 1;
-		unsigned	e		: 1;
-		unsigned	f		: 1;
-		unsigned	g		: 1;
-		unsigned	h		: 1;
-    };
 
-    struct {
-		unsigned	j0      	: 1;	 //bit0 显示8
-		unsigned	j1			: 1;
-		unsigned	j2			: 1;
-		unsigned	j3			: 1;
-		unsigned	j4			: 1;
-		unsigned	j5			: 1;
-		unsigned	j6	  		: 1;
-		unsigned	j7	  		: 1;
-    };	
-
-	struct {
-		unsigned	j8      	: 1;	 //bit0 显示8
-		unsigned	j9			: 1;
-    };	
-
-}ui_buff_;
 typedef struct ui_
 {
-	u8 w		;//
-	u8 u		;
-	u8 q		;//
+	u8 w1		;//
+	u8 w2		;//
 	u8 num1		;//
 	u8 num2		;//
 	u8 ou_d		;//
@@ -66,22 +32,21 @@ typedef struct ui_
 	u8 ts		;//
 	u8 yd		;//
 	u8 dian		;
-	u8 cnt		;//
+	u8 dian_s	;//
 } ui_;
 
 
 typedef struct ui__
 {
-	u8 w1	;
-	u8 w2	;
-	u8 cnt	;
+	u8 w	;
 	u8 n	;
 	u8 ts	;
 } ui__;
 
 typedef struct tim_ui_
 {
-	u8 cnt		;
+	u8 cnt9		;
+	u8 cnt10	;
 	u8 ok		;
 } tim_ui_;
 
@@ -112,7 +77,7 @@ typedef struct tim_ui_
 #define ui_smoing_ms		50
 #define ui_smoing_max		0
 
-#define ui_smoend_id		17
+#define ui_smoend_id		5
 #define ui_smoend_ms		50
 #define ui_smoend_max		73
 
@@ -158,8 +123,8 @@ void ui_chrgfree(task* task_);
 void ui_chrgfull(task* task_);
 //50ms 0
 void ui_smoing(task* task_);
-// //50ms 73
-// void ui_smoend_dl_getup(task* task_);
+//50ms 73
+void ui_smoend_dl_getup(task* task_);
 //250ms 10
 void ui_kl(task* task_);
 //50ms 40
@@ -175,26 +140,58 @@ void new_nixie(void) ;
 
 void ldz(u8 a);
 
-//50ms 73
-void ui_dl_getup(task* task_);
-//50ms 73
-void ui_smoend(task* task_);
+#define pols0	0xff
+#define pols1	0xc0
+#define pols2	0xff
+#define pols3	0xc0
+#define pols4	0xff
+#define pols5	0xc0
+#define pols6	0x00
+#define pols7	0x3f
+#define pols8	0x00
+
+#if 0
+#define pme0	0x01
+#define pme1	0x02
+#define pme2	0x04
+#define pme3	0x08
+#define pme4	0x10
+#define pme5	0x20
+#define pme6	0x08
+#define pme7	0x10
+#define pme8	0x20
+#else
+#define pme0	HBPWMOE00
+#define pme1	HBPWMOE01
+#define pme2	HBPWMOE10
+#define pme3	HBPWMOE11
+#define pme4	HBPWMOE20
+#define pme5	HBPWMOE21
+#define pme6	HBPWMOE11
+#define pme7	HBPWMOE20
+#define pme8	HBPWMOE21
 
 
 
+#endif
+#define duty0	DUTY20
+#define duty1	DUTY20
+#define duty2	DUTY22
+#define duty3	DUTY22
+#define duty4	DUTY24
+#define duty5	DUTY24
+#define duty6	DUTY22
+#define duty7	DUTY24
+#define duty8	DUTY24
 
-#define led_(x,y,z)	 	if(ui_buff[x].y ){LED##z=ledon;tris##z=tris_w;}
-#define ledz_(x)		LED##x=ledzon;tris##x=tris_w
-
-#define ui_delay	10
-#define ui_ldmax	10
-#define uidelay	
+#define ui_delay	0
+#define uidelay		
 extern ui__ ui_ld;
 extern volatile tim_ui_ tim_ui;
 extern volatile u8 nixie_z[9][2];
 extern volatile ui_ ui;
 extern s8 ui_id;
-extern volatile union ui_buff_ ui_buff[12];
+
 /* tris0=tris_r;\
 						tris1=tris_r;\
 						tris2=tris_r;\
@@ -219,7 +216,6 @@ extern volatile union ui_buff_ ui_buff[12];
 
 #define ui_tim_isr()	tim_ui.ok=1
 
-
 #define ledz_off()		tris0=tris_r;\
 						tris1=tris_r;\
 						tris2=tris_r;\
@@ -234,187 +230,184 @@ extern volatile union ui_buff_ ui_buff[12];
 						PME=0;\
 						T2CON0=4;\
     					T2CON1=2
+// #else
+// #define ledz_off()		tris0=tris_r;\
+// 						tris1=tris_r;\
+// 						tris2=tris_r;\
+// 						tris3=tris_r;\
+// 						tris4=tris_r;\
+// 						tris5=tris_r;\
+// 						tris6=tris_r;\
+// 						tris7=tris_r;\
+// 						tris8=tris_r;\
+// 						tris9=tris_r;\
+// 						\
+// 						PME=0
 
-#define ui_loop() 		switch (tim_ui.cnt)\
+
+// #endif
+#define ui_loop() 		switch (tim_ui.cnt9)\
 						{\
 						case 0:\
 							if(ui_ld.n>0){\
-								ledpwm_(ui_ld.n,0);\
-								ledz_(0);\
-								led_(0 ,a ,1);\
-								led_(0 ,b ,2);\
-								led_(0 ,c ,3);\
-								led_(0 ,d ,4);\
-								led_(0 ,e ,5);\
-								led_(0 ,f ,6);\
-								led_(0 ,g ,7);\
-								led_(0 ,h ,8);\
-								led_(10,j0,9);}\
+								if(ui_ld.n<10){pme0=1;POLS=pols0;duty0=ui_ld.n<<3;uidelay}\
+								LED0=ledzon;\
+								tris0=tris_w;\
+								if(nixie_z[0][0]&pin1_on){LED1=ledon;tris1=tris_w;}\
+								if(nixie_z[0][0]&pin2_on){LED2=ledon;tris2=tris_w;}\
+								if(nixie_z[0][0]&pin3_on){LED3=ledon;tris3=tris_w;}\
+								if(nixie_z[0][0]&pin4_on){LED4=ledon;tris4=tris_w;}\
+								if(nixie_z[0][0]&pin5_on){LED5=ledon;tris5=tris_w;}\
+								if(nixie_z[0][0]&pin6_on){LED6=ledon;tris6=tris_w;}\
+								if(nixie_z[0][0]&pin7_on){LED7=ledon;tris7=tris_w;}\
+								if(nixie_z[0][1]&pin0_on){LED8=ledon;tris8=tris_w;}\
+								if(nixie_z[0][1]&pin1_on){LED9=ledon;tris9=tris_w;}\
+							}\
 							break;\
 						case 1:\
 							if(ui_ld.n>0){\
-								ledpwm_(ui_ld.n,1);\
-								ledz_(1);\
-								led_(1 ,a ,0);\
-								led_(1 ,b ,2);\
-								led_(1 ,c ,3);\
-								led_(1 ,d ,4);\
-								led_(1 ,e ,5);\
-								led_(1 ,f ,6);\
-								led_(1 ,g ,7);\
-								led_(1 ,h ,8);\}\
+								if(ui_ld.n<10){pme1=1;POLS=pols1;duty1=ui_ld.n<<3;uidelay}\
+								LED1=ledzon;\
+								tris1=tris_w;\
+								if(nixie_z[1][0]&pin0_on){LED0=ledon;tris0=tris_w;}\
+								if(nixie_z[1][0]&pin2_on){LED2=ledon;tris2=tris_w;}\
+								if(nixie_z[1][0]&pin3_on){LED3=ledon;tris3=tris_w;}\
+								if(nixie_z[1][0]&pin4_on){LED4=ledon;tris4=tris_w;}\
+								if(nixie_z[1][0]&pin5_on){LED5=ledon;tris5=tris_w;}\
+								if(nixie_z[1][0]&pin6_on){LED6=ledon;tris6=tris_w;}\
+								if(nixie_z[1][0]&pin7_on){LED7=ledon;tris7=tris_w;}\
+								if(nixie_z[1][1]&pin0_on){LED8=ledon;tris8=tris_w;}\
+							}\
 							break;\
 						case 2:\
 							if(ui_ld.ts>0){\
-								ledpwm_(ui_ld.ts,1);\
-								ledz_(1);\
-								led_(10,j1,9);}\
+								if(ui_ld.ts<10){pme1=1;POLS=pols1;duty1=ui_ld.ts<<3;uidelay}\
+								LED1=ledzon;\
+								tris1=tris_w;\
+								if(nixie_z[1][1]&pin1_on){LED9=ledon;tris9=tris_w;}\
+							}\
 							break;\
 						case 3:\
-							if(ui_ld.w1>0){\
-								ledpwm_(ui_ld.w1,2);\
-								ledz_(2);\
-								led_(2 ,a ,0);\
-								led_(2 ,b ,1);\
-								led_(2 ,c ,3);\
-								led_(2 ,d ,4);\
-								led_(2 ,e ,5);\
-								led_(2 ,f ,6);\
-								led_(2 ,g ,7);\
-								led_(2 ,h ,8);\
-								led_(10,j2,9);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme2=1;POLS=pols2;duty2=ui_ld.w<<3;uidelay}\
+							LED2=ledzon;\
+							tris2=tris_w;\
+							if((nixie_z[2][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[2][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[2][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[2][0]&pin4_on)){LED4=ledon;tris4=tris_w;}\
+							if((nixie_z[2][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[2][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[2][0]&pin7_on)){LED7=ledon;tris7=tris_w;}}\
 							break;\
 						case 4:\
-							if(ui_ld.w1>0){\
-								ledpwm_(ui_ld.w1,3);\
-								ledz_(3);\
-								led_(3 ,a ,0);\
-								led_(3 ,b ,1);\
-								led_(3 ,c ,2);\
-								led_(3 ,d ,4);\
-								led_(3 ,e ,5);}\
+							if(ui_ld.n>0){\
+							if(ui_ld.n<10){pme2=1;POLS=pols2;duty2=ui_ld.n<<3;uidelay}\
+							LED2=ledzon;\
+							tris2=tris_w;\
+							if((nixie_z[2][1]&pin0_on)){LED8=ledon;tris8=tris_w;}}\
 							break;\
 						case 5:\
-							if(ui_ld.w2>0){\
-								ledpwm_(ui_ld.w2,3);\
-								ledz_(3);\
-								led_(3 ,g ,7);\
-								led_(3 ,h ,8);\
-								led_(10,j3,9);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme3=1;POLS=pols3;duty3=ui_ld.w<<3;uidelay}\
+							LED3=ledzon;\
+							tris3=tris_w;\
+							if((nixie_z[3][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[3][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[3][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[3][0]&pin4_on)){LED4=ledon;tris4=tris_w;}\
+							if((nixie_z[3][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[3][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[3][0]&pin7_on)){LED7=ledon;tris7=tris_w;}}\
 							break;\
 						case 6:\
-							if(ui_ld.n>0){\
-								ledpwm_(ui_ld.n,3);\
-								ledz_(3);\
-								led_(3 ,f ,6);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme4=1;POLS=pols4;duty4=ui_ld.w<<3;uidelay}\
+							LED4=ledzon;\
+							tris4=tris_w;\
+							if((nixie_z[4][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[4][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[4][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[4][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[4][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[4][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[4][0]&pin7_on)){LED7=ledon;tris7=tris_w;}\
+							if((nixie_z[4][1]&pin0_on)){LED8=ledon;tris8=tris_w;}\
+							if((nixie_z[4][1]&pin1_on)){LED9=ledon;tris9=tris_w;}}\
 							break;\
 						case 7:\
-							if(ui_ld.w2>0){\
-								ledpwm_(ui_ld.w2,4);\
-								ledz_(4);\
-								led_(4 ,a ,0);\
-								led_(4 ,b ,1);\
-								led_(4 ,c ,2);\
-								led_(4 ,d ,3);\
-								led_(4 ,e ,5);\
-								led_(4 ,f ,6);\
-								led_(4 ,g ,7);\
-								led_(4 ,h ,8);\
-								led_(10,j4,9);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme5=1;POLS=pols5;duty5=ui_ld.w<<3;uidelay}\
+							LED5=ledzon;\
+							tris5=tris_w;\
+							if((nixie_z[5][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[5][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[5][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[5][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[5][0]&pin4_on)){LED4=ledon;tris4=tris_w;}\
+							if((nixie_z[5][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[5][0]&pin7_on)){LED7=ledon;tris7=tris_w;}\
+							if((nixie_z[5][1]&pin0_on)){LED8=ledon;tris8=tris_w;}\
+							if((nixie_z[5][1]&pin1_on)){LED9=ledon;tris9=tris_w;}}\
 							break;\
 						case 8:\
-							if(ui_ld.w2>0){\
-								ledpwm_(ui_ld.w2,5);\
-								ledz_(5);\
-								led_(5 ,a ,0);\
-								led_(5 ,b ,1);\
-								led_(5 ,c ,2);\
-								led_(5 ,d ,3);\
-								led_(5 ,e ,4);\
-								led_(5 ,f ,6);\
-								led_(5 ,g ,7);\
-								led_(5 ,h ,8);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme6=1;POLS=pols6;duty6=ui_ld.w<<3;uidelay}\
+							LED6=ledzon;\
+							tris6=tris_w;\
+							if((nixie_z[6][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[6][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[6][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[6][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[6][0]&pin4_on)){LED4=ledon;tris4=tris_w;}\
+							if((nixie_z[6][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[6][0]&pin7_on)){LED7=ledon;tris7=tris_w;}\
+							if((nixie_z[6][1]&pin0_on)){LED8=ledon;tris8=tris_w;}\
+							if((nixie_z[6][1]&pin1_on)){LED9=ledon;tris9=tris_w;}}\
 							break;\
 						case 9:\
-							if(ui_ld.cnt>0){\
-								ledpwm_(ui_ld.cnt,5);\
-								ledz_(5);\
-								led_(10,j5,9);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme7=1;POLS=pols7;duty7=ui_ld.w<<3;uidelay}\
+							LED7=ledzon;\
+							tris7=tris_w;\
+							if((nixie_z[7][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[7][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[7][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[7][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[7][0]&pin4_on)){LED4=ledon;tris4=tris_w;}\
+							if((nixie_z[7][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[7][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[7][1]&pin0_on)){LED8=ledon;tris8=tris_w;}\
+							if((nixie_z[7][1]&pin1_on)){LED9=ledon;tris9=tris_w;}}\
 							break;\
 						case 10:\
-							if(ui_ld.cnt>0){\
-								ledpwm_(ui_ld.cnt,6);\
-								ledz_(6);\
-								led_(6 ,a ,0);\
-								led_(6 ,b ,1);\
-								led_(6 ,c ,2);\
-								led_(6 ,d ,3);}\
+							if(ui_ld.n>0){\
+							if(ui_ld.n<10){pme8=1;POLS=pols8;duty8=ui_ld.n<<3;uidelay}\
+							LED8=ledzon;\
+							tris8=tris_w;\
+							if((nixie_z[8][0]&pin0_on)){LED0=ledon;tris0=tris_w;}\
+							if((nixie_z[8][0]&pin1_on)){LED1=ledon;tris1=tris_w;}\
+							if((nixie_z[8][0]&pin2_on)){LED2=ledon;tris2=tris_w;}\
+							if((nixie_z[8][0]&pin3_on)){LED3=ledon;tris3=tris_w;}\
+							if((nixie_z[8][0]&pin4_on)){LED4=ledon;tris4=tris_w;}}\
 							break;\
 						case 11:\
-							if(ui_ld.n>0){\
-								ledpwm_(ui_ld.n,6);\
-								ledz_(6);\
-								led_(6 ,e ,4);\
-								led_(6 ,f ,5);\
-								led_(6 ,g ,7);\
-								led_(6 ,h ,8);}\
-							break;\
-						case 12:\
-							if(ui_ld.w1>0){\
-								ledpwm_(ui_ld.w1,6);\
-								ledz_(6);\
-								led_(10,j6,9);}\
-							break;\
-						case 13:\
-							if(ui_ld.w2>0){\
-								ledpwm_(ui_ld.w2,7);\
-								ledz_(7);\
-								led_(7 ,a ,0);\
-								led_(7 ,b ,1);\
-								led_(7 ,c ,2);\
-								led_(7 ,d ,3);\
-								led_(7 ,e ,4);\
-								led_(7 ,f ,5);\
-								led_(7 ,g ,6);\
-								led_(7 ,h ,8);\
-								led_(10,j7,9);}\
-							break;\
-						case 14:\
-							if(ui_ld.w2>0){\
-								ledpwm_(ui_ld.w2,8);\
-								ledz_(8);\
-								led_(8 ,a ,0);\
-								led_(8 ,b ,1);\
-								led_(8 ,c ,2);\
-								led_(8 ,d ,3);\
-								led_(8 ,e ,4);\
-								led_(8 ,f ,5);\
-								led_(8 ,g ,6);\
-								led_(8 ,h ,7);\
-								led_(11,j8,9);}\
-							break;\
-						case 15:\
-							if(ui_ld.w1>0){\
-								ledpwm_(ui_ld.w1,9);\
-								ledz_(9);\
-								led_(9 ,a ,0);\
-								led_(9 ,b ,1);\
-								led_(9 ,c ,2);\
-								led_(9 ,d ,3);\
-								led_(9 ,e ,4);\
-								led_(9 ,f ,5);\
-								led_(9 ,g ,6);\
-								led_(9 ,h ,7);\
-								led_(11,j9,8);}\
+							if(ui_ld.w>0){\
+							if(ui_ld.w<10){pme8=1;POLS=pols8;duty8=ui_ld.w<<3;uidelay}\
+							LED8=ledzon;\
+							tris8=tris_w;\
+							if((nixie_z[8][0]&pin5_on)){LED5=ledon;tris5=tris_w;}\
+							if((nixie_z[8][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
+							if((nixie_z[8][0]&pin7_on)){LED7=ledon;tris7=tris_w;}}\
 							break;\
 						\
 						default:\
 							break;\
 						}\
-						tim_ui.cnt++;\
-						if(tim_ui.cnt>=16)\
+						tim_ui.cnt9++;\
+						if(tim_ui.cnt9>=12)\
 						{\
-							tim_ui.cnt=0;\
+							tim_ui.cnt9=0;\
 						}
 
 
@@ -422,11 +415,11 @@ extern volatile union ui_buff_ ui_buff[12];
 
 
 /* 
-						if(tim_ui.cnt<=4)\
+						if(tim_ui.cnt9<=4)\
 						{\
-							if(tim_ui.cnt<=2)\
+							if(tim_ui.cnt9<=2)\
 							{\
-								if(tim_ui.cnt==0)\
+								if(tim_ui.cnt9==0)\
 								{\
 									\
 									tris0=tris_w;\
@@ -440,7 +433,7 @@ extern volatile union ui_buff_ ui_buff[12];
 									if((nixie_z[0][1]&pin0_on) && tim_ui.cnt10<ui_ld.n){tris8=tris_w;LED8=ledon;}\
 									if((nixie_z[0][1]&pin1_on) && tim_ui.cnt10<ui_ld.n){tris9=tris_w;LED9=ledon;}\
 								}\
-								else if(tim_ui.cnt==1)\
+								else if(tim_ui.cnt9==1)\
 								{\
 									tris1=tris_w;\
 									if((nixie_z[1][0]&pin0_on) && tim_ui.cnt10<ui_ld.n) {tris0=tris_w;LED0=ledon;}\
@@ -468,7 +461,7 @@ extern volatile union ui_buff_ ui_buff[12];
 							}\
 							else\
 							{\
-								if(tim_ui.cnt==3)\
+								if(tim_ui.cnt9==3)\
 								{\
 									tris3=tris_w;\
 									if((nixie_z[3][0]&pin0_on) && tim_ui.cnt10<ui_ld.w10){tris0=tris_w;LED0=ledon;}\
@@ -496,9 +489,9 @@ extern volatile union ui_buff_ ui_buff[12];
 						}\
 						else\
 						{\
-							if(tim_ui.cnt<=6)\
+							if(tim_ui.cnt9<=6)\
 							{\
-								if(tim_ui.cnt==5)\
+								if(tim_ui.cnt9==5)\
 								{\
 									tris5=tris_w;\
 									if((nixie_z[5][0]&pin0_on) && tim_ui.cnt10<ui_ld.w0){tris0=tris_w;LED0=ledon;}\
@@ -527,7 +520,7 @@ extern volatile union ui_buff_ ui_buff[12];
 							}\
 							else\
 							{\
-								if(tim_ui.cnt==7)\
+								if(tim_ui.cnt9==7)\
 								{\
 									tris7=tris_w;\
 									if((nixie_z[7][0]&pin0_on) && tim_ui.cnt10<ui_ld.w0){tris0=tris_w;LED0=ledon;}\
