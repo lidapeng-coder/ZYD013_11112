@@ -46,6 +46,9 @@ void chrg_task(task* task_)
         {
             full=1;            
             bat.dian=4;
+            #if chrg_g
+            chrg_num=95;
+            #endif
             if(get_bat()>390)
             {
                 add_task_id(ui_chrgfull_id,ui_chrgfull_ms,ui_chrgfull_max,ui_id);
