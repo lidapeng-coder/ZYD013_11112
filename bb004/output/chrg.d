@@ -1,1 +1,0 @@
- output/chrg.d  output/chrg.p1:  ./src/chrg.c ./src/public.h ./src/smo_det.h ./src/task.h ./src/aip33626.h ./src/si_mic.h ./src/uart.h ./src/key.h ./src/AD18F128.h ./src/sleep.h ./src/bat.h ./src/DataType.h ./src/chrg.h ./src/periph.h ./src/pwm.h

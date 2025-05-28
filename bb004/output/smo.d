@@ -1,1 +1,0 @@
- output/smo.d  output/smo.p1:  ./src/smo.c ./src/public.h ./src/task.h ./src/aip33626.h ./src/AD18F128.h ./src/DataType.h ./src/periph.h
