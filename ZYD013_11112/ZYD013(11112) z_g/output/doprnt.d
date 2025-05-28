@@ -1,0 +1,1 @@
+ output/doprnt.d  output/doprnt.p1:  c:/Users/Administrator/.vscode/extensions/ad.adide-1.1.7/resource/Microchip/xc8/v1.41/sources/common/doprnt.c

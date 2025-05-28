@@ -1,0 +1,2376 @@
+Microchip MPLAB XC8 Compiler V1.41 ()
+
+Linker command line:
+
+\
+  --edf=c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\dat\en_msgs.txt \
+  -cs -h+output\PS1103_PU_PD.sym --cmf=output\PS1103_PU_PD.cmf -z \
+  -Q18XPS1103 -oC:\Users\Administrator\AppData\Local\Temp\sea8.2 \
+  -Moutput\PS1103_PU_PD.map -ver=XC8 -ASTACK=0D9h-0ffh -pstack=STACK \
+  -ACODE=00h-01FEFh -ACONST=00h-01FEFh \
+  -ASMALLCONST=0100h-01FFhx30,01F00h-01FEFh -AMEDIUMCONST=0100h-01FEFh \
+  -ACOMRAM=01h-07Fh -AABS1=00h-0FFh -ABIGRAM=01h-0FFh -ARAM=080h-0FFh \
+  -ABANK0=080h-0FFh -ASFR=0F00h-0F7Fhx2 \
+  -preset_vec=00h,intcode=08h,intcodelo=018h,powerup,init -pramtop=0100h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F00000h \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\Administrator\AppData\Local\Temp\sea8.obj \
+  output\PS1103_PU_PD.obj 
+
+Object code version is 3.11
+
+Machine type is 18XPS1103
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Administrator\AppData\Local\Temp\sea8.obj
+                init                                 32       32        4        C       0
+                reset_vec                             0        0        4        0       0
+output\PS1103_PU_PD.obj
+                intcodelo                            18       18       1A        C       0
+                intcode                               8        8        6        4       0
+                temp                                 7D       7D        1        1       1
+                smallconst                          100      100        C       80       0
+                config                           300000   300000        4   300000       0
+                intcode_body                        E44      E44      176       86       0
+                text35                             19EE     19EE       76       86       0
+                text34                             1BEE     1BEE       5C       86       0
+                text33                             18F8     18F8       7E       86       0
+                text32                             163E     163E       9C       86       0
+                text31                             1C98     1C98       4C       86       0
+                text30                             1876     1876       82       86       0
+                text29                             159E     159E       A0       86       0
+                text28                              FBA      FBA      162       86       0
+                text27                             111C     111C      142       86       0
+                text26                              C5A      C5A      1EA       86       0
+                text25                             1E66     1E66       18       86       0
+                text24                             1E0C     1E0C       26       86       0
+                text23                             1B92     1B92       5C       86       0
+                text22                             1EAA     1EAA       14       86       0
+                text21                             1E32     1E32       1C       86       0
+                text20                             1E94     1E94       16       86       0
+                text19                             1A64     1A64       6A       86       0
+                text18                             1E4E     1E4E       18       86       0
+                text17                              A6A      A6A      1F0       86       0
+                text16                             17F2     17F2       84       86       0
+                text15                             1D5A     1D5A       34       86       0
+                text14                             1DE6     1DE6       26       86       0
+                text13                             125E     125E       FA       86       0
+                text12                             1C4A     1C4A       4E       86       0
+                text11                             1D8E     1D8E       32       86       0
+                text10                             1CE4     1CE4       40       86       0
+                text9                              1976     1976       78       86       0
+                text8                              1B34     1B34       5E       86       0
+                text7                              176C     176C       86       86       0
+                text6                              16DA     16DA       92       86       0
+                text5                              1D24     1D24       36       86       0
+                text4                              14FA     14FA       A4       86       0
+                text3                              143A     143A       C0       86       0
+                text2                              1358     1358       E2       86       0
+                text1                              1DC0     1DC0       26       86       0
+                text0                               10C      10C      95E       86       0
+                cstackCOMRAM                         3C       3C       2B        1       1
+                cstackBANK0                          D7       D7        2       80       1
+                dataBANK0                            CE       CE        9       80       1
+                bssBANK0                             80       80       4E       80       1
+                dataCOMRAM                           67       67       16        1       1
+                bssCOMRAM                             1        1       3B        1       1
+                cinit                              1ACE     1ACE       66       86       0
+                idataBANK0                         1EBE     1EBE        9       86       0
+                idataCOMRAM                        1E7E     1E7E       16       86       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                intcodelo                            18       18       1A         0
+                intcode                               8        8        6         0
+                init                                 32       32        4         0
+                reset_vec                             0        0        4         0
+                intcode_body                        E44      E44      176         0
+                text35                             19EE     19EE       76         0
+                text34                             1BEE     1BEE       5C         0
+                text33                             18F8     18F8       7E         0
+                text32                             163E     163E       9C         0
+                text31                             1C98     1C98       4C         0
+                text30                             1876     1876       82         0
+                text29                             159E     159E       A0         0
+                text28                              FBA      FBA      162         0
+                text27                             111C     111C      142         0
+                text26                              C5A      C5A      1EA         0
+                text25                             1E66     1E66       18         0
+                text24                             1E0C     1E0C       26         0
+                text23                             1B92     1B92       5C         0
+                text22                             1EAA     1EAA       14         0
+                text21                             1E32     1E32       1C         0
+                text20                             1E94     1E94       16         0
+                text19                             1A64     1A64       6A         0
+                text18                             1E4E     1E4E       18         0
+                text17                              A6A      A6A      1F0         0
+                text16                             17F2     17F2       84         0
+                text15                             1D5A     1D5A       34         0
+                text14                             1DE6     1DE6       26         0
+                text13                             125E     125E       FA         0
+                text12                             1C4A     1C4A       4E         0
+                text11                             1D8E     1D8E       32         0
+                text10                             1CE4     1CE4       40         0
+                text9                              1976     1976       78         0
+                text8                              1B34     1B34       5E         0
+                text7                              176C     176C       86         0
+                text6                              16DA     16DA       92         0
+                text5                              1D24     1D24       36         0
+                text4                              14FA     14FA       A4         0
+                text3                              143A     143A       C0         0
+                text2                              1358     1358       E2         0
+                text1                              1DC0     1DC0       26         0
+                text0                               10C      10C      95E         0
+                cinit                              1ACE     1ACE       66         0
+                idataBANK0                         1EBE     1EBE        9         0
+                idataCOMRAM                        1E7E     1E7E       16         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                          100      100        C         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                temp                                 7D       7D        1         1
+                cstackCOMRAM                         3C       3C       2B         1
+                dataCOMRAM                           67       67       16         1
+                bssCOMRAM                             1        1       3B         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          D7       D7        2         1
+                dataBANK0                            CE       CE        9         1
+                bssBANK0                             80       80       4E         1
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        4         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                bssCOMRAM                      000001  00007D  00007E         1       1  COMRAM  
+                intcode                        000008  000006  00000E         4       0  CODE    
+                intcodelo                      000018  00001E  000036         C       0  CODE    
+                bssBANK0                       000080  000059  0000D9        80       1  BANK0   
+                smallconst                     000100  00000C  00010C        80       0  SMALLCON
+                text0                          00010C  001DBB  001EC7        86       0  CODE    
+                config                         300000  000004  300004    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000D9-0000FF               27
+        BIGRAM           00007E-00007F                2
+                         0000D9-0000FF               27
+        CODE             000004-000007                4
+                         00000E-000017                A
+                         000036-0000FF               CA
+                         001EC7-001FEF              129
+        COMRAM           00007E-00007F                2
+        CONFIG           300004-30000D                A
+        CONST            000004-000007                4
+                         00000E-000017                A
+                         000036-0000FF               CA
+                         001EC7-001FEF              129
+        EEDATA           F00000-F00000                1
+        IDLOC            200000-200007                8
+        MEDIUMCONST      001EC7-001FEF              129
+        RAM              0000D9-0000FF               27
+        SFR              000F00-000FFF               80
+        SMALLCONST       001EC7-001FEF               39
+        STACK            0000D9-0000FF               27
+
+                                  Symbol Table
+
+?___lldiv                  cstackCOMRAM 000049
+?___lmul                   cstackCOMRAM 00003D
+?_get_bat                  cstackCOMRAM 000056
+PL10                       text4        001572
+PL12                       text4        001584
+PL14                       text0        00099E
+PL16                       text0        0009AA
+PL18                       text11       001DB6
+PL2                        text3        0014DC
+PL20                       text13       001346
+PL22                       text26       000E38
+PL24                       text28       001110
+PL26                       text0        0009BE
+PL28                       text0        0009D0
+PL30                       text0        0009D6
+PL32                       text16       00185A
+PL34                       text32       0016C2
+PL36                       text9        0019E4
+PL38                       text27       001254
+PL4                        text3        0014E6
+PL40                       text8        001B74
+PL42                       text0        0009DC
+PL44                       text17       000C40
+PL46                       text29       00162A
+PL48                       text13       001350
+PL50                       text0        0009E6
+PL52                       text0        0009F0
+PL54                       text0        0009F8
+PL56                       text23       001BD8
+PL58                       text1        001DDA
+PL6                        text26       000E2E
+PL60                       text0        000A04
+PL62                       text32       0016D2
+PL64                       text0        000A10
+PL66                       text0        000A18
+PL68                       text0        000A1E
+PL70                       text17       000C50
+PL72                       text0        000A26
+PL74                       text0        000A30
+PL76                       text0        000A3A
+PL78                       text23       001BE4
+PL8                        text27       001242
+PL80                       text29       001634
+PL82                       text0        000A44
+PL84                       text4        001596
+PL86                       text0        000A4E
+PL88                       text0        000A58
+PL90                       text0        000A62
+PL92                       text8        001B84
+PL94                       text8        001B8C
+PL96                       text16       00186E
+PS1101@ADCON0              (abs)        000FA1
+PS1101@ADCON1              (abs)        000FA0
+PS1101@ADIE                (abs)        007D4A
+PS1101@ADIF                (abs)        007D52
+PS1101@ADIP                (abs)        007D5A
+PS1101@ADON                (abs)        007D08
+PS1101@ADRESH              (abs)        000FA3
+PS1101@ADRESL              (abs)        000FA2
+PS1101@CMP0CON0            (abs)        000FA8
+PS1101@CMP0CON1            (abs)        000FA7
+PS1101@CMP0EN              (abs)        007D47
+PS1101@CMP0IE              (abs)        007D4B
+PS1101@CMP0IF              (abs)        007D53
+PS1101@CMP0OUT             (abs)        007D46
+PS1101@CMP1EN              (abs)        007D37
+PS1101@DACCON              (abs)        000FA4
+PS1101@DACEN               (abs)        007D26
+PS1101@DUTY20              (abs)        000FC6
+PS1101@DUTY22              (abs)        000FC4
+PS1101@DUTY24              (abs)        000FC2
+PS1101@FVRCON              (abs)        000FD3
+PS1101@FVREN               (abs)        007E98
+PS1101@GIE                 (abs)        007F97
+PS1101@GO                  (abs)        007D09
+PS1101@HBPWMOE00           (abs)        007DE8
+PS1101@HBPWMOE01           (abs)        007DE9
+PS1101@HBPWMOE10           (abs)        007DEA
+PS1101@HBPWMOE11           (abs)        007DEB
+PS1101@HBPWMOE20           (abs)        007DEC
+PS1101@HBPWMOE21           (abs)        007DED
+PS1101@IOCUR               (abs)        000FB6
+PS1101@OSCCON              (abs)        000FF0
+PS1101@PA0                 (abs)        007C00
+PS1101@PA0OD               (abs)        007C90
+PS1101@PA4MSK              (abs)        007C7C
+PS1101@PA5MSK              (abs)        007C7D
+PS1101@PAIE                (abs)        007D65
+PS1101@PAIF                (abs)        007D6D
+PS1101@PAOD                (abs)        000F92
+PS1101@PAPD                (abs)        000F94
+PS1101@PAPU                (abs)        000F83
+PS1101@PB0                 (abs)        007C08
+PS1101@PB1MSK              (abs)        007C81
+PS1101@PB2                 (abs)        007C0A
+PS1101@PB3                 (abs)        007C0B
+PS1101@PB4                 (abs)        007C0C
+PS1101@PB5                 (abs)        007C0D
+PS1101@PBIE                (abs)        007D66
+PS1101@PBIF                (abs)        007D6E
+PS1101@PBPU                (abs)        000F84
+PS1101@PC0                 (abs)        007C10
+PS1101@PC1                 (abs)        007C11
+PS1101@PC2                 (abs)        007C12
+PS1101@PC3                 (abs)        007C13
+PS1101@PC4                 (abs)        007C14
+PS1101@PC5                 (abs)        007C15
+PS1101@PC6MSK              (abs)        007C8E
+PS1101@PCIE                (abs)        007D67
+PS1101@PCIF                (abs)        007D6F
+PS1101@PCON                (abs)        000FF1
+PS1101@PCPU                (abs)        000F85
+PS1101@PEIE                (abs)        007F96
+PS1101@PINA1               (abs)        007C31
+PS1101@PINA4               (abs)        007C34
+PS1101@PINA5               (abs)        007C35
+PS1101@PINB1               (abs)        007C39
+PS1101@PINC6               (abs)        007C46
+PS1101@PME                 (abs)        000FBD
+PS1101@POLS                (abs)        000FBE
+PS1101@PORTA               (abs)        000F80
+PS1101@PORTB               (abs)        000F81
+PS1101@PORTC               (abs)        000F82
+PS1101@PR0                 (abs)        000FD6
+PS1101@PR1H                (abs)        000FCF
+PS1101@PR1L                (abs)        000FCE
+PS1101@PR2                 (abs)        000FC8
+PS1101@PR3                 (abs)        000FB9
+PS1101@SMCR                (abs)        000FD4
+PS1101@T0CON               (abs)        000FD7
+PS1101@T1CON0              (abs)        000FCD
+PS1101@T1CON1              (abs)        000FCC
+PS1101@T2CON0              (abs)        000FC1
+PS1101@T2CON1              (abs)        000FC0
+PS1101@T3CON0              (abs)        000FB8
+PS1101@TMR0                (abs)        000FD5
+PS1101@TMR0IE              (abs)        007D78
+PS1101@TMR0IF              (abs)        007D80
+PS1101@TMR1H               (abs)        000FD1
+PS1101@TMR1IE              (abs)        007D79
+PS1101@TMR1IF              (abs)        007D81
+PS1101@TMR1L               (abs)        000FD0
+PS1101@TMR1ON              (abs)        007E68
+PS1101@TMR2                (abs)        000FCA
+PS1101@TMR2IE              (abs)        007D7C
+PS1101@TMR2IF              (abs)        007D84
+PS1101@TMR2IP              (abs)        007D8C
+PS1101@TMR2ON              (abs)        007E0A
+PS1101@TMR3                (abs)        000FBA
+PS1101@TMR3IE              (abs)        007D4D
+PS1101@TMR3IF              (abs)        007D55
+PS1101@TMR3ON              (abs)        007DC2
+PS1101@TRISA               (abs)        000F89
+PS1101@TRISB               (abs)        000F8A
+PS1101@TRISB2              (abs)        007C52
+PS1101@TRISB3              (abs)        007C53
+PS1101@TRISB4              (abs)        007C54
+PS1101@TRISB5              (abs)        007C55
+PS1101@TRISC               (abs)        000F8B
+PS1101@TRISC0              (abs)        007C58
+PS1101@TRISC1              (abs)        007C59
+PS1101@TRISC2              (abs)        007C5A
+PS1101@TRISC3              (abs)        007C5B
+PS1101@TRISC4              (abs)        007C5C
+PS1101@TRISC5              (abs)        007C5D
+_ADCON0                    (abs)        000FA1
+_ADCON1                    (abs)        000FA0
+_ADIE                      (abs)        007D4A
+_ADIF                      (abs)        007D52
+_ADRESH                    (abs)        000FA3
+_ADRESL                    (abs)        000FA2
+_GO                        (abs)        007D09
+_ISR_h                     intcode      000008
+_ISR_l                     intcodelo    000018
+_PA0                       (abs)        007C00
+_PINA4                     (abs)        007C34
+_PINA5                     (abs)        007C35
+_USART_BUF                 bssCOMRAM    000029
+__HRAM                     (abs)        000000
+__Habs1                    abs1         000000
+__Hbank0                   bank0        000000
+__Hbigbss                  bigbss       000000
+__Hbigdata                 bigdata      000000
+__Hbigram                  bigram       000000
+__Hbss                     bss          000000
+__HbssBANK0                bssBANK0     000000
+__HbssCOMRAM               bssCOMRAM    000000
+__Hcinit                   cinit        000000
+__Hclrtext                 clrtext      000000
+__Hcomram                  comram       000000
+__Hconfig                  config       300004
+__Hconst                   const        000000
+__HcstackBANK0             cstackBANK0  000000
+__HcstackCOMRAM            cstackCOMRAM 000000
+__Hdata                    data         000000
+__HdataBANK0               dataBANK0    000000
+__HdataCOMRAM              dataCOMRAM   000000
+__Heeprom_data             eeprom_data  000000
+__Hfarbss                  farbss       000000
+__Hfardata                 fardata      000000
+__Hibigdata                ibigdata     000000
+__Hidata                   idata        000000
+__HidataBANK0              idataBANK0   000000
+__HidataCOMRAM             idataCOMRAM  000000
+__Hidloc                   idloc        000000
+__Hifardata                ifardata     000000
+__Hinit                    init         000036
+__Hintcode                 intcode      00000E
+__Hintcode_body            intcode_body 000000
+__Hintcodelo               intcodelo    000032
+__Hintentry                intentry     000000
+__Hintret                  intret       000000
+__Hintsave_regs            intsave_regs 000000
+__Hirdata                  irdata       000000
+__Hmediumconst             mediumconst  000000
+__HnvFARRAM                nvFARRAM     000000
+__Hnvbit                   nvbit        000000
+__Hnvrram                  nvrram       000000
+__Hpa_nodes0               pa_nodes0    000000
+__Hparam                   rparam       000000
+__Hpowerup                 powerup      000032
+__Hram                     ram          000000
+__Hramtop                  ramtop       000100
+__Hrbit                    rbit         000000
+__Hrbss                    rbss         000000
+__Hrdata                   rdata        000000
+__Hreset_vec               reset_vec    000004
+__Hrparam                  rparam       000000
+__Hsfr                     sfr          000000
+__Hsmallconst              smallconst   00010C
+__Hspace_0                 (abs)        300004
+__Hspace_1                 (abs)        0000D9
+__Hspace_2                 (abs)        000000
+__Hstack                   stack        000000
+__Hstruct                  struct       000000
+__Htemp                    temp         00007E
+__Htext                    text         000000
+__Htext0                   text0        000000
+__Htext1                   text1        000000
+__Htext10                  text10       000000
+__Htext11                  text11       000000
+__Htext12                  text12       000000
+__Htext13                  text13       000000
+__Htext14                  text14       000000
+__Htext15                  text15       000000
+__Htext16                  text16       000000
+__Htext17                  text17       000000
+__Htext18                  text18       000000
+__Htext19                  text19       000000
+__Htext2                   text2        000000
+__Htext20                  text20       000000
+__Htext21                  text21       000000
+__Htext22                  text22       000000
+__Htext23                  text23       000000
+__Htext24                  text24       000000
+__Htext25                  text25       000000
+__Htext26                  text26       000000
+__Htext27                  text27       000000
+__Htext28                  text28       000000
+__Htext29                  text29       000000
+__Htext3                   text3        000000
+__Htext30                  text30       000000
+__Htext31                  text31       000000
+__Htext32                  text32       000000
+__Htext33                  text33       000000
+__Htext34                  text34       000000
+__Htext35                  text35       000000
+__Htext4                   text4        000000
+__Htext5                   text5        000000
+__Htext6                   text6        000000
+__Htext7                   text7        000000
+__Htext8                   text8        000000
+__Htext9                   text9        000000
+__LRAM                     (abs)        000001
+__Labs1                    abs1         000000
+__Lbank0                   bank0        000000
+__Lbigbss                  bigbss       000000
+__Lbigdata                 bigdata      000000
+__Lbigram                  bigram       000000
+__Lbss                     bss          000000
+__LbssBANK0                bssBANK0     000000
+__LbssCOMRAM               bssCOMRAM    000000
+__Lcinit                   cinit        000000
+__Lclrtext                 clrtext      000000
+__Lcomram                  comram       000000
+__Lconfig                  config       300000
+__Lconst                   const        000000
+__LcstackBANK0             cstackBANK0  000000
+__LcstackCOMRAM            cstackCOMRAM 000000
+__Ldata                    data         000000
+__LdataBANK0               dataBANK0    000000
+__LdataCOMRAM              dataCOMRAM   000000
+__Leeprom_data             eeprom_data  000000
+__Lfarbss                  farbss       000000
+__Lfardata                 fardata      000000
+__Libigdata                ibigdata     000000
+__Lidata                   idata        000000
+__LidataBANK0              idataBANK0   000000
+__LidataCOMRAM             idataCOMRAM  000000
+__Lidloc                   idloc        000000
+__Lifardata                ifardata     000000
+__Linit                    init         000032
+__Lintcode                 intcode      000008
+__Lintcode_body            intcode_body 000000
+__Lintcodelo               intcodelo    000018
+__Lintentry                intentry     000000
+__Lintret                  intret       000000
+__Lintsave_regs            intsave_regs 000000
+__Lirdata                  irdata       000000
+__Lmediumconst             mediumconst  000000
+__LnvFARRAM                nvFARRAM     000000
+__Lnvbit                   nvbit        000000
+__Lnvrram                  nvrram       000000
+__Lpa_nodes0               pa_nodes0    000000
+__Lparam                   rparam       000000
+__Lpowerup                 powerup      000032
+__Lram                     ram          000000
+__Lramtop                  ramtop       000100
+__Lrbit                    rbit         000000
+__Lrbss                    rbss         000000
+__Lrdata                   rdata        000000
+__Lreset_vec               reset_vec    000000
+__Lrparam                  rparam       000000
+__Lsfr                     sfr          000000
+__Lsmallconst              smallconst   000100
+__Lspace_0                 (abs)        000000
+__Lspace_1                 (abs)        000000
+__Lspace_2                 (abs)        000000
+__Lstack                   stack        000000
+__Lstruct                  struct       000000
+__Ltemp                    temp         00007D
+__Ltext                    text         000000
+__Ltext0                   text0        000000
+__Ltext1                   text1        000000
+__Ltext10                  text10       000000
+__Ltext11                  text11       000000
+__Ltext12                  text12       000000
+__Ltext13                  text13       000000
+__Ltext14                  text14       000000
+__Ltext15                  text15       000000
+__Ltext16                  text16       000000
+__Ltext17                  text17       000000
+__Ltext18                  text18       000000
+__Ltext19                  text19       000000
+__Ltext2                   text2        000000
+__Ltext20                  text20       000000
+__Ltext21                  text21       000000
+__Ltext22                  text22       000000
+__Ltext23                  text23       000000
+__Ltext24                  text24       000000
+__Ltext25                  text25       000000
+__Ltext26                  text26       000000
+__Ltext27                  text27       000000
+__Ltext28                  text28       000000
+__Ltext29                  text29       000000
+__Ltext3                   text3        000000
+__Ltext30                  text30       000000
+__Ltext31                  text31       000000
+__Ltext32                  text32       000000
+__Ltext33                  text33       000000
+__Ltext34                  text34       000000
+__Ltext35                  text35       000000
+__Ltext4                   text4        000000
+__Ltext5                   text5        000000
+__Ltext6                   text6        000000
+__Ltext7                   text7        000000
+__Ltext8                   text8        000000
+__Ltext9                   text9        000000
+__S0                       (abs)        300004
+__S1                       (abs)        0000D9
+__S2                       (abs)        000000
+___inthi_sp                stack        000000
+___intlo_sp                stack        000000
+___lbdiv                   text15       001D5A
+___lbdiv@counter           cstackCOMRAM 00003F
+___lbdiv@dividend          cstackCOMRAM 00003E
+___lbdiv@divisor           cstackCOMRAM 00003D
+___lbdiv@quotient          cstackCOMRAM 000040
+___lbmod                   text14       001DE6
+___lbmod@counter           cstackCOMRAM 000043
+___lbmod@dividend          cstackCOMRAM 000042
+___lbmod@divisor           cstackCOMRAM 000041
+___lbmod@rem               cstackCOMRAM 000044
+___lldiv                   text35       0019EE
+___lldiv@counter           cstackCOMRAM 000055
+___lldiv@dividend          cstackCOMRAM 000049
+___lldiv@divisor           cstackCOMRAM 00004D
+___lldiv@quotient          cstackCOMRAM 000051
+___lmul                    text31       001C98
+___lmul@multiplicand       cstackCOMRAM 000041
+___lmul@multiplier         cstackCOMRAM 00003D
+___lmul@product            cstackCOMRAM 000045
+___param_bank              (abs)        000000
+___rparam_used             (abs)        000001
+___sp                      stack        000000
+__accesstop                (abs)        000080
+__activetblptr             (abs)        000002
+__end_ofPL10               text4        001584
+__end_ofPL12               text4        001596
+__end_ofPL14               text0        0009AA
+__end_ofPL16               text0        0009BE
+__end_ofPL18               text11       001DC0
+__end_ofPL2                text3        0014E6
+__end_ofPL20               text13       001350
+__end_ofPL22               text26       000E44
+__end_ofPL24               text28       00111C
+__end_ofPL26               text0        0009D0
+__end_ofPL28               text0        0009D6
+__end_ofPL30               text0        0009DC
+__end_ofPL32               text16       00186E
+__end_ofPL34               text32       0016D2
+__end_ofPL36               text9        0019EE
+__end_ofPL38               text27       00125E
+__end_ofPL4                text3        0014FA
+__end_ofPL40               text8        001B84
+__end_ofPL42               text0        0009E6
+__end_ofPL44               text17       000C50
+__end_ofPL46               text29       001634
+__end_ofPL48               text13       001358
+__end_ofPL50               text0        0009F0
+__end_ofPL52               text0        0009F8
+__end_ofPL54               text0        000A04
+__end_ofPL56               text23       001BE4
+__end_ofPL58               text1        001DE6
+__end_ofPL6                text26       000E38
+__end_ofPL60               text0        000A10
+__end_ofPL62               text32       0016DA
+__end_ofPL64               text0        000A18
+__end_ofPL66               text0        000A1E
+__end_ofPL68               text0        000A26
+__end_ofPL70               text17       000C5A
+__end_ofPL72               text0        000A30
+__end_ofPL74               text0        000A3A
+__end_ofPL76               text0        000A44
+__end_ofPL78               text23       001BEE
+__end_ofPL8                text27       001254
+__end_ofPL80               text29       00163E
+__end_ofPL82               text0        000A4E
+__end_ofPL84               text4        00159E
+__end_ofPL86               text0        000A58
+__end_ofPL88               text0        000A62
+__end_ofPL90               text0        000A6A
+__end_ofPL92               text8        001B8C
+__end_ofPL94               text8        001B92
+__end_ofPL96               text16       001876
+__end_of_ISR_h             intcode_body 000FBA
+__end_of_ISR_l             intcodelo    000032
+__end_of___lbdiv           text15       001D8E
+__end_of___lbmod           text14       001E0C
+__end_of___lldiv           text35       001A64
+__end_of___lmul            text31       001CE4
+__end_of__initialization   cinit        001B26
+__end_of_add_task_id       text32       0016C2
+__end_of_bat_task          text33       001976
+__end_of_cb_task           text29       00162A
+__end_of_chrg_task         text28       001110
+__end_of_cmp0_init         text25       001E7E
+__end_of_find_task         text2        00143A
+__end_of_get_bat           text34       001C4A
+__end_of_get_load          text30       0018F8
+__end_of_gpio_init         text24       001E32
+__end_of_key_task          text27       001242
+__end_of_ldz               text18       001E66
+__end_of_main              text0        00099E
+__end_of_new_nixie         text17       000C40
+__end_of_nixienum          smallconst   00010B
+__end_of_si_mic_task       text26       000E2E
+__end_of_sleep_mode        text23       001BD8
+__end_of_sleep_task        text19       001ACE
+__end_of_task_init         text1        001DDA
+__end_of_timer0_init       text22       001EBE
+__end_of_timer1_init       text21       001E4E
+__end_of_timer2_init       text20       001EAA
+__end_of_ui_begin          text16       00185A
+__end_of_ui_cb             text13       001346
+__end_of_ui_chrg           text12       001C98
+__end_of_ui_chrgfree       text11       001DB6
+__end_of_ui_chrgfull       text10       001D24
+__end_of_ui_dl_getup       text9        0019E4
+__end_of_ui_kl             text8        001B74
+__end_of_ui_smoend         text7        0017F2
+__end_of_ui_smoing         text6        00176C
+__end_of_ui_timout         text5        001D5A
+__end_of_ui_ts_off         text4        001572
+__end_of_ui_ts_on          text3        0014DC
+__initialization           cinit        001ACE
+__mediumconst              mediumconst  000000
+__pbssBANK0                bssBANK0     000080
+__pbssCOMRAM               bssCOMRAM    000001
+__pcinit                   cinit        001ACE
+__pcstackBANK0             cstackBANK0  0000D7
+__pcstackCOMRAM            cstackCOMRAM 00003C
+__pdataBANK0               dataBANK0    0000CE
+__pdataCOMRAM              dataCOMRAM   000067
+__pidataBANK0              idataBANK0   001EBE
+__pidataCOMRAM             idataCOMRAM  001E7E
+__pintcode                 intcode      000008
+__pintcode_body            intcode_body 000E44
+__pintcodelo               intcodelo    000018
+__psmallconst              smallconst   000100
+__ptext0                   text0        00010C
+__ptext1                   text1        001DC0
+__ptext10                  text10       001CE4
+__ptext11                  text11       001D8E
+__ptext12                  text12       001C4A
+__ptext13                  text13       00125E
+__ptext14                  text14       001DE6
+__ptext15                  text15       001D5A
+__ptext16                  text16       0017F2
+__ptext17                  text17       000A6A
+__ptext18                  text18       001E4E
+__ptext19                  text19       001A64
+__ptext2                   text2        001358
+__ptext20                  text20       001E94
+__ptext21                  text21       001E32
+__ptext22                  text22       001EAA
+__ptext23                  text23       001B92
+__ptext24                  text24       001E0C
+__ptext25                  text25       001E66
+__ptext26                  text26       000C5A
+__ptext27                  text27       00111C
+__ptext28                  text28       000FBA
+__ptext29                  text29       00159E
+__ptext3                   text3        00143A
+__ptext30                  text30       001876
+__ptext31                  text31       001C98
+__ptext32                  text32       00163E
+__ptext33                  text33       0018F8
+__ptext34                  text34       001BEE
+__ptext35                  text35       0019EE
+__ptext4                   text4        0014FA
+__ptext5                   text5        001D24
+__ptext6                   text6        0016DA
+__ptext7                   text7        00176C
+__ptext8                   text8        001B34
+__ptext9                   text9        001976
+__ramtop                   ramtop       000100
+__size_of_ISR_h            (abs)        000000
+__size_of_ISR_l            (abs)        000000
+__size_of___lbdiv          (abs)        000000
+__size_of___lbmod          (abs)        000000
+__size_of___lldiv          (abs)        000000
+__size_of___lmul           (abs)        000000
+__size_of_add_task_id      (abs)        000000
+__size_of_bat_task         (abs)        000000
+__size_of_cb_task          (abs)        000000
+__size_of_chrg_task        (abs)        000000
+__size_of_cmp0_init        (abs)        000000
+__size_of_find_task        (abs)        000000
+__size_of_get_bat          (abs)        000000
+__size_of_get_load         (abs)        000000
+__size_of_gpio_init        (abs)        000000
+__size_of_key_task         (abs)        000000
+__size_of_ldz              (abs)        000000
+__size_of_main             (abs)        000000
+__size_of_new_nixie        (abs)        000000
+__size_of_si_mic_task      (abs)        000000
+__size_of_sleep_mode       (abs)        000000
+__size_of_sleep_task       (abs)        000000
+__size_of_task_init        (abs)        000000
+__size_of_timer0_init      (abs)        000000
+__size_of_timer1_init      (abs)        000000
+__size_of_timer2_init      (abs)        000000
+__size_of_ui_begin         (abs)        000000
+__size_of_ui_cb            (abs)        000000
+__size_of_ui_chrg          (abs)        000000
+__size_of_ui_chrgfree      (abs)        000000
+__size_of_ui_chrgfull      (abs)        000000
+__size_of_ui_dl_getup      (abs)        000000
+__size_of_ui_kl            (abs)        000000
+__size_of_ui_smoend        (abs)        000000
+__size_of_ui_smoing        (abs)        000000
+__size_of_ui_timout        (abs)        000000
+__size_of_ui_ts_off        (abs)        000000
+__size_of_ui_ts_on         (abs)        000000
+__smallconst               smallconst   000100
+_adc_begin                 bssCOMRAM    00002B
+_adc_cnt                   bssCOMRAM    00002C
+_adc_flag                  bssCOMRAM    00002D
+_add_task_id               text32       00163E
+_bat                       dataCOMRAM   000070
+_bat_task                  text33       0018F8
+_cb_o                      bssCOMRAM    000039
+_cb_task                   text29       00159E
+_cfg_flag                  dataCOMRAM   000075
+_chrg_cnt                  bssCOMRAM    000034
+_chrg_num                  dataCOMRAM   000078
+_chrg_o                    bssCOMRAM    000036
+_chrg_task                 text28       000FBA
+_chrging                   dataCOMRAM   000079
+_cmp0_init                 text25       001E66
+_find_task                 text2        001358
+_full                      bssCOMRAM    000035
+_get_bat                   text34       001BEE
+_get_load                  text30       001876
+_gpio_init                 text24       001E0C
+_key_cnt                   bssCOMRAM    000033
+_key_cnt_flag              bssCOMRAM    000032
+_key_o                     dataCOMRAM   000077
+_key_task                  text27       00111C
+_kl_init                   bssCOMRAM    000025
+_ldz                       text18       001E4E
+_lowbat_init               bssCOMRAM    00002F
+_main                      text0        00010C
+_new_nixie                 text17       000A6A
+_new_nixie$6626            cstackCOMRAM 000040
+_new_nixie$6627            cstackCOMRAM 000042
+_new_nixie$6628            cstackCOMRAM 000044
+_new_nixie$6629            cstackCOMRAM 000046
+_nixienum                  smallconst   000101
+_pw                        dataCOMRAM   00007C
+_pw_add_flag               dataCOMRAM   000076
+_pw_mode                   bssCOMRAM    000030
+_pw_t                      dataCOMRAM   00006C
+_pwm                       dataBANK0    0000CE
+_pwm_bat                   dataCOMRAM   000073
+_pwm_cnt                   bssCOMRAM    00002A
+_pwm_flag                  bssCOMRAM    00002E
+_si_mic_flag               bssCOMRAM    000018
+_si_mic_state              bssCOMRAM    000028
+_si_mic_task               text26       000C5A
+_si_mic_task$4421          cstackCOMRAM 000060
+_sleep_mode                text23       001B92
+_sleep_task                text19       001A64
+_smoing                    bssCOMRAM    000026
+_task_init                 text1        001DC0
+_task_list                 bssBANK0     000086
+_tim_cnt                   bssCOMRAM    00001D
+_tim_ui                    bssCOMRAM    000021
+_timer0_init               text22       001EAA
+_timer1_init               text21       001E32
+_timer2_init               text20       001E94
+_timout                    bssCOMRAM    000027
+_ts                        bssCOMRAM    000037
+_ts_cnt                    bssCOMRAM    000031
+_ui                        bssCOMRAM    00000D
+_ui_begin                  text16       0017F2
+_ui_buff                   bssCOMRAM    000001
+_ui_cb                     text13       00125E
+_ui_chrg                   text12       001C4A
+_ui_chrgfree               text11       001D8E
+_ui_chrgfull               text10       001CE4
+_ui_dl_getup               text9        001976
+_ui_id                     dataCOMRAM   00007B
+_ui_kl                     text8        001B34
+_ui_ld                     dataCOMRAM   000067
+_ui_smoend                 text7        00176C
+_ui_smoing                 text6        0016DA
+_ui_timout                 text5        001D24
+_ui_ts_off                 text4        0014FA
+_ui_ts_on                  text3        00143A
+_yd                        bssCOMRAM    000038
+_zz                        dataCOMRAM   00007A
+_zz_                       bssBANK0     000080
+_zz_begin                  bssCOMRAM    00003B
+_zz_p                      bssCOMRAM    00003A
+add_task_id@id             cstackCOMRAM 000047
+add_task_id@interval_ms    cstackCOMRAM 00003D
+add_task_id@interval_ticks cstackCOMRAM 000048
+add_task_id@suc_max        cstackCOMRAM 000041
+add_task_id@task_id        cstackCOMRAM 000042
+bat_task@b                 cstackCOMRAM 000061
+bat_task@task_             cstackCOMRAM 00005E
+btemp                      temp         00007D
+cb_task@task_              cstackCOMRAM 00005C
+cb_task@zz_t               cstackCOMRAM 00005F
+chrg_task@cheg_num_d       bssCOMRAM    000023
+chrg_task@task_            cstackCOMRAM 00005E
+config_word1               config       300000
+config_word2               config       300002
+end_of_initialization      cinit        001B26
+find_task@task_            cstackCOMRAM 000064
+get_bat@ttt                cstackCOMRAM 00005A
+get_load@temp              cstackCOMRAM 000058
+int$flags                  temp         00007D
+int_func                   intcode_body 000E44
+intlevel0                  text         000000
+intlevel1                  text         000000
+intlevel2                  text         000000
+intlevel3                  text         000000
+key_task@task_             cstackCOMRAM 00004A
+ldz@a                      cstackCOMRAM 00003D
+main@b_                    cstackBANK0  0000D7
+si_mic_task@task_          cstackCOMRAM 00005E
+sleep_task@task_           cstackCOMRAM 00003D
+stackhi                    (abs)        0000FF
+stacklo                    (abs)        0000D9
+start                      init         000032
+start_initialization       cinit        001ACE
+task_init@i                cstackCOMRAM 00003D
+ui_begin@task_             cstackCOMRAM 000048
+ui_cb@task_                cstackCOMRAM 00004A
+ui_chrg@task_              cstackCOMRAM 000048
+ui_chrgfree@task_          cstackCOMRAM 000048
+ui_chrgfull@task_          cstackCOMRAM 000048
+ui_dl_getup@task_          cstackCOMRAM 00004A
+ui_kl@task_                cstackCOMRAM 000048
+ui_smoend@task_            cstackCOMRAM 000048
+ui_smoing@task_            cstackCOMRAM 000048
+ui_timout@task_            cstackCOMRAM 000048
+ui_ts_off@task_            cstackCOMRAM 00004A
+ui_ts_on@task_             cstackCOMRAM 00004A
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 71 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  b_              2    0[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       2
+      Temps:          2       0
+      Totals:         2       2
+Total ram usage:        4 bytes
+ Hardware stack levels required when called:    6
+ This function calls:
+		___lldiv
+		___lmul
+		_add_task_id
+		_bat_task
+		_cb_task
+		_chrg_task
+		_cmp0_init
+		_find_task
+		_get_bat
+		_gpio_init
+		_key_task
+		_si_mic_task
+		_sleep_task
+		_task_init
+		_timer0_init
+		_timer1_init
+		_timer2_init
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _task_init *****************
+ Defined at:
+		line 7 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         1       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _find_task *****************
+ Defined at:
+		line 64 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+  task_           1   40[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_bat_task
+		_cb_task
+		_chrg_task
+		_key_task
+		_si_mic_task
+		_sleep_task
+		_ui_begin
+		_ui_cb
+		_ui_chrg
+		_ui_chrgfree
+		_ui_chrgfull
+		_ui_dl_getup
+		_ui_kl
+		_ui_smoend
+		_ui_smoing
+		_ui_timout
+		_ui_ts_off
+		_ui_ts_on
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_ts_on *****************
+ Defined at:
+		line 461 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_add_task_id
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_ts_off *****************
+ Defined at:
+		line 518 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_add_task_id
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_timout *****************
+ Defined at:
+		line 565 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_smoing *****************
+ Defined at:
+		line 288 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_smoend *****************
+ Defined at:
+		line 374 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_kl *****************
+ Defined at:
+		line 417 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_dl_getup *****************
+ Defined at:
+		line 333 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_add_task_id
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_chrgfull *****************
+ Defined at:
+		line 261 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_chrgfree *****************
+ Defined at:
+		line 234 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_chrg *****************
+ Defined at:
+		line 207 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_cb *****************
+ Defined at:
+		line 138 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lbdiv
+		___lbmod
+		_add_task_id
+		_ldz
+		_new_nixie
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lbmod *****************
+ Defined at:
+		line 4 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbmod.c"
+ Parameters:    Size  Location     Type
+  dividend        1    wreg     unsigned char 
+  divisor         1    5[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  dividend        1    6[COMRAM] unsigned char 
+  rem             1    8[COMRAM] unsigned char 
+  counter         1    7[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         3       0
+      Temps:          0       0
+      Totals:         4       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_ui_cb
+ This function uses a non-reentrant model
+
+
+ *************** function ___lbdiv *****************
+ Defined at:
+		line 4 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        1    wreg     unsigned char 
+  divisor         1    1[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  dividend        1    2[COMRAM] unsigned char 
+  quotient        1    4[COMRAM] unsigned char 
+  counter         1    3[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         3       0
+      Temps:          0       0
+      Totals:         4       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_ui_cb
+		_ui_chrg
+		_ui_dl_getup
+		_ui_smoend
+		_ui_ts_on
+		_ui_ts_off
+		_ui_timout
+ This function uses a non-reentrant model
+
+
+ *************** function _ui_begin *****************
+ Defined at:
+		line 597 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  task_           1   12[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_cmp0_init
+		_gpio_init
+		_ldz
+		_new_nixie
+		_sleep_mode
+		_timer0_init
+		_timer1_init
+		_timer2_init
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _new_nixie *****************
+ Defined at:
+		line 29 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         8       0
+      Temps:          3       0
+      Totals:        11       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_ui_cb
+		_ui_chrg
+		_ui_chrgfree
+		_ui_chrgfull
+		_ui_smoing
+		_ui_dl_getup
+		_ui_smoend
+		_ui_kl
+		_ui_ts_on
+		_ui_ts_off
+		_ui_timout
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _ldz *****************
+ Defined at:
+		line 128 in file ".\src\ui.c"
+ Parameters:    Size  Location     Type
+  a               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  a               1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         1       0
+      Temps:          0       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_ui_cb
+		_ui_chrg
+		_ui_chrgfree
+		_ui_chrgfull
+		_ui_smoing
+		_ui_dl_getup
+		_ui_smoend
+		_ui_kl
+		_ui_ts_on
+		_ui_ts_off
+		_ui_timout
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _sleep_task *****************
+ Defined at:
+		line 5 in file ".\src\sleep.c"
+ Parameters:    Size  Location     Type
+  task_           1    1[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          2       0
+      Totals:         3       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_cmp0_init
+		_gpio_init
+		_sleep_mode
+		_timer0_init
+		_timer1_init
+		_timer2_init
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _timer2_init *****************
+ Defined at:
+		line 64 in file ".\src\peripheral.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _timer1_init *****************
+ Defined at:
+		line 40 in file ".\src\peripheral.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _timer0_init *****************
+ Defined at:
+		line 97 in file ".\src\peripheral.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _sleep_mode *****************
+ Defined at:
+		line 35 in file ".\src\sleep.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _gpio_init *****************
+ Defined at:
+		line 4 in file ".\src\peripheral.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _cmp0_init *****************
+ Defined at:
+		line 78 in file ".\src\peripheral.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+		_ui_begin
+ This function uses a non-reentrant model
+
+
+ *************** function _si_mic_task *****************
+ Defined at:
+		line 18 in file ".\src\si_mic.c"
+ Parameters:    Size  Location     Type
+  task_           1   34[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         4       0
+      Temps:          1       0
+      Totals:         6       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_add_task_id
+		_get_bat
+		_get_load
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _key_task *****************
+ Defined at:
+		line 19 in file ".\src\key.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_add_task_id
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _chrg_task *****************
+ Defined at:
+		line 15 in file ".\src\chrg.c"
+ Parameters:    Size  Location     Type
+  task_           1   34[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         2       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_add_task_id
+		_get_bat
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _cb_task *****************
+ Defined at:
+		line 38 in file ".\src\cb.c"
+ Parameters:    Size  Location     Type
+  task_           1   32[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+  zz_t            2   35[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         2       0
+      Temps:          2       0
+      Totals:         5       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_add_task_id
+		_get_load
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _get_load *****************
+ Defined at:
+		line 6 in file ".\src\cb.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            4   28[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         4       0
+      Temps:          2       0
+      Totals:         6       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lldiv
+		___lmul
+ This function is called by:
+		_cb_task
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lmul *****************
+ Defined at:
+		line 15 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\Umul32.c"
+ Parameters:    Size  Location     Type
+  multiplier      4    1[COMRAM] unsigned long 
+  multiplicand    4    5[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  product         4    9[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  4    1[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         8       0
+      Locals:         4       0
+      Temps:          0       0
+      Totals:        12       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_get_load
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _add_task_id *****************
+ Defined at:
+		line 42 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+  id              1    wreg     unsigned char 
+  interval_ms     4    1[COMRAM] unsigned long 
+  suc_max         1    5[COMRAM] unsigned char 
+  task_id         1    6[COMRAM] char 
+ Auto vars:     Size  Location     Type
+  id              1   11[COMRAM] unsigned char 
+  interval_tic    2   12[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         6       0
+      Locals:         3       0
+      Temps:          4       0
+      Totals:        13       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_cb_task
+		_chrg_task
+		_key_task
+		_main
+		_si_mic_task
+		_ui_cb
+		_ui_dl_getup
+		_ui_ts_on
+		_ui_ts_off
+ This function uses a non-reentrant model
+
+
+ *************** function _bat_task *****************
+ Defined at:
+		line 35 in file ".\src\bat.c"
+ Parameters:    Size  Location     Type
+  task_           1   34[COMRAM] PTR struct task
+		 -> task_list(72), 
+ Auto vars:     Size  Location     Type
+  b               2   37[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         1       0
+      Locals:         2       0
+      Temps:          2       0
+      Totals:         5       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_get_bat
+ This function is called by:
+		_main
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _get_bat *****************
+ Defined at:
+		line 7 in file ".\src\bat.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  ttt             4   30[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  2   26[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         2       0
+      Locals:         4       0
+      Temps:          2       0
+      Totals:         8       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		___lldiv
+ This function is called by:
+		_bat_task
+		_chrg_task
+		_main
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 8 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lldiv.c"
+ Parameters:    Size  Location     Type
+  dividend        4   13[COMRAM] unsigned long 
+  divisor         4   17[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4   21[COMRAM] unsigned long 
+  counter         1   25[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   13[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         8       0
+      Locals:         5       0
+      Temps:          0       0
+      Totals:        13       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		_get_bat
+		_get_load
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR_l *****************
+ Defined at:
+		line 533 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          1       0
+      Totals:         1       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR_h *****************
+ Defined at:
+		line 383 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+.\src\key.c
+		_key_task      		CODE           	111C	0000	295
+
+.\src\key.c estimated size: 295
+
+.\src\si_mic.c
+		_si_mic_task   		CODE           	0C5A	0000	469
+
+.\src\si_mic.c estimated size: 469
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbmod.c
+		___lbmod       		CODE           	1DE6	0000	39
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbmod.c estimated size: 39
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lldiv.c
+		___lldiv       		CODE           	19EE	0000	119
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lldiv.c estimated size: 119
+
+.\src\ui.c
+		_ui_cb         		CODE           	125E	0000	233
+		_ui_begin      		CODE           	17F2	0000	105
+		_ui_chrg       		CODE           	1C4A	0000	79
+		_ui_chrgfree   		CODE           	1D8E	0000	41
+		_ui_chrgfull   		CODE           	1CE4	0000	65
+		_new_nixie     		CODE           	0A6A	0000	471
+		_ui_dl_getup   		CODE           	1976	0000	111
+		_ui_kl         		CODE           	1B34	0000	65
+		_ui_ts_on      		CODE           	143A	0000	163
+		_ui_ts_off     		CODE           	14FA	0000	121
+		_ui_timout     		CODE           	1D24	0000	55
+		_ldz           		CODE           	1E4E	0000	25
+		_ui_smoing     		CODE           	16DA	0000	147
+		_ui_smoend     		CODE           	176C	0000	135
+
+.\src\ui.c estimated size: 1816
+
+.\src\main.c
+		_ISR_h         		CODE           	0008	0000	381
+		_main          		CODE           	010C	0000	2195
+		_ISR_l         		CODE           	0018	0000	27
+
+.\src\main.c estimated size: 2603
+
+.\src\peripheral.c
+		_timer2_init   		CODE           	1E94	0000	23
+		_timer0_init   		CODE           	1EAA	0000	21
+		_cmp0_init     		CODE           	1E66	0000	25
+		_gpio_init     		CODE           	1E0C	0000	39
+		_timer1_init   		CODE           	1E32	0000	29
+
+.\src\peripheral.c estimated size: 137
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\Umul32.c
+		___lmul        		CODE           	1C98	0000	77
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\Umul32.c estimated size: 77
+
+.\src\cb.c
+		_cb_task       		CODE           	159E	0000	141
+		_get_load      		CODE           	1876	0000	131
+
+.\src\cb.c estimated size: 272
+
+.\src\chrg.c
+		_chrg_task     		CODE           	0FBA	0000	343
+
+.\src\chrg.c estimated size: 343
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbdiv.c
+		___lbdiv       		CODE           	1D5A	0000	53
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.7\resource\Microchip\xc8\v1.41\sources\common\lbdiv.c estimated size: 53
+
+.\src\sleep.c
+		_sleep_task    		CODE           	1A64	0000	107
+		_sleep_mode    		CODE           	1B92	0000	71
+
+.\src\sleep.c estimated size: 178
+
+shared
+		PL12           		CODE           	1584	0000	19
+		PL50           		CODE           	09E6	0000	11
+		PL8            		CODE           	1242	0000	19
+		PL22           		CODE           	0E38	0000	13
+		PL60           		CODE           	0A04	0000	13
+		PL32           		CODE           	185A	0000	21
+		PL70           		CODE           	0C50	0000	11
+		PL42           		CODE           	09DC	0000	11
+		PL80           		CODE           	1634	0000	11
+		PL14           		CODE           	099E	0000	13
+		PL52           		CODE           	09F0	0000	9
+		PL90           		CODE           	0A62	0000	9
+		PL24           		CODE           	1110	0000	13
+		PL62           		CODE           	16D2	0000	9
+		PL34           		CODE           	16C2	0000	17
+		PL72           		CODE           	0A26	0000	11
+		PL44           		CODE           	0C40	0000	17
+		PL82           		CODE           	0A44	0000	11
+		PL16           		CODE           	09AA	0000	21
+		PL54           		CODE           	09F8	0000	13
+		PL92           		CODE           	1B84	0000	9
+		PL26           		CODE           	09BE	0000	19
+		PL64           		CODE           	0A10	0000	9
+		PL36           		CODE           	19E4	0000	11
+		PL74           		CODE           	0A30	0000	11
+		PL46           		CODE           	162A	0000	11
+		PL84           		CODE           	1596	0000	9
+		PL18           		CODE           	1DB6	0000	11
+		PL56           		CODE           	1BD8	0000	13
+		PL94           		CODE           	1B8C	0000	7
+		PL28           		CODE           	09D0	0000	7
+		PL66           		CODE           	0A18	0000	7
+		PL38           		CODE           	1254	0000	11
+		PL76           		CODE           	0A3A	0000	11
+		PL48           		CODE           	1350	0000	9
+		PL86           		CODE           	0A4E	0000	11
+		PL58           		CODE           	1DDA	0000	13
+		PL96           		CODE           	186E	0000	9
+		PL68           		CODE           	0A1E	0000	9
+		PL78           		CODE           	1BE4	0000	11
+		_nixienum      		SMALLCONST     	0101	0000	11
+		PL88           		CODE           	0A58	0000	11
+		__initialization		CODE           	1ACE	0000	89
+		PL2            		CODE           	14DC	0000	11
+		PL10           		CODE           	1572	0000	19
+		PL4            		CODE           	14E6	0000	21
+		PL20           		CODE           	1346	0000	11
+		PL30           		CODE           	09D6	0000	7
+		PL6            		CODE           	0E2E	0000	11
+		PL40           		CODE           	1B74	0000	17
+
+shared estimated size: 688
+
+.\src\task.c
+		_add_task_id   		CODE           	163E	0000	133
+		_task_init     		CODE           	1DC0	0000	27
+		_find_task     		CODE           	1358	0000	227
+
+.\src\task.c estimated size: 387
+
+.\src\bat.c
+		_get_bat       		CODE           	1BEE	0000	93
+		_bat_task      		CODE           	18F8	0000	127
+
+.\src\bat.c estimated size: 220
+

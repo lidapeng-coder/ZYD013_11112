@@ -1,0 +1,1 @@
+ output/peripheral.d  output/peripheral.p1:  ./src/peripheral.c ./src/public.h ./src/tim.h ./src/task.h ./src/cb.h ./src/si_mic.h ./src/key.h ./src/ui.h ./src/sleep.h ./src/PS1101.h ./src/bat.h ./src/PS1101_DEF.h ./src/peripheral.h ./src/chrg.h ./src/pwm.h

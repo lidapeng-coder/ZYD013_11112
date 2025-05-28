@@ -1,0 +1,18 @@
+{
+"folders": [
+{
+"path": "."
+}
+],
+"settings": {
+    "files.associations": {
+        "datatype.h": "c",
+        "myi2c.h": "c",
+        "periph.h": "c",
+        "ad18f128.h": "c",
+        "public.h": "c",
+        "task.h": "c",
+        "pwm.h": "c"
+    }
+}
+}

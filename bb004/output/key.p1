@@ -1,0 +1,3762 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"13 .\src\task.h
+[s S1 `ui 1 `ui 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1 task interval counter id1 id2 active ready maxSuc sucCnt ]
+"45
+[v _task_list `S1 ~T0 @X0 -> 0 `x e ]
+"38 .\src\aip33626.h
+[v _aip33626_task_id `uc ~T0 @X0 0 e ]
+"9 .\src\chrg.h
+[v _task_1_7_flag `uc ~T0 @X0 0 e ]
+"9 .\src\si_mic.h
+[v _mode_sub `uc ~T0 @X0 0 e ]
+"29 .\src\task.h
+[v _add_task_id `(uc ~T0 @X0 0 ef5`uc`uc`ul`uc`uc ]
+"7 .\src\chrg.h
+[v _state_chrg `uc ~T0 @X0 0 e ]
+"12 .\src\smo_det.h
+[v _cr_flag `uc ~T0 @X0 0 e ]
+"16 .\src\si_mic.h
+[v _you `uc ~T0 @X0 0 e ]
+[v _mode_you `uc ~T0 @X0 0 e ]
+"14
+[v _breath_state `uc ~T0 @X0 0 e ]
+"9 .\src\smo_det.h
+[v _state_smo_det `uc ~T0 @X0 0 e ]
+[; ;AD18F128.h: 16: extern __nonreentrant void _delay(unsigned long);
+"76 .\src\AD18F128.h
+[v _TOSU `Vuc ~T0 @X0 1 s@4095 ]
+[; ;AD18F128.h: 76: static volatile unsigned char TOSU @0XFFF;
+"77
+[v _TOSH `Vuc ~T0 @X0 1 s@4094 ]
+[; ;AD18F128.h: 77: static volatile unsigned char TOSH @0XFFE;
+"78
+[v _TOSL `Vuc ~T0 @X0 1 s@4093 ]
+[; ;AD18F128.h: 78: static volatile unsigned char TOSL @0XFFD;
+"79
+[v _STKPTR `Vuc ~T0 @X0 1 s@4092 ]
+[; ;AD18F128.h: 79: static volatile unsigned char STKPTR @0XFFC;
+"82
+[v _PCLATU `Vuc ~T0 @X0 1 s@4091 ]
+[; ;AD18F128.h: 82: static volatile unsigned char PCLATU @0XFFB;
+"83
+[v _PCLATH `Vuc ~T0 @X0 1 s@4090 ]
+[; ;AD18F128.h: 83: static volatile unsigned char PCLATH @0XFFA;
+"84
+[v _PCL `Vuc ~T0 @X0 1 s@4089 ]
+[; ;AD18F128.h: 84: static volatile unsigned char PCL @0XFF9;
+"87
+[v _TBLPTRU `Vuc ~T0 @X0 1 s@4088 ]
+[; ;AD18F128.h: 87: static volatile unsigned char TBLPTRU @0XFF8;
+"88
+[v _TBLPTRH `Vuc ~T0 @X0 1 s@4087 ]
+[; ;AD18F128.h: 88: static volatile unsigned char TBLPTRH @0XFF7;
+"89
+[v _TBLPTRL `Vuc ~T0 @X0 1 s@4086 ]
+[; ;AD18F128.h: 89: static volatile unsigned char TBLPTRL @0XFF6;
+"90
+[v _TABLAT `Vuc ~T0 @X0 1 s@4085 ]
+[; ;AD18F128.h: 90: static volatile unsigned char TABLAT @0XFF5;
+"92
+[v _PRODH `Vuc ~T0 @X0 1 s@4084 ]
+[; ;AD18F128.h: 92: static volatile unsigned char PRODH @0XFF4;
+"93
+[v _PRODL `Vuc ~T0 @X0 1 s@4083 ]
+[; ;AD18F128.h: 93: static volatile unsigned char PRODL @0XFF3;
+"95
+[v _INTCON `Vuc ~T0 @X0 1 s@4082 ]
+[; ;AD18F128.h: 95: static volatile unsigned char INTCON @0XFF2;
+"96
+[v _PCON `Vuc ~T0 @X0 1 s@4081 ]
+[; ;AD18F128.h: 96: static volatile unsigned char PCON @0XFF1;
+"99
+[v _INDF `Vuc ~T0 @X0 1 s@4079 ]
+[; ;AD18F128.h: 99: static volatile unsigned char INDF @0XFEF;
+"100
+[v _POSTINC0 `Vuc ~T0 @X0 1 s@4078 ]
+[; ;AD18F128.h: 100: static volatile unsigned char POSTINC0 @0XFEE;
+"101
+[v _POSTDEC0 `Vuc ~T0 @X0 1 s@4077 ]
+[; ;AD18F128.h: 101: static volatile unsigned char POSTDEC0 @0XFED;
+"102
+[v _PREINC0 `Vuc ~T0 @X0 1 s@4076 ]
+[; ;AD18F128.h: 102: static volatile unsigned char PREINC0 @0XFEC;
+"103
+[v _PLUSW0 `Vuc ~T0 @X0 1 s@4075 ]
+[; ;AD18F128.h: 103: static volatile unsigned char PLUSW0 @0XFEB;
+"104
+[v _FSR0H `Vuc ~T0 @X0 1 s@4074 ]
+[; ;AD18F128.h: 104: static volatile unsigned char FSR0H @0XFEA;
+"105
+[v _FSR0L `Vuc ~T0 @X0 1 s@4073 ]
+[; ;AD18F128.h: 105: static volatile unsigned char FSR0L @0XFE9;
+"106
+[v _WREG `Vuc ~T0 @X0 1 s@4072 ]
+[; ;AD18F128.h: 106: static volatile unsigned char WREG @0XFE8;
+"109
+[v _INDF1 `Vuc ~T0 @X0 1 s@4071 ]
+[; ;AD18F128.h: 109: static volatile unsigned char INDF1 @0XFE7;
+"110
+[v _POSTINC1 `Vuc ~T0 @X0 1 s@4070 ]
+[; ;AD18F128.h: 110: static volatile unsigned char POSTINC1 @0XFE6;
+"111
+[v _POSTDEC1 `Vuc ~T0 @X0 1 s@4069 ]
+[; ;AD18F128.h: 111: static volatile unsigned char POSTDEC1 @0XFE5;
+"112
+[v _PREINC1 `Vuc ~T0 @X0 1 s@4068 ]
+[; ;AD18F128.h: 112: static volatile unsigned char PREINC1 @0XFE4;
+"113
+[v _PLUSW1 `Vuc ~T0 @X0 1 s@4067 ]
+[; ;AD18F128.h: 113: static volatile unsigned char PLUSW1 @0XFE3;
+"114
+[v _FSR1H `Vuc ~T0 @X0 1 s@4066 ]
+[; ;AD18F128.h: 114: static volatile unsigned char FSR1H @0XFE2;
+"115
+[v _FSR1L `Vuc ~T0 @X0 1 s@4065 ]
+[; ;AD18F128.h: 115: static volatile unsigned char FSR1L @0XFE1;
+"116
+[v _BSR `Vuc ~T0 @X0 1 s@4064 ]
+[; ;AD18F128.h: 116: static volatile unsigned char BSR @0XFE0;
+"119
+[v _INDF2 `Vuc ~T0 @X0 1 s@4063 ]
+[; ;AD18F128.h: 119: static volatile unsigned char INDF2 @0XFDF;
+"120
+[v _POSTINC2 `Vuc ~T0 @X0 1 s@4062 ]
+[; ;AD18F128.h: 120: static volatile unsigned char POSTINC2 @0XFDE;
+"121
+[v _POSTDEC2 `Vuc ~T0 @X0 1 s@4061 ]
+[; ;AD18F128.h: 121: static volatile unsigned char POSTDEC2 @0XFDD;
+"122
+[v _PREINC2 `Vuc ~T0 @X0 1 s@4060 ]
+[; ;AD18F128.h: 122: static volatile unsigned char PREINC2 @0XFDC;
+"123
+[v _PLUSW2 `Vuc ~T0 @X0 1 s@4059 ]
+[; ;AD18F128.h: 123: static volatile unsigned char PLUSW2 @0XFDB;
+"124
+[v _FSR2H `Vuc ~T0 @X0 1 s@4058 ]
+[; ;AD18F128.h: 124: static volatile unsigned char FSR2H @0XFDA;
+"125
+[v _FSR2L `Vuc ~T0 @X0 1 s@4057 ]
+[; ;AD18F128.h: 125: static volatile unsigned char FSR2L @0XFD9;
+"126
+[v _STATUS `Vuc ~T0 @X0 1 s@4056 ]
+[; ;AD18F128.h: 126: static volatile unsigned char STATUS @0XFD8;
+"128
+[v _T0CON `Vuc ~T0 @X0 1 s@4055 ]
+[; ;AD18F128.h: 128: static volatile unsigned char T0CON @0XFD7;
+"129
+[v _PR0 `Vuc ~T0 @X0 1 s@4054 ]
+[; ;AD18F128.h: 129: static volatile unsigned char PR0 @0XFD6;
+"130
+[v _TMR0 `Vuc ~T0 @X0 1 s@4053 ]
+[; ;AD18F128.h: 130: static volatile unsigned char TMR0 @0XFD5;
+"131
+[v _PWM0DUTY `Vuc ~T0 @X0 1 s@4052 ]
+[; ;AD18F128.h: 131: static volatile unsigned char PWM0DUTY @0XFD4;
+"132
+[v _PWM0CON `Vuc ~T0 @X0 1 s@4051 ]
+[; ;AD18F128.h: 132: static volatile unsigned char PWM0CON @0XFD3;
+"133
+[v _RCON `Vuc ~T0 @X0 1 s@4050 ]
+[; ;AD18F128.h: 133: static volatile unsigned char RCON @0XFD2;
+"135
+[v _TMR1H `Vuc ~T0 @X0 1 s@4049 ]
+[; ;AD18F128.h: 135: static volatile unsigned char TMR1H @0XFD1;
+"136
+[v _TMR1L `Vuc ~T0 @X0 1 s@4048 ]
+[; ;AD18F128.h: 136: static volatile unsigned char TMR1L @0XFD0;
+"137
+[v _T1CON0 `Vuc ~T0 @X0 1 s@4047 ]
+[; ;AD18F128.h: 137: static volatile unsigned char T1CON0 @0XFCF;
+"138
+[v _T1CON1 `Vuc ~T0 @X0 1 s@4046 ]
+[; ;AD18F128.h: 138: static volatile unsigned char T1CON1 @0XFCE;
+"140
+[v _TMR2L `Vuc ~T0 @X0 1 s@4045 ]
+[; ;AD18F128.h: 140: static volatile unsigned char TMR2L @0XFCD;
+"141
+[v _TMR2H `Vuc ~T0 @X0 1 s@4044 ]
+[; ;AD18F128.h: 141: static volatile unsigned char TMR2H @0XFCC;
+"142
+[v _PR2L `Vuc ~T0 @X0 1 s@4043 ]
+[; ;AD18F128.h: 142: static volatile unsigned char PR2L @0XFCB;
+"143
+[v _PR2H `Vuc ~T0 @X0 1 s@4042 ]
+[; ;AD18F128.h: 143: static volatile unsigned char PR2H @0XFCA;
+"144
+[v _T2CON `Vuc ~T0 @X0 1 s@4041 ]
+[; ;AD18F128.h: 144: static volatile unsigned char T2CON @0XFC9;
+"146
+[v _CCPR1H `Vuc ~T0 @X0 1 s@4040 ]
+[; ;AD18F128.h: 146: static volatile unsigned char CCPR1H @0XFC8;
+"147
+[v _CCPR1L `Vuc ~T0 @X0 1 s@4039 ]
+[; ;AD18F128.h: 147: static volatile unsigned char CCPR1L @0XFC7;
+"148
+[v _CCPR1LH `Vuc ~T0 @X0 1 s@4038 ]
+[; ;AD18F128.h: 148: static volatile unsigned char CCPR1LH @0XFC6;
+"149
+[v _PMS `Vuc ~T0 @X0 1 s@4037 ]
+[; ;AD18F128.h: 149: static volatile unsigned char PMS @0XFC5;
+"150
+[v _PXC `Vuc ~T0 @X0 1 s@4036 ]
+[; ;AD18F128.h: 150: static volatile unsigned char PXC @0XFC4;
+"151
+[v _DTC `Vuc ~T0 @X0 1 s@4035 ]
+[; ;AD18F128.h: 151: static volatile unsigned char DTC @0XFC3;
+"152
+[v _POLS `Vuc ~T0 @X0 1 s@4034 ]
+[; ;AD18F128.h: 152: static volatile unsigned char POLS @0XFC2;
+"153
+[v _PME `Vuc ~T0 @X0 1 s@4033 ]
+[; ;AD18F128.h: 153: static volatile unsigned char PME @0XFC1;
+"156
+[v _CCPCON `Vuc ~T0 @X0 1 s@4031 ]
+[; ;AD18F128.h: 156: static volatile unsigned char CCPCON @0XFBF;
+"157
+[v _PWM1CON0 `Vuc ~T0 @X0 1 s@4030 ]
+[; ;AD18F128.h: 157: static volatile unsigned char PWM1CON0 @0XFBE;
+"158
+[v _PWM1CON1 `Vuc ~T0 @X0 1 s@4029 ]
+[; ;AD18F128.h: 158: static volatile unsigned char PWM1CON1 @0XFBD;
+"160
+[v _T3CON `Vuc ~T0 @X0 1 s@4028 ]
+[; ;AD18F128.h: 160: static volatile unsigned char T3CON @0XFBC;
+"161
+[v _TMR3H `Vuc ~T0 @X0 1 s@4027 ]
+[; ;AD18F128.h: 161: static volatile unsigned char TMR3H @0XFBB;
+"162
+[v _TMR3L `Vuc ~T0 @X0 1 s@4026 ]
+[; ;AD18F128.h: 162: static volatile unsigned char TMR3L @0XFBA;
+"163
+[v _PR3H `Vuc ~T0 @X0 1 s@4025 ]
+[; ;AD18F128.h: 163: static volatile unsigned char PR3H @0XFB9;
+"164
+[v _PR3L `Vuc ~T0 @X0 1 s@4024 ]
+[; ;AD18F128.h: 164: static volatile unsigned char PR3L @0XFB8;
+"168
+[v _PWM5H `Vuc ~T0 @X0 1 s@4023 ]
+[; ;AD18F128.h: 168: static volatile unsigned char PWM5H @0XFB7;
+"169
+[v _PWM5L `Vuc ~T0 @X0 1 s@4022 ]
+[; ;AD18F128.h: 169: static volatile unsigned char PWM5L @0XFB6;
+"170
+[v _PWM4H `Vuc ~T0 @X0 1 s@4021 ]
+[; ;AD18F128.h: 170: static volatile unsigned char PWM4H @0XFB5;
+"171
+[v _PWM4L `Vuc ~T0 @X0 1 s@4020 ]
+[; ;AD18F128.h: 171: static volatile unsigned char PWM4L @0XFB4;
+"172
+[v _PWM3H `Vuc ~T0 @X0 1 s@4019 ]
+[; ;AD18F128.h: 172: static volatile unsigned char PWM3H @0XFB3;
+"173
+[v _PWM3L `Vuc ~T0 @X0 1 s@4018 ]
+[; ;AD18F128.h: 173: static volatile unsigned char PWM3L @0XFB2;
+"174
+[v _PWM2H `Vuc ~T0 @X0 1 s@4017 ]
+[; ;AD18F128.h: 174: static volatile unsigned char PWM2H @0XFB1;
+"175
+[v _PWM2L `Vuc ~T0 @X0 1 s@4016 ]
+[; ;AD18F128.h: 175: static volatile unsigned char PWM2L @0XFB0;
+"177
+[v _PWM2CON0 `Vuc ~T0 @X0 1 s@4015 ]
+[; ;AD18F128.h: 177: static volatile unsigned char PWM2CON0 @0XFAF;
+"178
+[v _PWM2CON1 `Vuc ~T0 @X0 1 s@4014 ]
+[; ;AD18F128.h: 178: static volatile unsigned char PWM2CON1 @0XFAE;
+"179
+[v _PWM2CON2 `Vuc ~T0 @X0 1 s@4013 ]
+[; ;AD18F128.h: 179: static volatile unsigned char PWM2CON2 @0XFAD;
+"180
+[v _PWM2CON3 `Vuc ~T0 @X0 1 s@4012 ]
+[; ;AD18F128.h: 180: static volatile unsigned char PWM2CON3 @0XFAC;
+"182
+[v _ADCMP0H `Vuc ~T0 @X0 1 s@4011 ]
+[; ;AD18F128.h: 182: static volatile unsigned char ADCMP0H @0XFAB;
+"183
+[v _ADCMP1H `Vuc ~T0 @X0 1 s@4010 ]
+[; ;AD18F128.h: 183: static volatile unsigned char ADCMP1H @0XFAA;
+"184
+[v _ADCMP01L `Vuc ~T0 @X0 1 s@4009 ]
+[; ;AD18F128.h: 184: static volatile unsigned char ADCMP01L @0XFA9;
+"185
+[v _ADRESH `Vuc ~T0 @X0 1 s@4008 ]
+[; ;AD18F128.h: 185: static volatile unsigned char ADRESH @0XFA8;
+"186
+[v _ADRESL `Vuc ~T0 @X0 1 s@4007 ]
+[; ;AD18F128.h: 186: static volatile unsigned char ADRESL @0XFA7;
+"187
+[v _ADCON0 `Vuc ~T0 @X0 1 s@4006 ]
+[; ;AD18F128.h: 187: static volatile unsigned char ADCON0 @0XFA6;
+"188
+[v _ADCON1 `Vuc ~T0 @X0 1 s@4005 ]
+[; ;AD18F128.h: 188: static volatile unsigned char ADCON1 @0XFA5;
+"191
+[v _IPR1 `Vuc ~T0 @X0 1 s@4003 ]
+[; ;AD18F128.h: 191: static volatile unsigned char IPR1 @0XFA3;
+"192
+[v _PIR1 `Vuc ~T0 @X0 1 s@4002 ]
+[; ;AD18F128.h: 192: static volatile unsigned char PIR1 @0XFA2;
+"193
+[v _PIE1 `Vuc ~T0 @X0 1 s@4001 ]
+[; ;AD18F128.h: 193: static volatile unsigned char PIE1 @0XFA1;
+"195
+[v _IPR2 `Vuc ~T0 @X0 1 s@4000 ]
+[; ;AD18F128.h: 195: static volatile unsigned char IPR2 @0XFA0;
+"196
+[v _PIR2 `Vuc ~T0 @X0 1 s@3999 ]
+[; ;AD18F128.h: 196: static volatile unsigned char PIR2 @0XF9F;
+"197
+[v _PIE2 `Vuc ~T0 @X0 1 s@3998 ]
+[; ;AD18F128.h: 197: static volatile unsigned char PIE2 @0XF9E;
+"199
+[v _IPR3 `Vuc ~T0 @X0 1 s@3997 ]
+[; ;AD18F128.h: 199: static volatile unsigned char IPR3 @0XF9D;
+"200
+[v _PIR3 `Vuc ~T0 @X0 1 s@3996 ]
+[; ;AD18F128.h: 200: static volatile unsigned char PIR3 @0XF9C;
+"201
+[v _PIE3 `Vuc ~T0 @X0 1 s@3995 ]
+[; ;AD18F128.h: 201: static volatile unsigned char PIE3 @0XF9B;
+"207
+[v _SMTC `Vuc ~T0 @X0 1 s@3994 ]
+[; ;AD18F128.h: 207: static volatile unsigned char SMTC @0XF9A;
+"208
+[v _SMTB `Vuc ~T0 @X0 1 s@3993 ]
+[; ;AD18F128.h: 208: static volatile unsigned char SMTB @0XF99;
+"209
+[v _SMTA `Vuc ~T0 @X0 1 s@3992 ]
+[; ;AD18F128.h: 209: static volatile unsigned char SMTA @0XF98;
+"211
+[v _PDOD `Vuc ~T0 @X0 1 s@3991 ]
+[; ;AD18F128.h: 211: static volatile unsigned char PDOD @0XF97;
+"212
+[v _PCOD `Vuc ~T0 @X0 1 s@3990 ]
+[; ;AD18F128.h: 212: static volatile unsigned char PCOD @0XF96;
+"213
+[v _PBOD `Vuc ~T0 @X0 1 s@3989 ]
+[; ;AD18F128.h: 213: static volatile unsigned char PBOD @0XF95;
+"214
+[v _PAOD `Vuc ~T0 @X0 1 s@3988 ]
+[; ;AD18F128.h: 214: static volatile unsigned char PAOD @0XF94;
+"216
+[v _TRISD `Vuc ~T0 @X0 1 s@3987 ]
+[; ;AD18F128.h: 216: static volatile unsigned char TRISD @0XF93;
+"217
+[v _TRISC `Vuc ~T0 @X0 1 s@3986 ]
+[; ;AD18F128.h: 217: static volatile unsigned char TRISC @0XF92;
+"218
+[v _TRISB `Vuc ~T0 @X0 1 s@3985 ]
+[; ;AD18F128.h: 218: static volatile unsigned char TRISB @0XF91;
+"219
+[v _TRISA `Vuc ~T0 @X0 1 s@3984 ]
+[; ;AD18F128.h: 219: static volatile unsigned char TRISA @0XF90;
+"221
+[v _PDPD `Vuc ~T0 @X0 1 s@3983 ]
+[; ;AD18F128.h: 221: static volatile unsigned char PDPD @0XF8F;
+"222
+[v _PCPD `Vuc ~T0 @X0 1 s@3982 ]
+[; ;AD18F128.h: 222: static volatile unsigned char PCPD @0XF8E;
+"223
+[v _PBPD `Vuc ~T0 @X0 1 s@3981 ]
+[; ;AD18F128.h: 223: static volatile unsigned char PBPD @0XF8D;
+"224
+[v _PAPD `Vuc ~T0 @X0 1 s@3980 ]
+[; ;AD18F128.h: 224: static volatile unsigned char PAPD @0XF8C;
+"226
+[v _PIND `Vuc ~T0 @X0 1 s@3979 ]
+[; ;AD18F128.h: 226: static volatile unsigned char PIND @0XF8B;
+"227
+[v _PINC `Vuc ~T0 @X0 1 s@3978 ]
+[; ;AD18F128.h: 227: static volatile unsigned char PINC @0XF8A;
+"228
+[v _PINB `Vuc ~T0 @X0 1 s@3977 ]
+[; ;AD18F128.h: 228: static volatile unsigned char PINB @0XF89;
+"229
+[v _PINA `Vuc ~T0 @X0 1 s@3976 ]
+[; ;AD18F128.h: 229: static volatile unsigned char PINA @0XF88;
+"231
+[v _PDPU `Vuc ~T0 @X0 1 s@3975 ]
+[; ;AD18F128.h: 231: static volatile unsigned char PDPU @0XF87;
+"232
+[v _PCPU `Vuc ~T0 @X0 1 s@3974 ]
+[; ;AD18F128.h: 232: static volatile unsigned char PCPU @0XF86;
+"233
+[v _PBPU `Vuc ~T0 @X0 1 s@3973 ]
+[; ;AD18F128.h: 233: static volatile unsigned char PBPU @0XF85;
+"234
+[v _PAPU `Vuc ~T0 @X0 1 s@3972 ]
+[; ;AD18F128.h: 234: static volatile unsigned char PAPU @0XF84;
+"236
+[v _PORTD `Vuc ~T0 @X0 1 s@3971 ]
+[; ;AD18F128.h: 236: static volatile unsigned char PORTD @0XF83;
+"237
+[v _PORTC `Vuc ~T0 @X0 1 s@3970 ]
+[; ;AD18F128.h: 237: static volatile unsigned char PORTC @0XF82;
+"238
+[v _PORTB `Vuc ~T0 @X0 1 s@3969 ]
+[; ;AD18F128.h: 238: static volatile unsigned char PORTB @0XF81;
+"239
+[v _PORTA `Vuc ~T0 @X0 1 s@3968 ]
+[; ;AD18F128.h: 239: static volatile unsigned char PORTA @0XF80;
+"242
+[v _CMP2CON0 `Vuc ~T0 @X0 1 s@3967 ]
+[; ;AD18F128.h: 242: static volatile unsigned char CMP2CON0 @0XF7F;
+"243
+[v _CMP2CON1 `Vuc ~T0 @X0 1 s@3966 ]
+[; ;AD18F128.h: 243: static volatile unsigned char CMP2CON1 @0XF7E;
+"244
+[v _CMPCON1 `Vuc ~T0 @X0 1 s@3965 ]
+[; ;AD18F128.h: 244: static volatile unsigned char CMPCON1 @0XF7D;
+"245
+[v _OP1CON0 `Vuc ~T0 @X0 1 s@3964 ]
+[; ;AD18F128.h: 245: static volatile unsigned char OP1CON0 @0XF7C;
+"246
+[v _OP1CON1 `Vuc ~T0 @X0 1 s@3963 ]
+[; ;AD18F128.h: 246: static volatile unsigned char OP1CON1 @0XF7B;
+"247
+[v _OP1CON2 `Vuc ~T0 @X0 1 s@3962 ]
+[; ;AD18F128.h: 247: static volatile unsigned char OP1CON2 @0XF7A;
+"248
+[v _OP1CON3 `Vuc ~T0 @X0 1 s@3961 ]
+[; ;AD18F128.h: 248: static volatile unsigned char OP1CON3 @0XF79;
+"249
+[v _CMP0CON `Vuc ~T0 @X0 1 s@3960 ]
+[; ;AD18F128.h: 249: static volatile unsigned char CMP0CON @0XF78;
+"250
+[v _CMP1CON `Vuc ~T0 @X0 1 s@3959 ]
+[; ;AD18F128.h: 250: static volatile unsigned char CMP1CON @0XF77;
+"251
+[v _CMPCON `Vuc ~T0 @X0 1 s@3958 ]
+[; ;AD18F128.h: 251: static volatile unsigned char CMPCON @0XF76;
+"254
+[v _DACCON `Vuc ~T0 @X0 1 s@3957 ]
+[; ;AD18F128.h: 254: static volatile unsigned char DACCON @0XF75;
+"255
+[v _DAC0CON `Vuc ~T0 @X0 1 s@3956 ]
+[; ;AD18F128.h: 255: static volatile unsigned char DAC0CON @0XF74;
+"256
+[v _DAC1CON `Vuc ~T0 @X0 1 s@3955 ]
+[; ;AD18F128.h: 256: static volatile unsigned char DAC1CON @0XF73;
+"258
+[v _FVRCON `Vuc ~T0 @X0 1 s@3954 ]
+[; ;AD18F128.h: 258: static volatile unsigned char FVRCON @0XF72;
+"260
+[v _LCDCON0 `Vuc ~T0 @X0 1 s@3953 ]
+[; ;AD18F128.h: 260: static volatile unsigned char LCDCON0 @0XF71;
+"261
+[v _LCDCON1 `Vuc ~T0 @X0 1 s@3952 ]
+[; ;AD18F128.h: 261: static volatile unsigned char LCDCON1 @0XF70;
+"262
+[v _LCDCON2 `Vuc ~T0 @X0 1 s@3951 ]
+[; ;AD18F128.h: 262: static volatile unsigned char LCDCON2 @0XF6F;
+"263
+[v _LCDCON3 `Vuc ~T0 @X0 1 s@3950 ]
+[; ;AD18F128.h: 263: static volatile unsigned char LCDCON3 @0XF6E;
+"265
+[v _BUCON `Vuc ~T0 @X0 1 s@3949 ]
+[; ;AD18F128.h: 265: static volatile unsigned char BUCON @0XF6D;
+"267
+[v _IAPTRIG `Vuc ~T0 @X0 1 s@3948 ]
+[; ;AD18F128.h: 267: static volatile unsigned char IAPTRIG @0XF6C;
+"268
+[v _IAPCTRL `Vuc ~T0 @X0 1 s@3947 ]
+[; ;AD18F128.h: 268: static volatile unsigned char IAPCTRL @0XF6B;
+"269
+[v _IAPADDRH `Vuc ~T0 @X0 1 s@3946 ]
+[; ;AD18F128.h: 269: static volatile unsigned char IAPADDRH @0XF6A;
+"270
+[v _IAPADDRL `Vuc ~T0 @X0 1 s@3945 ]
+[; ;AD18F128.h: 270: static volatile unsigned char IAPADDRL @0XF69;
+"271
+[v _IAPDATH `Vuc ~T0 @X0 1 s@3944 ]
+[; ;AD18F128.h: 271: static volatile unsigned char IAPDATH @0XF68;
+"272
+[v _IAPDATL `Vuc ~T0 @X0 1 s@3943 ]
+[; ;AD18F128.h: 272: static volatile unsigned char IAPDATL @0XF67;
+"273
+[v _IAPWAIT `Vuc ~T0 @X0 1 s@3942 ]
+[; ;AD18F128.h: 273: static volatile unsigned char IAPWAIT @0XF66;
+"275
+[v _SMCR `Vuc ~T0 @X0 1 s@3941 ]
+[; ;AD18F128.h: 275: static volatile unsigned char SMCR @0XF65;
+"276
+[v _OSCCON `Vuc ~T0 @X0 1 s@3940 ]
+[; ;AD18F128.h: 276: static volatile unsigned char OSCCON @0XF64;
+"277
+[v _CLKCFG1 `Vuc ~T0 @X0 1 s@3939 ]
+[; ;AD18F128.h: 277: static volatile unsigned char CLKCFG1 @0XF63;
+"278
+[v _CLKCFG2 `Vuc ~T0 @X0 1 s@3938 ]
+[; ;AD18F128.h: 278: static volatile unsigned char CLKCFG2 @0XF62;
+"279
+[v _SIGCON `Vuc ~T0 @X0 1 s@3937 ]
+[; ;AD18F128.h: 279: static volatile unsigned char SIGCON @0XF61;
+"281
+[v _PAINTMASK `Vuc ~T0 @X0 1 s@3936 ]
+[; ;AD18F128.h: 281: static volatile unsigned char PAINTMASK @0XF60;
+"282
+[v _PBINTMASK `Vuc ~T0 @X0 1 s@3935 ]
+[; ;AD18F128.h: 282: static volatile unsigned char PBINTMASK @0XF5F;
+"283
+[v _PCINTMASK `Vuc ~T0 @X0 1 s@3934 ]
+[; ;AD18F128.h: 283: static volatile unsigned char PCINTMASK @0XF5E;
+"284
+[v _PDINTMASK `Vuc ~T0 @X0 1 s@3933 ]
+[; ;AD18F128.h: 284: static volatile unsigned char PDINTMASK @0XF5D;
+"287
+[v _EEDAT `Vuc ~T0 @X0 1 s@3932 ]
+[; ;AD18F128.h: 287: static volatile unsigned char EEDAT @0XF5C;
+"288
+[v _EEADR `Vuc ~T0 @X0 1 s@3931 ]
+[; ;AD18F128.h: 288: static volatile unsigned char EEADR @0XF5B;
+"289
+[v _EECON1 `Vuc ~T0 @X0 1 s@3930 ]
+[; ;AD18F128.h: 289: static volatile unsigned char EECON1 @0XF5A;
+"290
+[v _EECON2 `Vuc ~T0 @X0 1 s@3929 ]
+[; ;AD18F128.h: 290: static volatile unsigned char EECON2 @0XF59;
+"292
+[v _WDTCON `Vuc ~T0 @X0 1 s@3928 ]
+[; ;AD18F128.h: 292: static volatile unsigned char WDTCON @0XF58;
+"293
+[v _OP1CON4 `Vuc ~T0 @X0 1 s@3926 ]
+[; ;AD18F128.h: 293: static volatile unsigned char OP1CON4 @0XF56;
+"294
+[v _CURCON `Vuc ~T0 @X0 1 s@3925 ]
+[; ;AD18F128.h: 294: static volatile unsigned char CURCON @0XF55;
+"296
+[v _ANASEL0 `Vuc ~T0 @X0 1 s@3924 ]
+[; ;AD18F128.h: 296: static volatile unsigned char ANASEL0 @0XF54;
+"297
+[v _ANASEL1 `Vuc ~T0 @X0 1 s@3923 ]
+[; ;AD18F128.h: 297: static volatile unsigned char ANASEL1 @0XF53;
+"298
+[v _ANASEL2 `Vuc ~T0 @X0 1 s@3922 ]
+[; ;AD18F128.h: 298: static volatile unsigned char ANASEL2 @0XF52;
+"300
+[v _SPBRG `Vuc ~T0 @X0 1 s@3921 ]
+[; ;AD18F128.h: 300: static volatile unsigned char SPBRG @0XF51;
+"301
+[v _RCREG `Vuc ~T0 @X0 1 s@3920 ]
+[; ;AD18F128.h: 301: static volatile unsigned char RCREG @0XF50;
+"302
+[v _TXREG `Vuc ~T0 @X0 1 s@3919 ]
+[; ;AD18F128.h: 302: static volatile unsigned char TXREG @0XF4F;
+"303
+[v _TXSTA `Vuc ~T0 @X0 1 s@3918 ]
+[; ;AD18F128.h: 303: static volatile unsigned char TXSTA @0XF4E;
+"304
+[v _RCSTA `Vuc ~T0 @X0 1 s@3917 ]
+[; ;AD18F128.h: 304: static volatile unsigned char RCSTA @0XF4D;
+"305
+[v _UARTCON `Vuc ~T0 @X0 1 s@3916 ]
+[; ;AD18F128.h: 305: static volatile unsigned char UARTCON @0XF4C;
+"307
+[v _I2CACKDLY `Vuc ~T0 @X0 1 s@3915 ]
+[; ;AD18F128.h: 307: static volatile unsigned char I2CACKDLY @0XF4B;
+"308
+[v _I2CTX `Vuc ~T0 @X0 1 s@3914 ]
+[; ;AD18F128.h: 308: static volatile unsigned char I2CTX @0XF4A;
+"309
+[v _I2CRC `Vuc ~T0 @X0 1 s@3913 ]
+[; ;AD18F128.h: 309: static volatile unsigned char I2CRC @0XF49;
+"310
+[v _I2CADDR0 `Vuc ~T0 @X0 1 s@3912 ]
+[; ;AD18F128.h: 310: static volatile unsigned char I2CADDR0 @0XF48;
+"311
+[v _I2CADDR1 `Vuc ~T0 @X0 1 s@3911 ]
+[; ;AD18F128.h: 311: static volatile unsigned char I2CADDR1 @0XF47;
+"312
+[v _I2CADDMASK `Vuc ~T0 @X0 1 s@3910 ]
+[; ;AD18F128.h: 312: static volatile unsigned char I2CADDMASK @0XF46;
+"313
+[v _I2CSTAT `Vuc ~T0 @X0 1 s@3909 ]
+[; ;AD18F128.h: 313: static volatile unsigned char I2CSTAT @0XF45;
+"314
+[v _I2CCON0 `Vuc ~T0 @X0 1 s@3908 ]
+[; ;AD18F128.h: 314: static volatile unsigned char I2CCON0 @0XF44;
+"315
+[v _I2CCON1 `Vuc ~T0 @X0 1 s@3907 ]
+[; ;AD18F128.h: 315: static volatile unsigned char I2CCON1 @0XF43;
+"316
+[v _I2CIE `Vuc ~T0 @X0 1 s@3906 ]
+[; ;AD18F128.h: 316: static volatile unsigned char I2CIE @0XF42;
+"317
+[v _I2CIF `Vuc ~T0 @X0 1 s@3905 ]
+[; ;AD18F128.h: 317: static volatile unsigned char I2CIF @0XF41;
+"318
+[v _I2CIP `Vuc ~T0 @X0 1 s@3904 ]
+[; ;AD18F128.h: 318: static volatile unsigned char I2CIP @0XF40;
+"322
+[v _TX0_MAP `Vuc ~T0 @X0 1 s@3901 ]
+[; ;AD18F128.h: 322: static volatile unsigned char TX0_MAP @0XF3D;
+"323
+[v _RX0_MAP `Vuc ~T0 @X0 1 s@3900 ]
+[; ;AD18F128.h: 323: static volatile unsigned char RX0_MAP @0XF3C;
+"324
+[v _SDA_MAP `Vuc ~T0 @X0 1 s@3899 ]
+[; ;AD18F128.h: 324: static volatile unsigned char SDA_MAP @0XF3B;
+"325
+[v _SCL_MAP `Vuc ~T0 @X0 1 s@3898 ]
+[; ;AD18F128.h: 325: static volatile unsigned char SCL_MAP @0XF3A;
+"326
+[v _PWM10_MAP `Vuc ~T0 @X0 1 s@3897 ]
+[; ;AD18F128.h: 326: static volatile unsigned char PWM10_MAP @0XF39;
+"327
+[v _PWM11_MAP `Vuc ~T0 @X0 1 s@3896 ]
+[; ;AD18F128.h: 327: static volatile unsigned char PWM11_MAP @0XF38;
+"328
+[v _PWM12_MAP `Vuc ~T0 @X0 1 s@3895 ]
+[; ;AD18F128.h: 328: static volatile unsigned char PWM12_MAP @0XF37;
+"329
+[v _PWM13_MAP `Vuc ~T0 @X0 1 s@3894 ]
+[; ;AD18F128.h: 329: static volatile unsigned char PWM13_MAP @0XF36;
+"330
+[v _PWM14_MAP `Vuc ~T0 @X0 1 s@3893 ]
+[; ;AD18F128.h: 330: static volatile unsigned char PWM14_MAP @0XF35;
+"331
+[v _PWM15_MAP `Vuc ~T0 @X0 1 s@3892 ]
+[; ;AD18F128.h: 331: static volatile unsigned char PWM15_MAP @0XF34;
+"333
+[v _CMP0CON2 `Vuc ~T0 @X0 1 s@3891 ]
+[; ;AD18F128.h: 333: static volatile unsigned char CMP0CON2 @0XF33;
+"334
+[v _CMP1CON2 `Vuc ~T0 @X0 1 s@3890 ]
+[; ;AD18F128.h: 334: static volatile unsigned char CMP1CON2 @0XF32;
+"335
+[v _CMP2CON2 `Vuc ~T0 @X0 1 s@3889 ]
+[; ;AD18F128.h: 335: static volatile unsigned char CMP2CON2 @0XF31;
+"338
+[v _FVRCON1 `Vuc ~T0 @X0 1 s@3888 ]
+[; ;AD18F128.h: 338: static volatile unsigned char FVRCON1 @0XF30;
+"339
+[v _CRC32CON `Vuc ~T0 @X0 1 s@3887 ]
+[; ;AD18F128.h: 339: static volatile unsigned char CRC32CON @0XF2F;
+"340
+[v _CRC32IN `Vuc ~T0 @X0 1 s@3886 ]
+[; ;AD18F128.h: 340: static volatile unsigned char CRC32IN @0XF2E;
+"341
+[v _CRC32R0 `Vuc ~T0 @X0 1 s@3885 ]
+[; ;AD18F128.h: 341: static volatile unsigned char CRC32R0 @0XF2D;
+"342
+[v _CRC32R1 `Vuc ~T0 @X0 1 s@3884 ]
+[; ;AD18F128.h: 342: static volatile unsigned char CRC32R1 @0XF2C;
+"343
+[v _CRC32R2 `Vuc ~T0 @X0 1 s@3883 ]
+[; ;AD18F128.h: 343: static volatile unsigned char CRC32R2 @0XF2B;
+"344
+[v _CRC32R3 `Vuc ~T0 @X0 1 s@3882 ]
+[; ;AD18F128.h: 344: static volatile unsigned char CRC32R3 @0XF2A;
+"345
+[v _BMCRST `Vuc ~T0 @X0 1 s@3881 ]
+[; ;AD18F128.h: 345: static volatile unsigned char BMCRST @0XF29;
+"346
+[v _PDRCT `Vuc ~T0 @X0 1 s@3880 ]
+[; ;AD18F128.h: 346: static volatile unsigned char PDRCT @0XF28;
+"347
+[v _BMCRL `Vuc ~T0 @X0 1 s@3879 ]
+[; ;AD18F128.h: 347: static volatile unsigned char BMCRL @0XF27;
+"348
+[v _BMCRH `Vuc ~T0 @X0 1 s@3878 ]
+[; ;AD18F128.h: 348: static volatile unsigned char BMCRH @0XF26;
+"349
+[v _BMCR5T4 `Vuc ~T0 @X0 1 s@3877 ]
+[; ;AD18F128.h: 349: static volatile unsigned char BMCR5T4 @0XF25;
+"350
+[v _PDTCT `Vuc ~T0 @X0 1 s@3876 ]
+[; ;AD18F128.h: 350: static volatile unsigned char PDTCT @0XF24;
+"351
+[v _BMCT4T5 `Vuc ~T0 @X0 1 s@3875 ]
+[; ;AD18F128.h: 351: static volatile unsigned char BMCT4T5 @0XF23;
+"352
+[v _BMCTL `Vuc ~T0 @X0 1 s@3874 ]
+[; ;AD18F128.h: 352: static volatile unsigned char BMCTL @0XF22;
+"353
+[v _BMCTH `Vuc ~T0 @X0 1 s@3873 ]
+[; ;AD18F128.h: 353: static volatile unsigned char BMCTH @0XF21;
+"354
+[v _MCT0 `Vuc ~T0 @X0 1 s@3872 ]
+[; ;AD18F128.h: 354: static volatile unsigned char MCT0 @0XF20;
+"355
+[v _MCPR0 `Vuc ~T0 @X0 1 s@3871 ]
+[; ;AD18F128.h: 355: static volatile unsigned char MCPR0 @0XF1F;
+"356
+[v _MCTCON `Vuc ~T0 @X0 1 s@3870 ]
+[; ;AD18F128.h: 356: static volatile unsigned char MCTCON @0XF1E;
+"357
+[v _CCRPCON0 `Vuc ~T0 @X0 1 s@3869 ]
+[; ;AD18F128.h: 357: static volatile unsigned char CCRPCON0 @0XF1D;
+"358
+[v _CCRPCON1 `Vuc ~T0 @X0 1 s@3868 ]
+[; ;AD18F128.h: 358: static volatile unsigned char CCRPCON1 @0XF1C;
+"359
+[v _BMCTX `Vuc ~T0 @X0 1 s@3867 ]
+[; ;AD18F128.h: 359: static volatile unsigned char BMCTX @0XF1B;
+"361
+[v _IPR4 `Vuc ~T0 @X0 1 s@3866 ]
+[; ;AD18F128.h: 361: static volatile unsigned char IPR4 @0XF1A;
+"362
+[v _PIR4 `Vuc ~T0 @X0 1 s@3865 ]
+[; ;AD18F128.h: 362: static volatile unsigned char PIR4 @0XF19;
+"363
+[v _PIE4 `Vuc ~T0 @X0 1 s@3864 ]
+[; ;AD18F128.h: 363: static volatile unsigned char PIE4 @0XF18;
+"365
+[v _ADRESH1 `Vuc ~T0 @X0 1 s@3863 ]
+[; ;AD18F128.h: 365: static volatile unsigned char ADRESH1 @0XF17;
+"366
+[v _ADRESL1 `Vuc ~T0 @X0 1 s@3862 ]
+[; ;AD18F128.h: 366: static volatile unsigned char ADRESL1 @0XF16;
+"367
+[v _ADRESH2 `Vuc ~T0 @X0 1 s@3861 ]
+[; ;AD18F128.h: 367: static volatile unsigned char ADRESH2 @0XF15;
+"368
+[v _ADRESL2 `Vuc ~T0 @X0 1 s@3860 ]
+[; ;AD18F128.h: 368: static volatile unsigned char ADRESL2 @0XF14;
+"369
+[v _ADCON3 `Vuc ~T0 @X0 1 s@3859 ]
+[; ;AD18F128.h: 369: static volatile unsigned char ADCON3 @0XF13;
+"370
+[v _ADCON4 `Vuc ~T0 @X0 1 s@3858 ]
+[; ;AD18F128.h: 370: static volatile unsigned char ADCON4 @0XF12;
+"371
+[v _CMPDLY `Vuc ~T0 @X0 1 s@3857 ]
+[; ;AD18F128.h: 371: static volatile unsigned char CMPDLY @0XF11;
+"372
+[v _CMPCON2 `Vuc ~T0 @X0 1 s@3856 ]
+[; ;AD18F128.h: 372: static volatile unsigned char CMPCON2 @0XF10;
+"373
+[v _CMPCON3 `Vuc ~T0 @X0 1 s@3855 ]
+[; ;AD18F128.h: 373: static volatile unsigned char CMPCON3 @0XF0F;
+"374
+[v _SMTD `Vuc ~T0 @X0 1 s@3854 ]
+[; ;AD18F128.h: 374: static volatile unsigned char SMTD @0XF0E;
+"375
+[v _ANASEL3 `Vuc ~T0 @X0 1 s@3853 ]
+[; ;AD18F128.h: 375: static volatile unsigned char ANASEL3 @0XF0D;
+"381
+[v _STKFUL `Vb ~T0 @X0 1 s@32743 ]
+[; ;AD18F128.h: 381: static volatile bit STKFUL @ ((unsigned)&STKPTR*8)+7;
+"382
+[v _STKUNF `Vb ~T0 @X0 1 s@32742 ]
+[; ;AD18F128.h: 382: static volatile bit STKUNF @ ((unsigned)&STKPTR*8)+6;
+"383
+[v _SP4 `Vb ~T0 @X0 1 s@32740 ]
+[; ;AD18F128.h: 383: static volatile bit SP4 @ ((unsigned)&STKPTR*8)+4;
+"384
+[v _SP3 `Vb ~T0 @X0 1 s@32739 ]
+[; ;AD18F128.h: 384: static volatile bit SP3 @ ((unsigned)&STKPTR*8)+3;
+"385
+[v _SP2 `Vb ~T0 @X0 1 s@32738 ]
+[; ;AD18F128.h: 385: static volatile bit SP2 @ ((unsigned)&STKPTR*8)+2;
+"386
+[v _SP1 `Vb ~T0 @X0 1 s@32737 ]
+[; ;AD18F128.h: 386: static volatile bit SP1 @ ((unsigned)&STKPTR*8)+1;
+"387
+[v _SP0 `Vb ~T0 @X0 1 s@32736 ]
+[; ;AD18F128.h: 387: static volatile bit SP0 @ ((unsigned)&STKPTR*8)+0;
+"390
+[v _N `Vb ~T0 @X0 1 s@32453 ]
+[; ;AD18F128.h: 390: static volatile bit N @ ((unsigned)&STATUS*8)+5;
+"391
+[v _OV `Vb ~T0 @X0 1 s@32452 ]
+[; ;AD18F128.h: 391: static volatile bit OV @ ((unsigned)&STATUS*8)+4;
+"392
+[v _Z `Vb ~T0 @X0 1 s@32451 ]
+[; ;AD18F128.h: 392: static volatile bit Z @ ((unsigned)&STATUS*8)+3;
+"393
+[v _DC `Vb ~T0 @X0 1 s@32449 ]
+[; ;AD18F128.h: 393: static volatile bit DC @ ((unsigned)&STATUS*8)+1;
+"394
+[v _C `Vb ~T0 @X0 1 s@32448 ]
+[; ;AD18F128.h: 394: static volatile bit C @ ((unsigned)&STATUS*8)+0;
+"396
+[v _PEIE `Vb ~T0 @X0 1 s@32662 ]
+[; ;AD18F128.h: 396: static volatile bit PEIE @ ((unsigned)&INTCON*8)+6;
+"397
+[v _GIEL `Vb ~T0 @X0 1 s@32662 ]
+[; ;AD18F128.h: 397: static volatile bit GIEL @ ((unsigned)&INTCON*8)+6;
+"398
+[v _GIE `Vb ~T0 @X0 1 s@32663 ]
+[; ;AD18F128.h: 398: static volatile bit GIE @ ((unsigned)&INTCON*8)+7;
+"399
+[v _GIEH `Vb ~T0 @X0 1 s@32663 ]
+[; ;AD18F128.h: 399: static volatile bit GIEH @ ((unsigned)&INTCON*8)+7;
+"401
+[v _IRFEN `Vb ~T0 @X0 1 s@32407 ]
+[; ;AD18F128.h: 401: static volatile bit IRFEN @ ((unsigned)&RCON*8)+7;
+"402
+[v _EMCEN `Vb ~T0 @X0 1 s@32406 ]
+[; ;AD18F128.h: 402: static volatile bit EMCEN @ ((unsigned)&RCON*8)+6;
+"403
+[v _RSTF1 `Vb ~T0 @X0 1 s@32405 ]
+[; ;AD18F128.h: 403: static volatile bit RSTF1 @ ((unsigned)&RCON*8)+5;
+"404
+[v _RSTF0 `Vb ~T0 @X0 1 s@32404 ]
+[; ;AD18F128.h: 404: static volatile bit RSTF0 @ ((unsigned)&RCON*8)+4;
+"405
+[v _TO `Vb ~T0 @X0 1 s@32403 ]
+[; ;AD18F128.h: 405: static volatile bit TO @ ((unsigned)&RCON*8)+3;
+"406
+[v _PD `Vb ~T0 @X0 1 s@32402 ]
+[; ;AD18F128.h: 406: static volatile bit PD @ ((unsigned)&RCON*8)+2;
+"407
+[v _POR `Vb ~T0 @X0 1 s@32401 ]
+[; ;AD18F128.h: 407: static volatile bit POR @ ((unsigned)&RCON*8)+1;
+"408
+[v _BOR `Vb ~T0 @X0 1 s@32400 ]
+[; ;AD18F128.h: 408: static volatile bit BOR @ ((unsigned)&RCON*8)+0;
+"412
+[v _T0OUT `Vb ~T0 @X0 1 s@32447 ]
+[; ;AD18F128.h: 412: static volatile bit T0OUT @ ((unsigned)&T0CON*8)+7;
+"413
+[v _T0CS1 `Vb ~T0 @X0 1 s@32446 ]
+[; ;AD18F128.h: 413: static volatile bit T0CS1 @ ((unsigned)&T0CON*8)+6;
+"414
+[v _T0CS0 `Vb ~T0 @X0 1 s@32445 ]
+[; ;AD18F128.h: 414: static volatile bit T0CS0 @ ((unsigned)&T0CON*8)+5;
+"415
+[v _T0SE `Vb ~T0 @X0 1 s@32444 ]
+[; ;AD18F128.h: 415: static volatile bit T0SE @ ((unsigned)&T0CON*8)+4;
+"416
+[v _PSA `Vb ~T0 @X0 1 s@32443 ]
+[; ;AD18F128.h: 416: static volatile bit PSA @ ((unsigned)&T0CON*8)+3;
+"417
+[v _PS2 `Vb ~T0 @X0 1 s@32442 ]
+[; ;AD18F128.h: 417: static volatile bit PS2 @ ((unsigned)&T0CON*8)+2;
+"418
+[v _PS1 `Vb ~T0 @X0 1 s@32441 ]
+[; ;AD18F128.h: 418: static volatile bit PS1 @ ((unsigned)&T0CON*8)+1;
+"419
+[v _PS0 `Vb ~T0 @X0 1 s@32440 ]
+[; ;AD18F128.h: 419: static volatile bit PS0 @ ((unsigned)&T0CON*8)+0;
+"422
+[v _POLS_03 `Vb ~T0 @X0 1 s@32415 ]
+[; ;AD18F128.h: 422: static volatile bit POLS_03 @ ((unsigned)&PWM0CON*8)+7;
+"423
+[v _POLS_02 `Vb ~T0 @X0 1 s@32414 ]
+[; ;AD18F128.h: 423: static volatile bit POLS_02 @ ((unsigned)&PWM0CON*8)+6;
+"424
+[v _POLS_01 `Vb ~T0 @X0 1 s@32413 ]
+[; ;AD18F128.h: 424: static volatile bit POLS_01 @ ((unsigned)&PWM0CON*8)+5;
+"425
+[v _POLS_00 `Vb ~T0 @X0 1 s@32412 ]
+[; ;AD18F128.h: 425: static volatile bit POLS_00 @ ((unsigned)&PWM0CON*8)+4;
+"426
+[v _PWM03EN `Vb ~T0 @X0 1 s@32411 ]
+[; ;AD18F128.h: 426: static volatile bit PWM03EN @ ((unsigned)&PWM0CON*8)+3;
+"427
+[v _PWM02EN `Vb ~T0 @X0 1 s@32410 ]
+[; ;AD18F128.h: 427: static volatile bit PWM02EN @ ((unsigned)&PWM0CON*8)+2;
+"428
+[v _PWM01EN `Vb ~T0 @X0 1 s@32409 ]
+[; ;AD18F128.h: 428: static volatile bit PWM01EN @ ((unsigned)&PWM0CON*8)+1;
+"429
+[v _PWM00EN `Vb ~T0 @X0 1 s@32408 ]
+[; ;AD18F128.h: 429: static volatile bit PWM00EN @ ((unsigned)&PWM0CON*8)+0;
+"432
+[v _T1CK1 `Vb ~T0 @X0 1 s@32383 ]
+[; ;AD18F128.h: 432: static volatile bit T1CK1 @ ((unsigned)&T1CON0*8)+7;
+"433
+[v _T1CK0 `Vb ~T0 @X0 1 s@32382 ]
+[; ;AD18F128.h: 433: static volatile bit T1CK0 @ ((unsigned)&T1CON0*8)+6;
+"434
+[v _T1CKPS1 `Vb ~T0 @X0 1 s@32381 ]
+[; ;AD18F128.h: 434: static volatile bit T1CKPS1 @ ((unsigned)&T1CON0*8)+5;
+"435
+[v _T1CKPS0 `Vb ~T0 @X0 1 s@32380 ]
+[; ;AD18F128.h: 435: static volatile bit T1CKPS0 @ ((unsigned)&T1CON0*8)+4;
+"436
+[v _T1SE `Vb ~T0 @X0 1 s@32379 ]
+[; ;AD18F128.h: 436: static volatile bit T1SE @ ((unsigned)&T1CON0*8)+3;
+"437
+[v _T1SYNC `Vb ~T0 @X0 1 s@32378 ]
+[; ;AD18F128.h: 437: static volatile bit T1SYNC @ ((unsigned)&T1CON0*8)+2;
+"438
+[v _TMR1CS0 `Vb ~T0 @X0 1 s@32377 ]
+[; ;AD18F128.h: 438: static volatile bit TMR1CS0 @ ((unsigned)&T1CON0*8)+1;
+"439
+[v _TMR1ON `Vb ~T0 @X0 1 s@32376 ]
+[; ;AD18F128.h: 439: static volatile bit TMR1ON @ ((unsigned)&T1CON0*8)+0;
+"441
+[v _INT2EDGE `Vb ~T0 @X0 1 s@32375 ]
+[; ;AD18F128.h: 441: static volatile bit INT2EDGE @ ((unsigned)&T1CON1*8)+7;
+"442
+[v _INT1EDGE `Vb ~T0 @X0 1 s@32374 ]
+[; ;AD18F128.h: 442: static volatile bit INT1EDGE @ ((unsigned)&T1CON1*8)+6;
+"443
+[v _INT0EDGE `Vb ~T0 @X0 1 s@32373 ]
+[; ;AD18F128.h: 443: static volatile bit INT0EDGE @ ((unsigned)&T1CON1*8)+5;
+"444
+[v _T1EDGE `Vb ~T0 @X0 1 s@32372 ]
+[; ;AD18F128.h: 444: static volatile bit T1EDGE @ ((unsigned)&T1CON1*8)+4;
+"445
+[v _T1CH1 `Vb ~T0 @X0 1 s@32371 ]
+[; ;AD18F128.h: 445: static volatile bit T1CH1 @ ((unsigned)&T1CON1*8)+3;
+"446
+[v _T1CH0 `Vb ~T0 @X0 1 s@32370 ]
+[; ;AD18F128.h: 446: static volatile bit T1CH0 @ ((unsigned)&T1CON1*8)+2;
+"447
+[v _T1M1 `Vb ~T0 @X0 1 s@32369 ]
+[; ;AD18F128.h: 447: static volatile bit T1M1 @ ((unsigned)&T1CON1*8)+1;
+"448
+[v _T1M0 `Vb ~T0 @X0 1 s@32368 ]
+[; ;AD18F128.h: 448: static volatile bit T1M0 @ ((unsigned)&T1CON1*8)+0;
+"450
+[v _PWM2CAEN `Vb ~T0 @X0 1 s@32335 ]
+[; ;AD18F128.h: 450: static volatile bit PWM2CAEN @ ((unsigned)&T2CON*8)+7;
+"451
+[v _T2OUTPS3 `Vb ~T0 @X0 1 s@32334 ]
+[; ;AD18F128.h: 451: static volatile bit T2OUTPS3 @ ((unsigned)&T2CON*8)+6;
+"452
+[v _T2OUTPS2 `Vb ~T0 @X0 1 s@32333 ]
+[; ;AD18F128.h: 452: static volatile bit T2OUTPS2 @ ((unsigned)&T2CON*8)+5;
+"453
+[v _T2OUTPS1 `Vb ~T0 @X0 1 s@32332 ]
+[; ;AD18F128.h: 453: static volatile bit T2OUTPS1 @ ((unsigned)&T2CON*8)+4;
+"454
+[v _T2OUTPS0 `Vb ~T0 @X0 1 s@32331 ]
+[; ;AD18F128.h: 454: static volatile bit T2OUTPS0 @ ((unsigned)&T2CON*8)+3;
+"455
+[v _TMR2ON `Vb ~T0 @X0 1 s@32330 ]
+[; ;AD18F128.h: 455: static volatile bit TMR2ON @ ((unsigned)&T2CON*8)+2;
+"456
+[v _T2CKPS1 `Vb ~T0 @X0 1 s@32329 ]
+[; ;AD18F128.h: 456: static volatile bit T2CKPS1 @ ((unsigned)&T2CON*8)+1;
+"457
+[v _T2CKPS0 `Vb ~T0 @X0 1 s@32328 ]
+[; ;AD18F128.h: 457: static volatile bit T2CKPS0 @ ((unsigned)&T2CON*8)+0;
+"459
+[v _DMISTK2 `Vb ~T0 @X0 1 s@32303 ]
+[; ;AD18F128.h: 459: static volatile bit DMISTK2 @ ((unsigned)&PMS*8)+7;
+"460
+[v _PWMH `Vb ~T0 @X0 1 s@32302 ]
+[; ;AD18F128.h: 460: static volatile bit PWMH @ ((unsigned)&PMS*8)+6;
+"461
+[v _PMS21 `Vb ~T0 @X0 1 s@32301 ]
+[; ;AD18F128.h: 461: static volatile bit PMS21 @ ((unsigned)&PMS*8)+5;
+"462
+[v _PMS20 `Vb ~T0 @X0 1 s@32300 ]
+[; ;AD18F128.h: 462: static volatile bit PMS20 @ ((unsigned)&PMS*8)+4;
+"463
+[v _PMS11 `Vb ~T0 @X0 1 s@32299 ]
+[; ;AD18F128.h: 463: static volatile bit PMS11 @ ((unsigned)&PMS*8)+3;
+"464
+[v _PMS10 `Vb ~T0 @X0 1 s@32298 ]
+[; ;AD18F128.h: 464: static volatile bit PMS10 @ ((unsigned)&PMS*8)+2;
+"465
+[v _PMS01 `Vb ~T0 @X0 1 s@32297 ]
+[; ;AD18F128.h: 465: static volatile bit PMS01 @ ((unsigned)&PMS*8)+1;
+"466
+[v _PMS00 `Vb ~T0 @X0 1 s@32296 ]
+[; ;AD18F128.h: 466: static volatile bit PMS00 @ ((unsigned)&PMS*8)+0;
+"468
+[v _T3PWMEN `Vb ~T0 @X0 1 s@32295 ]
+[; ;AD18F128.h: 468: static volatile bit T3PWMEN @ ((unsigned)&PXC*8)+7;
+"469
+[v _PWM14SEL `Vb ~T0 @X0 1 s@32294 ]
+[; ;AD18F128.h: 469: static volatile bit PWM14SEL @ ((unsigned)&PXC*8)+6;
+"470
+[v _PXC21 `Vb ~T0 @X0 1 s@32293 ]
+[; ;AD18F128.h: 470: static volatile bit PXC21 @ ((unsigned)&PXC*8)+5;
+"471
+[v _PXC20 `Vb ~T0 @X0 1 s@32292 ]
+[; ;AD18F128.h: 471: static volatile bit PXC20 @ ((unsigned)&PXC*8)+4;
+"472
+[v _PXC11 `Vb ~T0 @X0 1 s@32291 ]
+[; ;AD18F128.h: 472: static volatile bit PXC11 @ ((unsigned)&PXC*8)+3;
+"473
+[v _PXC10 `Vb ~T0 @X0 1 s@32290 ]
+[; ;AD18F128.h: 473: static volatile bit PXC10 @ ((unsigned)&PXC*8)+2;
+"474
+[v _PXC01 `Vb ~T0 @X0 1 s@32289 ]
+[; ;AD18F128.h: 474: static volatile bit PXC01 @ ((unsigned)&PXC*8)+1;
+"475
+[v _PXC00 `Vb ~T0 @X0 1 s@32288 ]
+[; ;AD18F128.h: 475: static volatile bit PXC00 @ ((unsigned)&PXC*8)+0;
+"477
+[v _DTCKS1 `Vb ~T0 @X0 1 s@32287 ]
+[; ;AD18F128.h: 477: static volatile bit DTCKS1 @ ((unsigned)&DTC*8)+7;
+"478
+[v _DTCKS0 `Vb ~T0 @X0 1 s@32286 ]
+[; ;AD18F128.h: 478: static volatile bit DTCKS0 @ ((unsigned)&DTC*8)+6;
+"479
+[v _DTEN `Vb ~T0 @X0 1 s@32285 ]
+[; ;AD18F128.h: 479: static volatile bit DTEN @ ((unsigned)&DTC*8)+5;
+"480
+[v _DTD4 `Vb ~T0 @X0 1 s@32284 ]
+[; ;AD18F128.h: 480: static volatile bit DTD4 @ ((unsigned)&DTC*8)+4;
+"481
+[v _DTD3 `Vb ~T0 @X0 1 s@32283 ]
+[; ;AD18F128.h: 481: static volatile bit DTD3 @ ((unsigned)&DTC*8)+3;
+"482
+[v _DTD2 `Vb ~T0 @X0 1 s@32282 ]
+[; ;AD18F128.h: 482: static volatile bit DTD2 @ ((unsigned)&DTC*8)+2;
+"483
+[v _DTD1 `Vb ~T0 @X0 1 s@32281 ]
+[; ;AD18F128.h: 483: static volatile bit DTD1 @ ((unsigned)&DTC*8)+1;
+"484
+[v _DTD0 `Vb ~T0 @X0 1 s@32280 ]
+[; ;AD18F128.h: 484: static volatile bit DTD0 @ ((unsigned)&DTC*8)+0;
+"486
+[v _T3PWMMODE `Vb ~T0 @X0 1 s@32279 ]
+[; ;AD18F128.h: 486: static volatile bit T3PWMMODE @ ((unsigned)&POLS*8)+7;
+"487
+[v _PT2MODE `Vb ~T0 @X0 1 s@32278 ]
+[; ;AD18F128.h: 487: static volatile bit PT2MODE @ ((unsigned)&POLS*8)+6;
+"488
+[v _POLS15 `Vb ~T0 @X0 1 s@32277 ]
+[; ;AD18F128.h: 488: static volatile bit POLS15 @ ((unsigned)&POLS*8)+5;
+"489
+[v _POLS14 `Vb ~T0 @X0 1 s@32276 ]
+[; ;AD18F128.h: 489: static volatile bit POLS14 @ ((unsigned)&POLS*8)+4;
+"490
+[v _POLS13 `Vb ~T0 @X0 1 s@32275 ]
+[; ;AD18F128.h: 490: static volatile bit POLS13 @ ((unsigned)&POLS*8)+3;
+"491
+[v _POLS12 `Vb ~T0 @X0 1 s@32274 ]
+[; ;AD18F128.h: 491: static volatile bit POLS12 @ ((unsigned)&POLS*8)+2;
+"492
+[v _POLS11 `Vb ~T0 @X0 1 s@32273 ]
+[; ;AD18F128.h: 492: static volatile bit POLS11 @ ((unsigned)&POLS*8)+1;
+"493
+[v _POLS10 `Vb ~T0 @X0 1 s@32272 ]
+[; ;AD18F128.h: 493: static volatile bit POLS10 @ ((unsigned)&POLS*8)+0;
+"495
+[v _PT1MODE `Vb ~T0 @X0 1 s@32271 ]
+[; ;AD18F128.h: 495: static volatile bit PT1MODE @ ((unsigned)&PME*8)+7;
+"496
+[v _PT0MODE `Vb ~T0 @X0 1 s@32270 ]
+[; ;AD18F128.h: 496: static volatile bit PT0MODE @ ((unsigned)&PME*8)+6;
+"497
+[v _PWM15EN `Vb ~T0 @X0 1 s@32269 ]
+[; ;AD18F128.h: 497: static volatile bit PWM15EN @ ((unsigned)&PME*8)+5;
+"498
+[v _PWM14EN `Vb ~T0 @X0 1 s@32268 ]
+[; ;AD18F128.h: 498: static volatile bit PWM14EN @ ((unsigned)&PME*8)+4;
+"499
+[v _PWM13EN `Vb ~T0 @X0 1 s@32267 ]
+[; ;AD18F128.h: 499: static volatile bit PWM13EN @ ((unsigned)&PME*8)+3;
+"500
+[v _PWM12EN `Vb ~T0 @X0 1 s@32266 ]
+[; ;AD18F128.h: 500: static volatile bit PWM12EN @ ((unsigned)&PME*8)+2;
+"501
+[v _PWM11EN `Vb ~T0 @X0 1 s@32265 ]
+[; ;AD18F128.h: 501: static volatile bit PWM11EN @ ((unsigned)&PME*8)+1;
+"502
+[v _PWM10EN `Vb ~T0 @X0 1 s@32264 ]
+[; ;AD18F128.h: 502: static volatile bit PWM10EN @ ((unsigned)&PME*8)+0;
+"506
+[v _CCP1CH3 `Vb ~T0 @X0 1 s@32255 ]
+[; ;AD18F128.h: 506: static volatile bit CCP1CH3 @ ((unsigned)&CCPCON*8)+7;
+"507
+[v _CCP1CH2 `Vb ~T0 @X0 1 s@32254 ]
+[; ;AD18F128.h: 507: static volatile bit CCP1CH2 @ ((unsigned)&CCPCON*8)+6;
+"508
+[v _CCP1CH1 `Vb ~T0 @X0 1 s@32253 ]
+[; ;AD18F128.h: 508: static volatile bit CCP1CH1 @ ((unsigned)&CCPCON*8)+5;
+"509
+[v _CCP1CH0 `Vb ~T0 @X0 1 s@32252 ]
+[; ;AD18F128.h: 509: static volatile bit CCP1CH0 @ ((unsigned)&CCPCON*8)+4;
+"510
+[v _CCP1M3 `Vb ~T0 @X0 1 s@32251 ]
+[; ;AD18F128.h: 510: static volatile bit CCP1M3 @ ((unsigned)&CCPCON*8)+3;
+"511
+[v _CCP1M2 `Vb ~T0 @X0 1 s@32250 ]
+[; ;AD18F128.h: 511: static volatile bit CCP1M2 @ ((unsigned)&CCPCON*8)+2;
+"512
+[v _CCP1M1 `Vb ~T0 @X0 1 s@32249 ]
+[; ;AD18F128.h: 512: static volatile bit CCP1M1 @ ((unsigned)&CCPCON*8)+1;
+"513
+[v _CCP1M0 `Vb ~T0 @X0 1 s@32248 ]
+[; ;AD18F128.h: 513: static volatile bit CCP1M0 @ ((unsigned)&CCPCON*8)+0;
+"515
+[v _PWMADPOS1 `Vb ~T0 @X0 1 s@32247 ]
+[; ;AD18F128.h: 515: static volatile bit PWMADPOS1 @ ((unsigned)&PWM1CON0*8)+7;
+"516
+[v _CMPFLT `Vb ~T0 @X0 1 s@32246 ]
+[; ;AD18F128.h: 516: static volatile bit CMPFLT @ ((unsigned)&PWM1CON0*8)+6;
+"517
+[v _ASTART `Vb ~T0 @X0 1 s@32245 ]
+[; ;AD18F128.h: 517: static volatile bit ASTART @ ((unsigned)&PWM1CON0*8)+5;
+"518
+[v _ACLOSE `Vb ~T0 @X0 1 s@32244 ]
+[; ;AD18F128.h: 518: static volatile bit ACLOSE @ ((unsigned)&PWM1CON0*8)+4;
+"519
+[v _OPFLT `Vb ~T0 @X0 1 s@32243 ]
+[; ;AD18F128.h: 519: static volatile bit OPFLT @ ((unsigned)&PWM1CON0*8)+3;
+"520
+[v _IOFLT `Vb ~T0 @X0 1 s@32242 ]
+[; ;AD18F128.h: 520: static volatile bit IOFLT @ ((unsigned)&PWM1CON0*8)+2;
+"521
+[v _PWMADPOS0 `Vb ~T0 @X0 1 s@32241 ]
+[; ;AD18F128.h: 521: static volatile bit PWMADPOS0 @ ((unsigned)&PWM1CON0*8)+1;
+"522
+[v _PWM10ADEN `Vb ~T0 @X0 1 s@32240 ]
+[; ;AD18F128.h: 522: static volatile bit PWM10ADEN @ ((unsigned)&PWM1CON0*8)+0;
+"524
+[v _PWM3CAEN `Vb ~T0 @X0 1 s@32231 ]
+[; ;AD18F128.h: 524: static volatile bit PWM3CAEN @ ((unsigned)&T3CON*8)+7;
+"525
+[v _T3OUTPS3 `Vb ~T0 @X0 1 s@32230 ]
+[; ;AD18F128.h: 525: static volatile bit T3OUTPS3 @ ((unsigned)&T3CON*8)+6;
+"526
+[v _T3OUTPS2 `Vb ~T0 @X0 1 s@32229 ]
+[; ;AD18F128.h: 526: static volatile bit T3OUTPS2 @ ((unsigned)&T3CON*8)+5;
+"527
+[v _T3OUTPS1 `Vb ~T0 @X0 1 s@32228 ]
+[; ;AD18F128.h: 527: static volatile bit T3OUTPS1 @ ((unsigned)&T3CON*8)+4;
+"528
+[v _T3OUTPS0 `Vb ~T0 @X0 1 s@32227 ]
+[; ;AD18F128.h: 528: static volatile bit T3OUTPS0 @ ((unsigned)&T3CON*8)+3;
+"529
+[v _TMR3ON `Vb ~T0 @X0 1 s@32226 ]
+[; ;AD18F128.h: 529: static volatile bit TMR3ON @ ((unsigned)&T3CON*8)+2;
+"530
+[v _T3CKPS1 `Vb ~T0 @X0 1 s@32225 ]
+[; ;AD18F128.h: 530: static volatile bit T3CKPS1 @ ((unsigned)&T3CON*8)+1;
+"531
+[v _T3CKPS0 `Vb ~T0 @X0 1 s@32224 ]
+[; ;AD18F128.h: 531: static volatile bit T3CKPS0 @ ((unsigned)&T3CON*8)+0;
+"534
+[v _PWM5OEN `Vb ~T0 @X0 1 s@32127 ]
+[; ;AD18F128.h: 534: static volatile bit PWM5OEN @ ((unsigned)&PWM2CON0*8)+7;
+"535
+[v _PWM4OEN `Vb ~T0 @X0 1 s@32126 ]
+[; ;AD18F128.h: 535: static volatile bit PWM4OEN @ ((unsigned)&PWM2CON0*8)+6;
+"536
+[v _PWM3OEN `Vb ~T0 @X0 1 s@32125 ]
+[; ;AD18F128.h: 536: static volatile bit PWM3OEN @ ((unsigned)&PWM2CON0*8)+5;
+"537
+[v _PWM2OEN `Vb ~T0 @X0 1 s@32124 ]
+[; ;AD18F128.h: 537: static volatile bit PWM2OEN @ ((unsigned)&PWM2CON0*8)+4;
+"538
+[v _PWM5EN `Vb ~T0 @X0 1 s@32123 ]
+[; ;AD18F128.h: 538: static volatile bit PWM5EN @ ((unsigned)&PWM2CON0*8)+3;
+"539
+[v _PWM4EN `Vb ~T0 @X0 1 s@32122 ]
+[; ;AD18F128.h: 539: static volatile bit PWM4EN @ ((unsigned)&PWM2CON0*8)+2;
+"540
+[v _PWM3EN `Vb ~T0 @X0 1 s@32121 ]
+[; ;AD18F128.h: 540: static volatile bit PWM3EN @ ((unsigned)&PWM2CON0*8)+1;
+"541
+[v _PWM2EN `Vb ~T0 @X0 1 s@32120 ]
+[; ;AD18F128.h: 541: static volatile bit PWM2EN @ ((unsigned)&PWM2CON0*8)+0;
+"543
+[v _POLS5 `Vb ~T0 @X0 1 s@32115 ]
+[; ;AD18F128.h: 543: static volatile bit POLS5 @ ((unsigned)&PWM2CON1*8)+3;
+"544
+[v _POLS4 `Vb ~T0 @X0 1 s@32114 ]
+[; ;AD18F128.h: 544: static volatile bit POLS4 @ ((unsigned)&PWM2CON1*8)+2;
+"545
+[v _POLS3 `Vb ~T0 @X0 1 s@32113 ]
+[; ;AD18F128.h: 545: static volatile bit POLS3 @ ((unsigned)&PWM2CON1*8)+1;
+"546
+[v _POLS2 `Vb ~T0 @X0 1 s@32112 ]
+[; ;AD18F128.h: 546: static volatile bit POLS2 @ ((unsigned)&PWM2CON1*8)+0;
+"548
+[v _P5CS1 `Vb ~T0 @X0 1 s@32103 ]
+[; ;AD18F128.h: 548: static volatile bit P5CS1 @ ((unsigned)&PWM2CON3*8)+7;
+"549
+[v _P5CS0 `Vb ~T0 @X0 1 s@32102 ]
+[; ;AD18F128.h: 549: static volatile bit P5CS0 @ ((unsigned)&PWM2CON3*8)+6;
+"550
+[v _P4CS1 `Vb ~T0 @X0 1 s@32101 ]
+[; ;AD18F128.h: 550: static volatile bit P4CS1 @ ((unsigned)&PWM2CON3*8)+5;
+"551
+[v _P4CS0 `Vb ~T0 @X0 1 s@32100 ]
+[; ;AD18F128.h: 551: static volatile bit P4CS0 @ ((unsigned)&PWM2CON3*8)+4;
+"552
+[v _P3CS1 `Vb ~T0 @X0 1 s@32099 ]
+[; ;AD18F128.h: 552: static volatile bit P3CS1 @ ((unsigned)&PWM2CON3*8)+3;
+"553
+[v _P3CS0 `Vb ~T0 @X0 1 s@32098 ]
+[; ;AD18F128.h: 553: static volatile bit P3CS0 @ ((unsigned)&PWM2CON3*8)+2;
+"554
+[v _P2CS1 `Vb ~T0 @X0 1 s@32097 ]
+[; ;AD18F128.h: 554: static volatile bit P2CS1 @ ((unsigned)&PWM2CON3*8)+1;
+"555
+[v _P2CS0 `Vb ~T0 @X0 1 s@32096 ]
+[; ;AD18F128.h: 555: static volatile bit P2CS0 @ ((unsigned)&PWM2CON3*8)+0;
+"558
+[v _ADFM `Vb ~T0 @X0 1 s@32055 ]
+[; ;AD18F128.h: 558: static volatile bit ADFM @ ((unsigned)&ADCON0*8)+7;
+"559
+[v _ADCMPMODE `Vb ~T0 @X0 1 s@32054 ]
+[; ;AD18F128.h: 559: static volatile bit ADCMPMODE @ ((unsigned)&ADCON0*8)+6;
+"560
+[v _CHS3 `Vb ~T0 @X0 1 s@32053 ]
+[; ;AD18F128.h: 560: static volatile bit CHS3 @ ((unsigned)&ADCON0*8)+5;
+"561
+[v _CHS2 `Vb ~T0 @X0 1 s@32052 ]
+[; ;AD18F128.h: 561: static volatile bit CHS2 @ ((unsigned)&ADCON0*8)+4;
+"562
+[v _CHS1 `Vb ~T0 @X0 1 s@32051 ]
+[; ;AD18F128.h: 562: static volatile bit CHS1 @ ((unsigned)&ADCON0*8)+3;
+"563
+[v _CHS0 `Vb ~T0 @X0 1 s@32050 ]
+[; ;AD18F128.h: 563: static volatile bit CHS0 @ ((unsigned)&ADCON0*8)+2;
+"564
+[v _DONG `Vb ~T0 @X0 1 s@32049 ]
+[; ;AD18F128.h: 564: static volatile bit DONG @ ((unsigned)&ADCON0*8)+1;
+"565
+[v _GO `Vb ~T0 @X0 1 s@32049 ]
+[; ;AD18F128.h: 565: static volatile bit GO @ ((unsigned)&ADCON0*8)+1;
+"566
+[v _ADON `Vb ~T0 @X0 1 s@32048 ]
+[; ;AD18F128.h: 566: static volatile bit ADON @ ((unsigned)&ADCON0*8)+0;
+"568
+[v _ADVREF `Vb ~T0 @X0 1 s@32047 ]
+[; ;AD18F128.h: 568: static volatile bit ADVREF @ ((unsigned)&ADCON1*8)+7;
+"569
+[v _ADCSP `Vb ~T0 @X0 1 s@32046 ]
+[; ;AD18F128.h: 569: static volatile bit ADCSP @ ((unsigned)&ADCON1*8)+6;
+"570
+[v _ACQT2 `Vb ~T0 @X0 1 s@32045 ]
+[; ;AD18F128.h: 570: static volatile bit ACQT2 @ ((unsigned)&ADCON1*8)+5;
+"571
+[v _ACQT1 `Vb ~T0 @X0 1 s@32044 ]
+[; ;AD18F128.h: 571: static volatile bit ACQT1 @ ((unsigned)&ADCON1*8)+4;
+"572
+[v _ACQT0 `Vb ~T0 @X0 1 s@32043 ]
+[; ;AD18F128.h: 572: static volatile bit ACQT0 @ ((unsigned)&ADCON1*8)+3;
+"573
+[v _ADCS2 `Vb ~T0 @X0 1 s@32042 ]
+[; ;AD18F128.h: 573: static volatile bit ADCS2 @ ((unsigned)&ADCON1*8)+2;
+"574
+[v _ADCS1 `Vb ~T0 @X0 1 s@32041 ]
+[; ;AD18F128.h: 574: static volatile bit ADCS1 @ ((unsigned)&ADCON1*8)+1;
+"575
+[v _ADCS0 `Vb ~T0 @X0 1 s@32040 ]
+[; ;AD18F128.h: 575: static volatile bit ADCS0 @ ((unsigned)&ADCON1*8)+0;
+"578
+[v _AD1CH3 `Vb ~T0 @X0 1 s@30879 ]
+[; ;AD18F128.h: 578: static volatile bit AD1CH3 @ ((unsigned)&ADCON3*8)+7;
+"579
+[v _AD1CH2 `Vb ~T0 @X0 1 s@30878 ]
+[; ;AD18F128.h: 579: static volatile bit AD1CH2 @ ((unsigned)&ADCON3*8)+6;
+"580
+[v _AD1CH1 `Vb ~T0 @X0 1 s@30877 ]
+[; ;AD18F128.h: 580: static volatile bit AD1CH1 @ ((unsigned)&ADCON3*8)+5;
+"581
+[v _AD1CH0 `Vb ~T0 @X0 1 s@30876 ]
+[; ;AD18F128.h: 581: static volatile bit AD1CH0 @ ((unsigned)&ADCON3*8)+4;
+"582
+[v _ADCRPT1 `Vb ~T0 @X0 1 s@30875 ]
+[; ;AD18F128.h: 582: static volatile bit ADCRPT1 @ ((unsigned)&ADCON3*8)+3;
+"583
+[v _ADCRPT0 `Vb ~T0 @X0 1 s@30874 ]
+[; ;AD18F128.h: 583: static volatile bit ADCRPT0 @ ((unsigned)&ADCON3*8)+2;
+"584
+[v _AD2EN `Vb ~T0 @X0 1 s@30873 ]
+[; ;AD18F128.h: 584: static volatile bit AD2EN @ ((unsigned)&ADCON3*8)+1;
+"585
+[v _AD1EN `Vb ~T0 @X0 1 s@30872 ]
+[; ;AD18F128.h: 585: static volatile bit AD1EN @ ((unsigned)&ADCON3*8)+0;
+"588
+[v _AD2CH3 `Vb ~T0 @X0 1 s@30871 ]
+[; ;AD18F128.h: 588: static volatile bit AD2CH3 @ ((unsigned)&ADCON4*8)+7;
+"589
+[v _AD2CH2 `Vb ~T0 @X0 1 s@30870 ]
+[; ;AD18F128.h: 589: static volatile bit AD2CH2 @ ((unsigned)&ADCON4*8)+6;
+"590
+[v _AD2CH1 `Vb ~T0 @X0 1 s@30869 ]
+[; ;AD18F128.h: 590: static volatile bit AD2CH1 @ ((unsigned)&ADCON4*8)+5;
+"591
+[v _AD2CH0 `Vb ~T0 @X0 1 s@30868 ]
+[; ;AD18F128.h: 591: static volatile bit AD2CH0 @ ((unsigned)&ADCON4*8)+4;
+"592
+[v _ADPWMMODE1 `Vb ~T0 @X0 1 s@30867 ]
+[; ;AD18F128.h: 592: static volatile bit ADPWMMODE1 @ ((unsigned)&ADCON4*8)+3;
+"593
+[v _ADPWMMODE0 `Vb ~T0 @X0 1 s@30866 ]
+[; ;AD18F128.h: 593: static volatile bit ADPWMMODE0 @ ((unsigned)&ADCON4*8)+2;
+"594
+[v _ADPWMSEL1 `Vb ~T0 @X0 1 s@30865 ]
+[; ;AD18F128.h: 594: static volatile bit ADPWMSEL1 @ ((unsigned)&ADCON4*8)+1;
+"595
+[v _ADPWMSEL0 `Vb ~T0 @X0 1 s@30864 ]
+[; ;AD18F128.h: 595: static volatile bit ADPWMSEL0 @ ((unsigned)&ADCON4*8)+0;
+"598
+[v _IPEN `Vb ~T0 @X0 1 s@32655 ]
+[; ;AD18F128.h: 598: static volatile bit IPEN @ ((unsigned)&PCON*8)+7;
+"599
+[v _PB0ST `Vb ~T0 @X0 1 s@32654 ]
+[; ;AD18F128.h: 599: static volatile bit PB0ST @ ((unsigned)&PCON*8)+6;
+"600
+[v _LVDM1 `Vb ~T0 @X0 1 s@32653 ]
+[; ;AD18F128.h: 600: static volatile bit LVDM1 @ ((unsigned)&PCON*8)+5;
+"601
+[v _LVDM0 `Vb ~T0 @X0 1 s@32652 ]
+[; ;AD18F128.h: 601: static volatile bit LVDM0 @ ((unsigned)&PCON*8)+4;
+"602
+[v _LVT3 `Vb ~T0 @X0 1 s@32651 ]
+[; ;AD18F128.h: 602: static volatile bit LVT3 @ ((unsigned)&PCON*8)+3;
+"603
+[v _LVT2 `Vb ~T0 @X0 1 s@32650 ]
+[; ;AD18F128.h: 603: static volatile bit LVT2 @ ((unsigned)&PCON*8)+2;
+"604
+[v _LVT1 `Vb ~T0 @X0 1 s@32649 ]
+[; ;AD18F128.h: 604: static volatile bit LVT1 @ ((unsigned)&PCON*8)+1;
+"605
+[v _LVT0 `Vb ~T0 @X0 1 s@32648 ]
+[; ;AD18F128.h: 605: static volatile bit LVT0 @ ((unsigned)&PCON*8)+0;
+"608
+[v _PDIP `Vb ~T0 @X0 1 s@32031 ]
+[; ;AD18F128.h: 608: static volatile bit PDIP @ ((unsigned)&IPR1*8)+7;
+"609
+[v _RCIP `Vb ~T0 @X0 1 s@32030 ]
+[; ;AD18F128.h: 609: static volatile bit RCIP @ ((unsigned)&IPR1*8)+6;
+"610
+[v _TXIP `Vb ~T0 @X0 1 s@32029 ]
+[; ;AD18F128.h: 610: static volatile bit TXIP @ ((unsigned)&IPR1*8)+5;
+"611
+[v _CCPIP `Vb ~T0 @X0 1 s@32028 ]
+[; ;AD18F128.h: 611: static volatile bit CCPIP @ ((unsigned)&IPR1*8)+4;
+"612
+[v _TMR3IP `Vb ~T0 @X0 1 s@32027 ]
+[; ;AD18F128.h: 612: static volatile bit TMR3IP @ ((unsigned)&IPR1*8)+3;
+"613
+[v _TMR2IP `Vb ~T0 @X0 1 s@32026 ]
+[; ;AD18F128.h: 613: static volatile bit TMR2IP @ ((unsigned)&IPR1*8)+2;
+"614
+[v _TMR1IP `Vb ~T0 @X0 1 s@32025 ]
+[; ;AD18F128.h: 614: static volatile bit TMR1IP @ ((unsigned)&IPR1*8)+1;
+"615
+[v _TMR0IP `Vb ~T0 @X0 1 s@32024 ]
+[; ;AD18F128.h: 615: static volatile bit TMR0IP @ ((unsigned)&IPR1*8)+0;
+"618
+[v _PDIF `Vb ~T0 @X0 1 s@32023 ]
+[; ;AD18F128.h: 618: static volatile bit PDIF @ ((unsigned)&PIR1*8)+7;
+"619
+[v _RCIF `Vb ~T0 @X0 1 s@32022 ]
+[; ;AD18F128.h: 619: static volatile bit RCIF @ ((unsigned)&PIR1*8)+6;
+"620
+[v _TXIF `Vb ~T0 @X0 1 s@32021 ]
+[; ;AD18F128.h: 620: static volatile bit TXIF @ ((unsigned)&PIR1*8)+5;
+"621
+[v _CCPIF `Vb ~T0 @X0 1 s@32020 ]
+[; ;AD18F128.h: 621: static volatile bit CCPIF @ ((unsigned)&PIR1*8)+4;
+"622
+[v _TMR3IF `Vb ~T0 @X0 1 s@32019 ]
+[; ;AD18F128.h: 622: static volatile bit TMR3IF @ ((unsigned)&PIR1*8)+3;
+"623
+[v _TMR2IF `Vb ~T0 @X0 1 s@32018 ]
+[; ;AD18F128.h: 623: static volatile bit TMR2IF @ ((unsigned)&PIR1*8)+2;
+"624
+[v _TMR1IF `Vb ~T0 @X0 1 s@32017 ]
+[; ;AD18F128.h: 624: static volatile bit TMR1IF @ ((unsigned)&PIR1*8)+1;
+"625
+[v _TMR0IF `Vb ~T0 @X0 1 s@32016 ]
+[; ;AD18F128.h: 625: static volatile bit TMR0IF @ ((unsigned)&PIR1*8)+0;
+"628
+[v _PDIE `Vb ~T0 @X0 1 s@32015 ]
+[; ;AD18F128.h: 628: static volatile bit PDIE @ ((unsigned)&PIE1*8)+7;
+"629
+[v _RCIE `Vb ~T0 @X0 1 s@32014 ]
+[; ;AD18F128.h: 629: static volatile bit RCIE @ ((unsigned)&PIE1*8)+6;
+"630
+[v _TXIE `Vb ~T0 @X0 1 s@32013 ]
+[; ;AD18F128.h: 630: static volatile bit TXIE @ ((unsigned)&PIE1*8)+5;
+"631
+[v _CCPIE `Vb ~T0 @X0 1 s@32012 ]
+[; ;AD18F128.h: 631: static volatile bit CCPIE @ ((unsigned)&PIE1*8)+4;
+"632
+[v _TMR3IE `Vb ~T0 @X0 1 s@32011 ]
+[; ;AD18F128.h: 632: static volatile bit TMR3IE @ ((unsigned)&PIE1*8)+3;
+"633
+[v _TMR2IE `Vb ~T0 @X0 1 s@32010 ]
+[; ;AD18F128.h: 633: static volatile bit TMR2IE @ ((unsigned)&PIE1*8)+2;
+"634
+[v _TMR1IE `Vb ~T0 @X0 1 s@32009 ]
+[; ;AD18F128.h: 634: static volatile bit TMR1IE @ ((unsigned)&PIE1*8)+1;
+"635
+[v _TMR0IE `Vb ~T0 @X0 1 s@32008 ]
+[; ;AD18F128.h: 635: static volatile bit TMR0IE @ ((unsigned)&PIE1*8)+0;
+"638
+[v _PCIP `Vb ~T0 @X0 1 s@32007 ]
+[; ;AD18F128.h: 638: static volatile bit PCIP @ ((unsigned)&IPR2*8)+7;
+"639
+[v _PBIP `Vb ~T0 @X0 1 s@32006 ]
+[; ;AD18F128.h: 639: static volatile bit PBIP @ ((unsigned)&IPR2*8)+6;
+"640
+[v _PAIP `Vb ~T0 @X0 1 s@32005 ]
+[; ;AD18F128.h: 640: static volatile bit PAIP @ ((unsigned)&IPR2*8)+5;
+"641
+[v _INT2IP `Vb ~T0 @X0 1 s@32004 ]
+[; ;AD18F128.h: 641: static volatile bit INT2IP @ ((unsigned)&IPR2*8)+4;
+"642
+[v _INT1IP `Vb ~T0 @X0 1 s@32003 ]
+[; ;AD18F128.h: 642: static volatile bit INT1IP @ ((unsigned)&IPR2*8)+3;
+"643
+[v _INT0IP `Vb ~T0 @X0 1 s@32002 ]
+[; ;AD18F128.h: 643: static volatile bit INT0IP @ ((unsigned)&IPR2*8)+2;
+"644
+[v _CMP1IP `Vb ~T0 @X0 1 s@32001 ]
+[; ;AD18F128.h: 644: static volatile bit CMP1IP @ ((unsigned)&IPR2*8)+1;
+"645
+[v _CMP0IP `Vb ~T0 @X0 1 s@32000 ]
+[; ;AD18F128.h: 645: static volatile bit CMP0IP @ ((unsigned)&IPR2*8)+0;
+"647
+[v _PCIF `Vb ~T0 @X0 1 s@31999 ]
+[; ;AD18F128.h: 647: static volatile bit PCIF @ ((unsigned)&PIR2*8)+7;
+"648
+[v _PBIF `Vb ~T0 @X0 1 s@31998 ]
+[; ;AD18F128.h: 648: static volatile bit PBIF @ ((unsigned)&PIR2*8)+6;
+"649
+[v _PAIF `Vb ~T0 @X0 1 s@31997 ]
+[; ;AD18F128.h: 649: static volatile bit PAIF @ ((unsigned)&PIR2*8)+5;
+"650
+[v _INT2IF `Vb ~T0 @X0 1 s@31996 ]
+[; ;AD18F128.h: 650: static volatile bit INT2IF @ ((unsigned)&PIR2*8)+4;
+"651
+[v _INT1IF `Vb ~T0 @X0 1 s@31995 ]
+[; ;AD18F128.h: 651: static volatile bit INT1IF @ ((unsigned)&PIR2*8)+3;
+"652
+[v _INT0IF `Vb ~T0 @X0 1 s@31994 ]
+[; ;AD18F128.h: 652: static volatile bit INT0IF @ ((unsigned)&PIR2*8)+2;
+"653
+[v _CMP1IF `Vb ~T0 @X0 1 s@31993 ]
+[; ;AD18F128.h: 653: static volatile bit CMP1IF @ ((unsigned)&PIR2*8)+1;
+"654
+[v _CMP0IF `Vb ~T0 @X0 1 s@31992 ]
+[; ;AD18F128.h: 654: static volatile bit CMP0IF @ ((unsigned)&PIR2*8)+0;
+"656
+[v _PCIE `Vb ~T0 @X0 1 s@31991 ]
+[; ;AD18F128.h: 656: static volatile bit PCIE @ ((unsigned)&PIE2*8)+7;
+"657
+[v _PBIE `Vb ~T0 @X0 1 s@31990 ]
+[; ;AD18F128.h: 657: static volatile bit PBIE @ ((unsigned)&PIE2*8)+6;
+"658
+[v _PAIE `Vb ~T0 @X0 1 s@31989 ]
+[; ;AD18F128.h: 658: static volatile bit PAIE @ ((unsigned)&PIE2*8)+5;
+"659
+[v _INT2IE `Vb ~T0 @X0 1 s@31988 ]
+[; ;AD18F128.h: 659: static volatile bit INT2IE @ ((unsigned)&PIE2*8)+4;
+"660
+[v _INT1IE `Vb ~T0 @X0 1 s@31987 ]
+[; ;AD18F128.h: 660: static volatile bit INT1IE @ ((unsigned)&PIE2*8)+3;
+"661
+[v _INT0IE `Vb ~T0 @X0 1 s@31986 ]
+[; ;AD18F128.h: 661: static volatile bit INT0IE @ ((unsigned)&PIE2*8)+2;
+"662
+[v _CMP1IE `Vb ~T0 @X0 1 s@31985 ]
+[; ;AD18F128.h: 662: static volatile bit CMP1IE @ ((unsigned)&PIE2*8)+1;
+"663
+[v _CMP0IE `Vb ~T0 @X0 1 s@31984 ]
+[; ;AD18F128.h: 663: static volatile bit CMP0IE @ ((unsigned)&PIE2*8)+0;
+"666
+[v _ADCMP1IP `Vb ~T0 @X0 1 s@31983 ]
+[; ;AD18F128.h: 666: static volatile bit ADCMP1IP @ ((unsigned)&IPR3*8)+7;
+"667
+[v _ADCMP0IP `Vb ~T0 @X0 1 s@31982 ]
+[; ;AD18F128.h: 667: static volatile bit ADCMP0IP @ ((unsigned)&IPR3*8)+6;
+"668
+[v _ADIP `Vb ~T0 @X0 1 s@31981 ]
+[; ;AD18F128.h: 668: static volatile bit ADIP @ ((unsigned)&IPR3*8)+5;
+"669
+[v _OP1IP `Vb ~T0 @X0 1 s@31980 ]
+[; ;AD18F128.h: 669: static volatile bit OP1IP @ ((unsigned)&IPR3*8)+4;
+"670
+[v _CMP2IP `Vb ~T0 @X0 1 s@31979 ]
+[; ;AD18F128.h: 670: static volatile bit CMP2IP @ ((unsigned)&IPR3*8)+3;
+"671
+[v _EEIP `Vb ~T0 @X0 1 s@31978 ]
+[; ;AD18F128.h: 671: static volatile bit EEIP @ ((unsigned)&IPR3*8)+2;
+"672
+[v _OSFIP `Vb ~T0 @X0 1 s@31977 ]
+[; ;AD18F128.h: 672: static volatile bit OSFIP @ ((unsigned)&IPR3*8)+1;
+"673
+[v _LVDIP `Vb ~T0 @X0 1 s@31976 ]
+[; ;AD18F128.h: 673: static volatile bit LVDIP @ ((unsigned)&IPR3*8)+0;
+"675
+[v _ADCMP1IF `Vb ~T0 @X0 1 s@31975 ]
+[; ;AD18F128.h: 675: static volatile bit ADCMP1IF @ ((unsigned)&PIR3*8)+7;
+"676
+[v _ADCMP0IF `Vb ~T0 @X0 1 s@31974 ]
+[; ;AD18F128.h: 676: static volatile bit ADCMP0IF @ ((unsigned)&PIR3*8)+6;
+"677
+[v _ADIF `Vb ~T0 @X0 1 s@31973 ]
+[; ;AD18F128.h: 677: static volatile bit ADIF @ ((unsigned)&PIR3*8)+5;
+"678
+[v _OP1IF `Vb ~T0 @X0 1 s@31972 ]
+[; ;AD18F128.h: 678: static volatile bit OP1IF @ ((unsigned)&PIR3*8)+4;
+"679
+[v _CMP2IF `Vb ~T0 @X0 1 s@31971 ]
+[; ;AD18F128.h: 679: static volatile bit CMP2IF @ ((unsigned)&PIR3*8)+3;
+"680
+[v _EEIF `Vb ~T0 @X0 1 s@31970 ]
+[; ;AD18F128.h: 680: static volatile bit EEIF @ ((unsigned)&PIR3*8)+2;
+"681
+[v _OSFIF `Vb ~T0 @X0 1 s@31969 ]
+[; ;AD18F128.h: 681: static volatile bit OSFIF @ ((unsigned)&PIR3*8)+1;
+"682
+[v _LVDIF `Vb ~T0 @X0 1 s@31968 ]
+[; ;AD18F128.h: 682: static volatile bit LVDIF @ ((unsigned)&PIR3*8)+0;
+"685
+[v _ADCMP1IE `Vb ~T0 @X0 1 s@31967 ]
+[; ;AD18F128.h: 685: static volatile bit ADCMP1IE @ ((unsigned)&PIE3*8)+7;
+"686
+[v _ADCMP0IE `Vb ~T0 @X0 1 s@31966 ]
+[; ;AD18F128.h: 686: static volatile bit ADCMP0IE @ ((unsigned)&PIE3*8)+6;
+"687
+[v _ADIE `Vb ~T0 @X0 1 s@31965 ]
+[; ;AD18F128.h: 687: static volatile bit ADIE @ ((unsigned)&PIE3*8)+5;
+"688
+[v _OP1IE `Vb ~T0 @X0 1 s@31964 ]
+[; ;AD18F128.h: 688: static volatile bit OP1IE @ ((unsigned)&PIE3*8)+4;
+"689
+[v _CMP2IE `Vb ~T0 @X0 1 s@31963 ]
+[; ;AD18F128.h: 689: static volatile bit CMP2IE @ ((unsigned)&PIE3*8)+3;
+"690
+[v _EEIE `Vb ~T0 @X0 1 s@31962 ]
+[; ;AD18F128.h: 690: static volatile bit EEIE @ ((unsigned)&PIE3*8)+2;
+"691
+[v _OSFIE `Vb ~T0 @X0 1 s@31961 ]
+[; ;AD18F128.h: 691: static volatile bit OSFIE @ ((unsigned)&PIE3*8)+1;
+"692
+[v _LVDIE `Vb ~T0 @X0 1 s@31960 ]
+[; ;AD18F128.h: 692: static volatile bit LVDIE @ ((unsigned)&PIE3*8)+0;
+"696
+[v _ADBIP `Vb ~T0 @X0 1 s@30930 ]
+[; ;AD18F128.h: 696: static volatile bit ADBIP @ ((unsigned)&IPR4*8)+2;
+"697
+[v _PDRCIP `Vb ~T0 @X0 1 s@30929 ]
+[; ;AD18F128.h: 697: static volatile bit PDRCIP @ ((unsigned)&IPR4*8)+1;
+"698
+[v _PDTXIP `Vb ~T0 @X0 1 s@30928 ]
+[; ;AD18F128.h: 698: static volatile bit PDTXIP @ ((unsigned)&IPR4*8)+0;
+"700
+[v _ADBIF `Vb ~T0 @X0 1 s@30922 ]
+[; ;AD18F128.h: 700: static volatile bit ADBIF @ ((unsigned)&PIR4*8)+2;
+"701
+[v _PDRCIF `Vb ~T0 @X0 1 s@30921 ]
+[; ;AD18F128.h: 701: static volatile bit PDRCIF @ ((unsigned)&PIR4*8)+1;
+"702
+[v _PDTXIF `Vb ~T0 @X0 1 s@30920 ]
+[; ;AD18F128.h: 702: static volatile bit PDTXIF @ ((unsigned)&PIR4*8)+0;
+"705
+[v _ADBIE `Vb ~T0 @X0 1 s@30914 ]
+[; ;AD18F128.h: 705: static volatile bit ADBIE @ ((unsigned)&PIE4*8)+2;
+"706
+[v _PDRCIE `Vb ~T0 @X0 1 s@30913 ]
+[; ;AD18F128.h: 706: static volatile bit PDRCIE @ ((unsigned)&PIE4*8)+1;
+"707
+[v _PDTXIE `Vb ~T0 @X0 1 s@30912 ]
+[; ;AD18F128.h: 707: static volatile bit PDTXIE @ ((unsigned)&PIE4*8)+0;
+"710
+[v _PA5SMT `Vb ~T0 @X0 1 s@31941 ]
+[; ;AD18F128.h: 710: static volatile bit PA5SMT @ ((unsigned)&SMTA*8)+5;
+"711
+[v _PA4SMT `Vb ~T0 @X0 1 s@31940 ]
+[; ;AD18F128.h: 711: static volatile bit PA4SMT @ ((unsigned)&SMTA*8)+4;
+"712
+[v _PA3SMT `Vb ~T0 @X0 1 s@31939 ]
+[; ;AD18F128.h: 712: static volatile bit PA3SMT @ ((unsigned)&SMTA*8)+3;
+"713
+[v _PA2SMT `Vb ~T0 @X0 1 s@31938 ]
+[; ;AD18F128.h: 713: static volatile bit PA2SMT @ ((unsigned)&SMTA*8)+2;
+"714
+[v _PA1SMT `Vb ~T0 @X0 1 s@31937 ]
+[; ;AD18F128.h: 714: static volatile bit PA1SMT @ ((unsigned)&SMTA*8)+1;
+"715
+[v _PA0SMT `Vb ~T0 @X0 1 s@31936 ]
+[; ;AD18F128.h: 715: static volatile bit PA0SMT @ ((unsigned)&SMTA*8)+0;
+"717
+[v _PB5SMT `Vb ~T0 @X0 1 s@31949 ]
+[; ;AD18F128.h: 717: static volatile bit PB5SMT @ ((unsigned)&SMTB*8)+5;
+"718
+[v _PB4SMT `Vb ~T0 @X0 1 s@31948 ]
+[; ;AD18F128.h: 718: static volatile bit PB4SMT @ ((unsigned)&SMTB*8)+4;
+"719
+[v _PB3SMT `Vb ~T0 @X0 1 s@31947 ]
+[; ;AD18F128.h: 719: static volatile bit PB3SMT @ ((unsigned)&SMTB*8)+3;
+"720
+[v _PB2SMT `Vb ~T0 @X0 1 s@31946 ]
+[; ;AD18F128.h: 720: static volatile bit PB2SMT @ ((unsigned)&SMTB*8)+2;
+"721
+[v _PB1SMT `Vb ~T0 @X0 1 s@31945 ]
+[; ;AD18F128.h: 721: static volatile bit PB1SMT @ ((unsigned)&SMTB*8)+1;
+"722
+[v _PB0SMT `Vb ~T0 @X0 1 s@31944 ]
+[; ;AD18F128.h: 722: static volatile bit PB0SMT @ ((unsigned)&SMTB*8)+0;
+"724
+[v _PC5SMT `Vb ~T0 @X0 1 s@31957 ]
+[; ;AD18F128.h: 724: static volatile bit PC5SMT @ ((unsigned)&SMTC*8)+5;
+"725
+[v _PC4SMT `Vb ~T0 @X0 1 s@31956 ]
+[; ;AD18F128.h: 725: static volatile bit PC4SMT @ ((unsigned)&SMTC*8)+4;
+"726
+[v _PC3SMT `Vb ~T0 @X0 1 s@31955 ]
+[; ;AD18F128.h: 726: static volatile bit PC3SMT @ ((unsigned)&SMTC*8)+3;
+"727
+[v _PC2SMT `Vb ~T0 @X0 1 s@31954 ]
+[; ;AD18F128.h: 727: static volatile bit PC2SMT @ ((unsigned)&SMTC*8)+2;
+"728
+[v _PC1SMT `Vb ~T0 @X0 1 s@31953 ]
+[; ;AD18F128.h: 728: static volatile bit PC1SMT @ ((unsigned)&SMTC*8)+1;
+"729
+[v _PC0SMT `Vb ~T0 @X0 1 s@31952 ]
+[; ;AD18F128.h: 729: static volatile bit PC0SMT @ ((unsigned)&SMTC*8)+0;
+"731
+[v _PD3SMT `Vb ~T0 @X0 1 s@30835 ]
+[; ;AD18F128.h: 731: static volatile bit PD3SMT @ ((unsigned)&SMTD*8)+3;
+"732
+[v _PD2SMT `Vb ~T0 @X0 1 s@30834 ]
+[; ;AD18F128.h: 732: static volatile bit PD2SMT @ ((unsigned)&SMTD*8)+2;
+"733
+[v _PD1SMT `Vb ~T0 @X0 1 s@30833 ]
+[; ;AD18F128.h: 733: static volatile bit PD1SMT @ ((unsigned)&SMTD*8)+1;
+"734
+[v _PD0SMT `Vb ~T0 @X0 1 s@30832 ]
+[; ;AD18F128.h: 734: static volatile bit PD0SMT @ ((unsigned)&SMTD*8)+0;
+"736
+[v _PD3OD `Vb ~T0 @X0 1 s@31931 ]
+[; ;AD18F128.h: 736: static volatile bit PD3OD @ ((unsigned)&PDOD*8)+3;
+"737
+[v _PD2OD `Vb ~T0 @X0 1 s@31930 ]
+[; ;AD18F128.h: 737: static volatile bit PD2OD @ ((unsigned)&PDOD*8)+2;
+"738
+[v _PD1OD `Vb ~T0 @X0 1 s@31929 ]
+[; ;AD18F128.h: 738: static volatile bit PD1OD @ ((unsigned)&PDOD*8)+1;
+"739
+[v _PD0OD `Vb ~T0 @X0 1 s@31928 ]
+[; ;AD18F128.h: 739: static volatile bit PD0OD @ ((unsigned)&PDOD*8)+0;
+"742
+[v _PC5OD `Vb ~T0 @X0 1 s@31925 ]
+[; ;AD18F128.h: 742: static volatile bit PC5OD @ ((unsigned)&PCOD*8)+5;
+"743
+[v _PC4OD `Vb ~T0 @X0 1 s@31924 ]
+[; ;AD18F128.h: 743: static volatile bit PC4OD @ ((unsigned)&PCOD*8)+4;
+"744
+[v _PC3OD `Vb ~T0 @X0 1 s@31923 ]
+[; ;AD18F128.h: 744: static volatile bit PC3OD @ ((unsigned)&PCOD*8)+3;
+"745
+[v _PC2OD `Vb ~T0 @X0 1 s@31922 ]
+[; ;AD18F128.h: 745: static volatile bit PC2OD @ ((unsigned)&PCOD*8)+2;
+"746
+[v _PC1OD `Vb ~T0 @X0 1 s@31921 ]
+[; ;AD18F128.h: 746: static volatile bit PC1OD @ ((unsigned)&PCOD*8)+1;
+"747
+[v _PC0OD `Vb ~T0 @X0 1 s@31920 ]
+[; ;AD18F128.h: 747: static volatile bit PC0OD @ ((unsigned)&PCOD*8)+0;
+"750
+[v _PB5OD `Vb ~T0 @X0 1 s@31917 ]
+[; ;AD18F128.h: 750: static volatile bit PB5OD @ ((unsigned)&PBOD*8)+5;
+"751
+[v _PB4OD `Vb ~T0 @X0 1 s@31916 ]
+[; ;AD18F128.h: 751: static volatile bit PB4OD @ ((unsigned)&PBOD*8)+4;
+"752
+[v _PB3OD `Vb ~T0 @X0 1 s@31915 ]
+[; ;AD18F128.h: 752: static volatile bit PB3OD @ ((unsigned)&PBOD*8)+3;
+"753
+[v _PB2OD `Vb ~T0 @X0 1 s@31914 ]
+[; ;AD18F128.h: 753: static volatile bit PB2OD @ ((unsigned)&PBOD*8)+2;
+"754
+[v _PB1OD `Vb ~T0 @X0 1 s@31913 ]
+[; ;AD18F128.h: 754: static volatile bit PB1OD @ ((unsigned)&PBOD*8)+1;
+"755
+[v _PB0OD `Vb ~T0 @X0 1 s@31912 ]
+[; ;AD18F128.h: 755: static volatile bit PB0OD @ ((unsigned)&PBOD*8)+0;
+"757
+[v _PA5OD `Vb ~T0 @X0 1 s@31909 ]
+[; ;AD18F128.h: 757: static volatile bit PA5OD @ ((unsigned)&PAOD*8)+5;
+"758
+[v _PA4OD `Vb ~T0 @X0 1 s@31908 ]
+[; ;AD18F128.h: 758: static volatile bit PA4OD @ ((unsigned)&PAOD*8)+4;
+"759
+[v _PA3OD `Vb ~T0 @X0 1 s@31907 ]
+[; ;AD18F128.h: 759: static volatile bit PA3OD @ ((unsigned)&PAOD*8)+3;
+"760
+[v _PA2OD `Vb ~T0 @X0 1 s@31906 ]
+[; ;AD18F128.h: 760: static volatile bit PA2OD @ ((unsigned)&PAOD*8)+2;
+"761
+[v _PA1OD `Vb ~T0 @X0 1 s@31905 ]
+[; ;AD18F128.h: 761: static volatile bit PA1OD @ ((unsigned)&PAOD*8)+1;
+"762
+[v _PA0OD `Vb ~T0 @X0 1 s@31904 ]
+[; ;AD18F128.h: 762: static volatile bit PA0OD @ ((unsigned)&PAOD*8)+0;
+"765
+[v _TRISA5 `Vb ~T0 @X0 1 s@31877 ]
+[; ;AD18F128.h: 765: static volatile bit TRISA5 @ ((unsigned)&TRISA*8)+5;
+"766
+[v _TRISA4 `Vb ~T0 @X0 1 s@31876 ]
+[; ;AD18F128.h: 766: static volatile bit TRISA4 @ ((unsigned)&TRISA*8)+4;
+"767
+[v _TRISA3 `Vb ~T0 @X0 1 s@31875 ]
+[; ;AD18F128.h: 767: static volatile bit TRISA3 @ ((unsigned)&TRISA*8)+3;
+"768
+[v _TRISA2 `Vb ~T0 @X0 1 s@31874 ]
+[; ;AD18F128.h: 768: static volatile bit TRISA2 @ ((unsigned)&TRISA*8)+2;
+"769
+[v _TRISA1 `Vb ~T0 @X0 1 s@31873 ]
+[; ;AD18F128.h: 769: static volatile bit TRISA1 @ ((unsigned)&TRISA*8)+1;
+"770
+[v _TRISA0 `Vb ~T0 @X0 1 s@31872 ]
+[; ;AD18F128.h: 770: static volatile bit TRISA0 @ ((unsigned)&TRISA*8)+0;
+"773
+[v _TRISB5 `Vb ~T0 @X0 1 s@31885 ]
+[; ;AD18F128.h: 773: static volatile bit TRISB5 @ ((unsigned)&TRISB*8)+5;
+"774
+[v _TRISB4 `Vb ~T0 @X0 1 s@31884 ]
+[; ;AD18F128.h: 774: static volatile bit TRISB4 @ ((unsigned)&TRISB*8)+4;
+"775
+[v _TRISB3 `Vb ~T0 @X0 1 s@31883 ]
+[; ;AD18F128.h: 775: static volatile bit TRISB3 @ ((unsigned)&TRISB*8)+3;
+"776
+[v _TRISB2 `Vb ~T0 @X0 1 s@31882 ]
+[; ;AD18F128.h: 776: static volatile bit TRISB2 @ ((unsigned)&TRISB*8)+2;
+"777
+[v _TRISB1 `Vb ~T0 @X0 1 s@31881 ]
+[; ;AD18F128.h: 777: static volatile bit TRISB1 @ ((unsigned)&TRISB*8)+1;
+"778
+[v _TRISB0 `Vb ~T0 @X0 1 s@31880 ]
+[; ;AD18F128.h: 778: static volatile bit TRISB0 @ ((unsigned)&TRISB*8)+0;
+"780
+[v _TRISC5 `Vb ~T0 @X0 1 s@31893 ]
+[; ;AD18F128.h: 780: static volatile bit TRISC5 @ ((unsigned)&TRISC*8)+5;
+"781
+[v _TRISC4 `Vb ~T0 @X0 1 s@31892 ]
+[; ;AD18F128.h: 781: static volatile bit TRISC4 @ ((unsigned)&TRISC*8)+4;
+"782
+[v _TRISC3 `Vb ~T0 @X0 1 s@31891 ]
+[; ;AD18F128.h: 782: static volatile bit TRISC3 @ ((unsigned)&TRISC*8)+3;
+"783
+[v _TRISC2 `Vb ~T0 @X0 1 s@31890 ]
+[; ;AD18F128.h: 783: static volatile bit TRISC2 @ ((unsigned)&TRISC*8)+2;
+"784
+[v _TRISC1 `Vb ~T0 @X0 1 s@31889 ]
+[; ;AD18F128.h: 784: static volatile bit TRISC1 @ ((unsigned)&TRISC*8)+1;
+"785
+[v _TRISC0 `Vb ~T0 @X0 1 s@31888 ]
+[; ;AD18F128.h: 785: static volatile bit TRISC0 @ ((unsigned)&TRISC*8)+0;
+"787
+[v _TRISD3 `Vb ~T0 @X0 1 s@31899 ]
+[; ;AD18F128.h: 787: static volatile bit TRISD3 @ ((unsigned)&TRISD*8)+3;
+"788
+[v _TRISD2 `Vb ~T0 @X0 1 s@31898 ]
+[; ;AD18F128.h: 788: static volatile bit TRISD2 @ ((unsigned)&TRISD*8)+2;
+"789
+[v _TRISD1 `Vb ~T0 @X0 1 s@31897 ]
+[; ;AD18F128.h: 789: static volatile bit TRISD1 @ ((unsigned)&TRISD*8)+1;
+"790
+[v _TRISD0 `Vb ~T0 @X0 1 s@31896 ]
+[; ;AD18F128.h: 790: static volatile bit TRISD0 @ ((unsigned)&TRISD*8)+0;
+"793
+[v _PD3PD `Vb ~T0 @X0 1 s@31867 ]
+[; ;AD18F128.h: 793: static volatile bit PD3PD @ ((unsigned)&PDPD*8)+3;
+"794
+[v _PD2PD `Vb ~T0 @X0 1 s@31866 ]
+[; ;AD18F128.h: 794: static volatile bit PD2PD @ ((unsigned)&PDPD*8)+2;
+"795
+[v _PD1PD `Vb ~T0 @X0 1 s@31865 ]
+[; ;AD18F128.h: 795: static volatile bit PD1PD @ ((unsigned)&PDPD*8)+1;
+"796
+[v _PD0PD `Vb ~T0 @X0 1 s@31864 ]
+[; ;AD18F128.h: 796: static volatile bit PD0PD @ ((unsigned)&PDPD*8)+0;
+"798
+[v _PC5PD `Vb ~T0 @X0 1 s@31861 ]
+[; ;AD18F128.h: 798: static volatile bit PC5PD @ ((unsigned)&PCPD*8)+5;
+"799
+[v _PC4PD `Vb ~T0 @X0 1 s@31860 ]
+[; ;AD18F128.h: 799: static volatile bit PC4PD @ ((unsigned)&PCPD*8)+4;
+"800
+[v _PC3PD `Vb ~T0 @X0 1 s@31859 ]
+[; ;AD18F128.h: 800: static volatile bit PC3PD @ ((unsigned)&PCPD*8)+3;
+"801
+[v _PC2PD `Vb ~T0 @X0 1 s@31858 ]
+[; ;AD18F128.h: 801: static volatile bit PC2PD @ ((unsigned)&PCPD*8)+2;
+"802
+[v _PC1PD `Vb ~T0 @X0 1 s@31857 ]
+[; ;AD18F128.h: 802: static volatile bit PC1PD @ ((unsigned)&PCPD*8)+1;
+"803
+[v _PC0PD `Vb ~T0 @X0 1 s@31856 ]
+[; ;AD18F128.h: 803: static volatile bit PC0PD @ ((unsigned)&PCPD*8)+0;
+"805
+[v _PB5PD `Vb ~T0 @X0 1 s@31853 ]
+[; ;AD18F128.h: 805: static volatile bit PB5PD @ ((unsigned)&PBPD*8)+5;
+"806
+[v _PB4PD `Vb ~T0 @X0 1 s@31852 ]
+[; ;AD18F128.h: 806: static volatile bit PB4PD @ ((unsigned)&PBPD*8)+4;
+"807
+[v _PB3PD `Vb ~T0 @X0 1 s@31851 ]
+[; ;AD18F128.h: 807: static volatile bit PB3PD @ ((unsigned)&PBPD*8)+3;
+"808
+[v _PB2PD `Vb ~T0 @X0 1 s@31850 ]
+[; ;AD18F128.h: 808: static volatile bit PB2PD @ ((unsigned)&PBPD*8)+2;
+"809
+[v _PB1PD `Vb ~T0 @X0 1 s@31849 ]
+[; ;AD18F128.h: 809: static volatile bit PB1PD @ ((unsigned)&PBPD*8)+1;
+"810
+[v _PB0PD `Vb ~T0 @X0 1 s@31848 ]
+[; ;AD18F128.h: 810: static volatile bit PB0PD @ ((unsigned)&PBPD*8)+0;
+"812
+[v _PA5PD `Vb ~T0 @X0 1 s@31845 ]
+[; ;AD18F128.h: 812: static volatile bit PA5PD @ ((unsigned)&PAPD*8)+5;
+"813
+[v _PA4PD `Vb ~T0 @X0 1 s@31844 ]
+[; ;AD18F128.h: 813: static volatile bit PA4PD @ ((unsigned)&PAPD*8)+4;
+"814
+[v _PA3PD `Vb ~T0 @X0 1 s@31843 ]
+[; ;AD18F128.h: 814: static volatile bit PA3PD @ ((unsigned)&PAPD*8)+3;
+"815
+[v _PA2PD `Vb ~T0 @X0 1 s@31842 ]
+[; ;AD18F128.h: 815: static volatile bit PA2PD @ ((unsigned)&PAPD*8)+2;
+"816
+[v _PA1PD `Vb ~T0 @X0 1 s@31841 ]
+[; ;AD18F128.h: 816: static volatile bit PA1PD @ ((unsigned)&PAPD*8)+1;
+"817
+[v _PA0PD `Vb ~T0 @X0 1 s@31840 ]
+[; ;AD18F128.h: 817: static volatile bit PA0PD @ ((unsigned)&PAPD*8)+0;
+"820
+[v _PIND3 `Vb ~T0 @X0 1 s@31835 ]
+[; ;AD18F128.h: 820: static volatile bit PIND3 @ ((unsigned)&PIND*8)+3;
+"821
+[v _PIND2 `Vb ~T0 @X0 1 s@31834 ]
+[; ;AD18F128.h: 821: static volatile bit PIND2 @ ((unsigned)&PIND*8)+2;
+"822
+[v _PIND1 `Vb ~T0 @X0 1 s@31833 ]
+[; ;AD18F128.h: 822: static volatile bit PIND1 @ ((unsigned)&PIND*8)+1;
+"823
+[v _PIND0 `Vb ~T0 @X0 1 s@31832 ]
+[; ;AD18F128.h: 823: static volatile bit PIND0 @ ((unsigned)&PIND*8)+0;
+"825
+[v _PINC5 `Vb ~T0 @X0 1 s@31829 ]
+[; ;AD18F128.h: 825: static volatile bit PINC5 @ ((unsigned)&PINC*8)+5;
+"826
+[v _PINC4 `Vb ~T0 @X0 1 s@31828 ]
+[; ;AD18F128.h: 826: static volatile bit PINC4 @ ((unsigned)&PINC*8)+4;
+"827
+[v _PINC3 `Vb ~T0 @X0 1 s@31827 ]
+[; ;AD18F128.h: 827: static volatile bit PINC3 @ ((unsigned)&PINC*8)+3;
+"828
+[v _PINC2 `Vb ~T0 @X0 1 s@31826 ]
+[; ;AD18F128.h: 828: static volatile bit PINC2 @ ((unsigned)&PINC*8)+2;
+"829
+[v _PINC1 `Vb ~T0 @X0 1 s@31825 ]
+[; ;AD18F128.h: 829: static volatile bit PINC1 @ ((unsigned)&PINC*8)+1;
+"830
+[v _PINC0 `Vb ~T0 @X0 1 s@31824 ]
+[; ;AD18F128.h: 830: static volatile bit PINC0 @ ((unsigned)&PINC*8)+0;
+"832
+[v _PINB5 `Vb ~T0 @X0 1 s@31821 ]
+[; ;AD18F128.h: 832: static volatile bit PINB5 @ ((unsigned)&PINB*8)+5;
+"833
+[v _PINB4 `Vb ~T0 @X0 1 s@31820 ]
+[; ;AD18F128.h: 833: static volatile bit PINB4 @ ((unsigned)&PINB*8)+4;
+"834
+[v _PINB3 `Vb ~T0 @X0 1 s@31819 ]
+[; ;AD18F128.h: 834: static volatile bit PINB3 @ ((unsigned)&PINB*8)+3;
+"835
+[v _PINB2 `Vb ~T0 @X0 1 s@31818 ]
+[; ;AD18F128.h: 835: static volatile bit PINB2 @ ((unsigned)&PINB*8)+2;
+"836
+[v _PINB1 `Vb ~T0 @X0 1 s@31817 ]
+[; ;AD18F128.h: 836: static volatile bit PINB1 @ ((unsigned)&PINB*8)+1;
+"837
+[v _PINB0 `Vb ~T0 @X0 1 s@31816 ]
+[; ;AD18F128.h: 837: static volatile bit PINB0 @ ((unsigned)&PINB*8)+0;
+"839
+[v _PINA5 `Vb ~T0 @X0 1 s@31813 ]
+[; ;AD18F128.h: 839: static volatile bit PINA5 @ ((unsigned)&PINA*8)+5;
+"840
+[v _PINA4 `Vb ~T0 @X0 1 s@31812 ]
+[; ;AD18F128.h: 840: static volatile bit PINA4 @ ((unsigned)&PINA*8)+4;
+"841
+[v _PINA3 `Vb ~T0 @X0 1 s@31811 ]
+[; ;AD18F128.h: 841: static volatile bit PINA3 @ ((unsigned)&PINA*8)+3;
+"842
+[v _PINA2 `Vb ~T0 @X0 1 s@31810 ]
+[; ;AD18F128.h: 842: static volatile bit PINA2 @ ((unsigned)&PINA*8)+2;
+"843
+[v _PINA1 `Vb ~T0 @X0 1 s@31809 ]
+[; ;AD18F128.h: 843: static volatile bit PINA1 @ ((unsigned)&PINA*8)+1;
+"844
+[v _PINA0 `Vb ~T0 @X0 1 s@31808 ]
+[; ;AD18F128.h: 844: static volatile bit PINA0 @ ((unsigned)&PINA*8)+0;
+"846
+[v _PD3PU `Vb ~T0 @X0 1 s@31803 ]
+[; ;AD18F128.h: 846: static volatile bit PD3PU @ ((unsigned)&PDPU*8)+3;
+"847
+[v _PD2PU `Vb ~T0 @X0 1 s@31802 ]
+[; ;AD18F128.h: 847: static volatile bit PD2PU @ ((unsigned)&PDPU*8)+2;
+"848
+[v _PD1PU `Vb ~T0 @X0 1 s@31801 ]
+[; ;AD18F128.h: 848: static volatile bit PD1PU @ ((unsigned)&PDPU*8)+1;
+"849
+[v _PD0PU `Vb ~T0 @X0 1 s@31800 ]
+[; ;AD18F128.h: 849: static volatile bit PD0PU @ ((unsigned)&PDPU*8)+0;
+"851
+[v _PC5PU `Vb ~T0 @X0 1 s@31797 ]
+[; ;AD18F128.h: 851: static volatile bit PC5PU @ ((unsigned)&PCPU*8)+5;
+"852
+[v _PC4PU `Vb ~T0 @X0 1 s@31796 ]
+[; ;AD18F128.h: 852: static volatile bit PC4PU @ ((unsigned)&PCPU*8)+4;
+"853
+[v _PC3PU `Vb ~T0 @X0 1 s@31795 ]
+[; ;AD18F128.h: 853: static volatile bit PC3PU @ ((unsigned)&PCPU*8)+3;
+"854
+[v _PC2PU `Vb ~T0 @X0 1 s@31794 ]
+[; ;AD18F128.h: 854: static volatile bit PC2PU @ ((unsigned)&PCPU*8)+2;
+"855
+[v _PC1PU `Vb ~T0 @X0 1 s@31793 ]
+[; ;AD18F128.h: 855: static volatile bit PC1PU @ ((unsigned)&PCPU*8)+1;
+"856
+[v _PC0PU `Vb ~T0 @X0 1 s@31792 ]
+[; ;AD18F128.h: 856: static volatile bit PC0PU @ ((unsigned)&PCPU*8)+0;
+"858
+[v _PB5PU `Vb ~T0 @X0 1 s@31789 ]
+[; ;AD18F128.h: 858: static volatile bit PB5PU @ ((unsigned)&PBPU*8)+5;
+"859
+[v _PB4PU `Vb ~T0 @X0 1 s@31788 ]
+[; ;AD18F128.h: 859: static volatile bit PB4PU @ ((unsigned)&PBPU*8)+4;
+"860
+[v _PB3PU `Vb ~T0 @X0 1 s@31787 ]
+[; ;AD18F128.h: 860: static volatile bit PB3PU @ ((unsigned)&PBPU*8)+3;
+"861
+[v _PB2PU `Vb ~T0 @X0 1 s@31786 ]
+[; ;AD18F128.h: 861: static volatile bit PB2PU @ ((unsigned)&PBPU*8)+2;
+"862
+[v _PB1PU `Vb ~T0 @X0 1 s@31785 ]
+[; ;AD18F128.h: 862: static volatile bit PB1PU @ ((unsigned)&PBPU*8)+1;
+"863
+[v _PB0PU `Vb ~T0 @X0 1 s@31784 ]
+[; ;AD18F128.h: 863: static volatile bit PB0PU @ ((unsigned)&PBPU*8)+0;
+"865
+[v _PA5PU `Vb ~T0 @X0 1 s@31781 ]
+[; ;AD18F128.h: 865: static volatile bit PA5PU @ ((unsigned)&PAPU*8)+5;
+"866
+[v _PA4PU `Vb ~T0 @X0 1 s@31780 ]
+[; ;AD18F128.h: 866: static volatile bit PA4PU @ ((unsigned)&PAPU*8)+4;
+"867
+[v _PA3PU `Vb ~T0 @X0 1 s@31779 ]
+[; ;AD18F128.h: 867: static volatile bit PA3PU @ ((unsigned)&PAPU*8)+3;
+"868
+[v _PA2PU `Vb ~T0 @X0 1 s@31778 ]
+[; ;AD18F128.h: 868: static volatile bit PA2PU @ ((unsigned)&PAPU*8)+2;
+"869
+[v _PA1PU `Vb ~T0 @X0 1 s@31777 ]
+[; ;AD18F128.h: 869: static volatile bit PA1PU @ ((unsigned)&PAPU*8)+1;
+"870
+[v _PA0PU `Vb ~T0 @X0 1 s@31776 ]
+[; ;AD18F128.h: 870: static volatile bit PA0PU @ ((unsigned)&PAPU*8)+0;
+"872
+[v _PD3 `Vb ~T0 @X0 1 s@31771 ]
+[; ;AD18F128.h: 872: static volatile bit PD3 @ ((unsigned)&PORTD*8)+3;
+"873
+[v _PD2 `Vb ~T0 @X0 1 s@31770 ]
+[; ;AD18F128.h: 873: static volatile bit PD2 @ ((unsigned)&PORTD*8)+2;
+"874
+[v _PD1 `Vb ~T0 @X0 1 s@31769 ]
+[; ;AD18F128.h: 874: static volatile bit PD1 @ ((unsigned)&PORTD*8)+1;
+"875
+[v _PD0 `Vb ~T0 @X0 1 s@31768 ]
+[; ;AD18F128.h: 875: static volatile bit PD0 @ ((unsigned)&PORTD*8)+0;
+"877
+[v _PC5 `Vb ~T0 @X0 1 s@31765 ]
+[; ;AD18F128.h: 877: static volatile bit PC5 @ ((unsigned)&PORTC*8)+5;
+"878
+[v _PC4 `Vb ~T0 @X0 1 s@31764 ]
+[; ;AD18F128.h: 878: static volatile bit PC4 @ ((unsigned)&PORTC*8)+4;
+"879
+[v _PC3 `Vb ~T0 @X0 1 s@31763 ]
+[; ;AD18F128.h: 879: static volatile bit PC3 @ ((unsigned)&PORTC*8)+3;
+"880
+[v _PC2 `Vb ~T0 @X0 1 s@31762 ]
+[; ;AD18F128.h: 880: static volatile bit PC2 @ ((unsigned)&PORTC*8)+2;
+"881
+[v _PC1 `Vb ~T0 @X0 1 s@31761 ]
+[; ;AD18F128.h: 881: static volatile bit PC1 @ ((unsigned)&PORTC*8)+1;
+"882
+[v _PC0 `Vb ~T0 @X0 1 s@31760 ]
+[; ;AD18F128.h: 882: static volatile bit PC0 @ ((unsigned)&PORTC*8)+0;
+"884
+[v _PB5 `Vb ~T0 @X0 1 s@31757 ]
+[; ;AD18F128.h: 884: static volatile bit PB5 @ ((unsigned)&PORTB*8)+5;
+"885
+[v _PB4 `Vb ~T0 @X0 1 s@31756 ]
+[; ;AD18F128.h: 885: static volatile bit PB4 @ ((unsigned)&PORTB*8)+4;
+"886
+[v _PB3 `Vb ~T0 @X0 1 s@31755 ]
+[; ;AD18F128.h: 886: static volatile bit PB3 @ ((unsigned)&PORTB*8)+3;
+"887
+[v _PB2 `Vb ~T0 @X0 1 s@31754 ]
+[; ;AD18F128.h: 887: static volatile bit PB2 @ ((unsigned)&PORTB*8)+2;
+"888
+[v _PB1 `Vb ~T0 @X0 1 s@31753 ]
+[; ;AD18F128.h: 888: static volatile bit PB1 @ ((unsigned)&PORTB*8)+1;
+"889
+[v _PB0 `Vb ~T0 @X0 1 s@31752 ]
+[; ;AD18F128.h: 889: static volatile bit PB0 @ ((unsigned)&PORTB*8)+0;
+"891
+[v _PA5 `Vb ~T0 @X0 1 s@31749 ]
+[; ;AD18F128.h: 891: static volatile bit PA5 @ ((unsigned)&PORTA*8)+5;
+"892
+[v _PA4 `Vb ~T0 @X0 1 s@31748 ]
+[; ;AD18F128.h: 892: static volatile bit PA4 @ ((unsigned)&PORTA*8)+4;
+"893
+[v _PA3 `Vb ~T0 @X0 1 s@31747 ]
+[; ;AD18F128.h: 893: static volatile bit PA3 @ ((unsigned)&PORTA*8)+3;
+"894
+[v _PA2 `Vb ~T0 @X0 1 s@31746 ]
+[; ;AD18F128.h: 894: static volatile bit PA2 @ ((unsigned)&PORTA*8)+2;
+"895
+[v _PA1 `Vb ~T0 @X0 1 s@31745 ]
+[; ;AD18F128.h: 895: static volatile bit PA1 @ ((unsigned)&PORTA*8)+1;
+"896
+[v _PA0 `Vb ~T0 @X0 1 s@31744 ]
+[; ;AD18F128.h: 896: static volatile bit PA0 @ ((unsigned)&PORTA*8)+0;
+"898
+[v _PDCUR `Vb ~T0 @X0 1 s@31403 ]
+[; ;AD18F128.h: 898: static volatile bit PDCUR @ ((unsigned)&CURCON*8)+3;
+"899
+[v _PCCUR `Vb ~T0 @X0 1 s@31402 ]
+[; ;AD18F128.h: 899: static volatile bit PCCUR @ ((unsigned)&CURCON*8)+2;
+"900
+[v _PBCUR `Vb ~T0 @X0 1 s@31401 ]
+[; ;AD18F128.h: 900: static volatile bit PBCUR @ ((unsigned)&CURCON*8)+1;
+"901
+[v _PACUR `Vb ~T0 @X0 1 s@31400 ]
+[; ;AD18F128.h: 901: static volatile bit PACUR @ ((unsigned)&CURCON*8)+0;
+"904
+[v _OP1ON `Vb ~T0 @X0 1 s@31719 ]
+[; ;AD18F128.h: 904: static volatile bit OP1ON @ ((unsigned)&OP1CON0*8)+7;
+"905
+[v _EX1 `Vb ~T0 @X0 1 s@31718 ]
+[; ;AD18F128.h: 905: static volatile bit EX1 @ ((unsigned)&OP1CON0*8)+6;
+"906
+[v _A1NS1 `Vb ~T0 @X0 1 s@31717 ]
+[; ;AD18F128.h: 906: static volatile bit A1NS1 @ ((unsigned)&OP1CON0*8)+5;
+"907
+[v _PCH12 `Vb ~T0 @X0 1 s@31716 ]
+[; ;AD18F128.h: 907: static volatile bit PCH12 @ ((unsigned)&OP1CON0*8)+4;
+"908
+[v _PCH11 `Vb ~T0 @X0 1 s@31715 ]
+[; ;AD18F128.h: 908: static volatile bit PCH11 @ ((unsigned)&OP1CON0*8)+3;
+"909
+[v _PCH10 `Vb ~T0 @X0 1 s@31714 ]
+[; ;AD18F128.h: 909: static volatile bit PCH10 @ ((unsigned)&OP1CON0*8)+2;
+"910
+[v _NCH11 `Vb ~T0 @X0 1 s@31713 ]
+[; ;AD18F128.h: 910: static volatile bit NCH11 @ ((unsigned)&OP1CON0*8)+1;
+"911
+[v _NCH10 `Vb ~T0 @X0 1 s@31712 ]
+[; ;AD18F128.h: 911: static volatile bit NCH10 @ ((unsigned)&OP1CON0*8)+0;
+"913
+[v _OP1OUT `Vb ~T0 @X0 1 s@31711 ]
+[; ;AD18F128.h: 913: static volatile bit OP1OUT @ ((unsigned)&OP1CON1*8)+7;
+"914
+[v _OUT1EN1 `Vb ~T0 @X0 1 s@31710 ]
+[; ;AD18F128.h: 914: static volatile bit OUT1EN1 @ ((unsigned)&OP1CON1*8)+6;
+"915
+[v _AN_AVSS1 `Vb ~T0 @X0 1 s@31709 ]
+[; ;AD18F128.h: 915: static volatile bit AN_AVSS1 @ ((unsigned)&OP1CON1*8)+5;
+"916
+[v _A1O2N1 `Vb ~T0 @X0 1 s@31708 ]
+[; ;AD18F128.h: 916: static volatile bit A1O2N1 @ ((unsigned)&OP1CON1*8)+4;
+"917
+[v _PGAEN1 `Vb ~T0 @X0 1 s@31707 ]
+[; ;AD18F128.h: 917: static volatile bit PGAEN1 @ ((unsigned)&OP1CON1*8)+3;
+"918
+[v _OP1POS `Vb ~T0 @X0 1 s@31706 ]
+[; ;AD18F128.h: 918: static volatile bit OP1POS @ ((unsigned)&OP1CON1*8)+2;
+"919
+[v _CMPMODE1 `Vb ~T0 @X0 1 s@31705 ]
+[; ;AD18F128.h: 919: static volatile bit CMPMODE1 @ ((unsigned)&OP1CON1*8)+1;
+"920
+[v _OUT0EN1 `Vb ~T0 @X0 1 s@31704 ]
+[; ;AD18F128.h: 920: static volatile bit OUT0EN1 @ ((unsigned)&OP1CON1*8)+0;
+"922
+[v _FILTER14 `Vb ~T0 @X0 1 s@31703 ]
+[; ;AD18F128.h: 922: static volatile bit FILTER14 @ ((unsigned)&OP1CON2*8)+7;
+"923
+[v _FILTER13 `Vb ~T0 @X0 1 s@31702 ]
+[; ;AD18F128.h: 923: static volatile bit FILTER13 @ ((unsigned)&OP1CON2*8)+6;
+"924
+[v _FILTER12 `Vb ~T0 @X0 1 s@31701 ]
+[; ;AD18F128.h: 924: static volatile bit FILTER12 @ ((unsigned)&OP1CON2*8)+5;
+"925
+[v _FILTER11 `Vb ~T0 @X0 1 s@31700 ]
+[; ;AD18F128.h: 925: static volatile bit FILTER11 @ ((unsigned)&OP1CON2*8)+4;
+"926
+[v _FILTER10 `Vb ~T0 @X0 1 s@31699 ]
+[; ;AD18F128.h: 926: static volatile bit FILTER10 @ ((unsigned)&OP1CON2*8)+3;
+"927
+[v _OP1A2DEN `Vb ~T0 @X0 1 s@31698 ]
+[; ;AD18F128.h: 927: static volatile bit OP1A2DEN @ ((unsigned)&OP1CON2*8)+2;
+"928
+[v _OP1PGA1 `Vb ~T0 @X0 1 s@31697 ]
+[; ;AD18F128.h: 928: static volatile bit OP1PGA1 @ ((unsigned)&OP1CON2*8)+1;
+"929
+[v _OP1PGA0 `Vb ~T0 @X0 1 s@31696 ]
+[; ;AD18F128.h: 929: static volatile bit OP1PGA0 @ ((unsigned)&OP1CON2*8)+0;
+"931
+[v _OP1CSEL3 `Vb ~T0 @X0 1 s@31695 ]
+[; ;AD18F128.h: 931: static volatile bit OP1CSEL3 @ ((unsigned)&OP1CON3*8)+7;
+"932
+[v _OP1CSEL2 `Vb ~T0 @X0 1 s@31694 ]
+[; ;AD18F128.h: 932: static volatile bit OP1CSEL2 @ ((unsigned)&OP1CON3*8)+6;
+"933
+[v _OP1CSEL1 `Vb ~T0 @X0 1 s@31693 ]
+[; ;AD18F128.h: 933: static volatile bit OP1CSEL1 @ ((unsigned)&OP1CON3*8)+5;
+"934
+[v _OP1CSEL0 `Vb ~T0 @X0 1 s@31692 ]
+[; ;AD18F128.h: 934: static volatile bit OP1CSEL0 @ ((unsigned)&OP1CON3*8)+4;
+"935
+[v _OP1_HYS_EN `Vb ~T0 @X0 1 s@31691 ]
+[; ;AD18F128.h: 935: static volatile bit OP1_HYS_EN @ ((unsigned)&OP1CON3*8)+3;
+"936
+[v _A1NS1B `Vb ~T0 @X0 1 s@31690 ]
+[; ;AD18F128.h: 936: static volatile bit A1NS1B @ ((unsigned)&OP1CON3*8)+2;
+"937
+[v _PGAENB `Vb ~T0 @X0 1 s@31689 ]
+[; ;AD18F128.h: 937: static volatile bit PGAENB @ ((unsigned)&OP1CON3*8)+1;
+"938
+[v _OP1PGA2 `Vb ~T0 @X0 1 s@31688 ]
+[; ;AD18F128.h: 938: static volatile bit OP1PGA2 @ ((unsigned)&OP1CON3*8)+0;
+"940
+[v _OP1_SW1 `Vb ~T0 @X0 1 s@31415 ]
+[; ;AD18F128.h: 940: static volatile bit OP1_SW1 @ ((unsigned)&OP1CON4*8)+7;
+"941
+[v _OP1_OFFSETEN `Vb ~T0 @X0 1 s@31414 ]
+[; ;AD18F128.h: 941: static volatile bit OP1_OFFSETEN @ ((unsigned)&OP1CON4*8)+6;
+"942
+[v _OP1_OFFSET5 `Vb ~T0 @X0 1 s@31413 ]
+[; ;AD18F128.h: 942: static volatile bit OP1_OFFSET5 @ ((unsigned)&OP1CON4*8)+5;
+"943
+[v _OP1_OFFSET4 `Vb ~T0 @X0 1 s@31412 ]
+[; ;AD18F128.h: 943: static volatile bit OP1_OFFSET4 @ ((unsigned)&OP1CON4*8)+4;
+"944
+[v _OP1_OFFSET3 `Vb ~T0 @X0 1 s@31411 ]
+[; ;AD18F128.h: 944: static volatile bit OP1_OFFSET3 @ ((unsigned)&OP1CON4*8)+3;
+"945
+[v _OP1_OFFSET2 `Vb ~T0 @X0 1 s@31410 ]
+[; ;AD18F128.h: 945: static volatile bit OP1_OFFSET2 @ ((unsigned)&OP1CON4*8)+2;
+"946
+[v _OP1_OFFSET1 `Vb ~T0 @X0 1 s@31409 ]
+[; ;AD18F128.h: 946: static volatile bit OP1_OFFSET1 @ ((unsigned)&OP1CON4*8)+1;
+"947
+[v _OP1_OFFSET0 `Vb ~T0 @X0 1 s@31408 ]
+[; ;AD18F128.h: 947: static volatile bit OP1_OFFSET0 @ ((unsigned)&OP1CON4*8)+0;
+"949
+[v _CMP0EN `Vb ~T0 @X0 1 s@31687 ]
+[; ;AD18F128.h: 949: static volatile bit CMP0EN @ ((unsigned)&CMP0CON*8)+7;
+"950
+[v _CMP0OUT `Vb ~T0 @X0 1 s@31686 ]
+[; ;AD18F128.h: 950: static volatile bit CMP0OUT @ ((unsigned)&CMP0CON*8)+6;
+"951
+[v _CMP0POS `Vb ~T0 @X0 1 s@31685 ]
+[; ;AD18F128.h: 951: static volatile bit CMP0POS @ ((unsigned)&CMP0CON*8)+5;
+"952
+[v _CMP0PCH2 `Vb ~T0 @X0 1 s@31684 ]
+[; ;AD18F128.h: 952: static volatile bit CMP0PCH2 @ ((unsigned)&CMP0CON*8)+4;
+"953
+[v _CMP0PCH1 `Vb ~T0 @X0 1 s@31683 ]
+[; ;AD18F128.h: 953: static volatile bit CMP0PCH1 @ ((unsigned)&CMP0CON*8)+3;
+"954
+[v _CMP0PCH0 `Vb ~T0 @X0 1 s@31682 ]
+[; ;AD18F128.h: 954: static volatile bit CMP0PCH0 @ ((unsigned)&CMP0CON*8)+2;
+"955
+[v _CMP0NCH1 `Vb ~T0 @X0 1 s@31681 ]
+[; ;AD18F128.h: 955: static volatile bit CMP0NCH1 @ ((unsigned)&CMP0CON*8)+1;
+"956
+[v _CMP0NCH0 `Vb ~T0 @X0 1 s@31680 ]
+[; ;AD18F128.h: 956: static volatile bit CMP0NCH0 @ ((unsigned)&CMP0CON*8)+0;
+"958
+[v _CMP1EN `Vb ~T0 @X0 1 s@31679 ]
+[; ;AD18F128.h: 958: static volatile bit CMP1EN @ ((unsigned)&CMP1CON*8)+7;
+"959
+[v _CMP1OUT `Vb ~T0 @X0 1 s@31678 ]
+[; ;AD18F128.h: 959: static volatile bit CMP1OUT @ ((unsigned)&CMP1CON*8)+6;
+"960
+[v _CMP1POS `Vb ~T0 @X0 1 s@31677 ]
+[; ;AD18F128.h: 960: static volatile bit CMP1POS @ ((unsigned)&CMP1CON*8)+5;
+"961
+[v _CMP1PCH2 `Vb ~T0 @X0 1 s@31676 ]
+[; ;AD18F128.h: 961: static volatile bit CMP1PCH2 @ ((unsigned)&CMP1CON*8)+4;
+"962
+[v _CMP1PCH1 `Vb ~T0 @X0 1 s@31675 ]
+[; ;AD18F128.h: 962: static volatile bit CMP1PCH1 @ ((unsigned)&CMP1CON*8)+3;
+"963
+[v _CMP1PCH0 `Vb ~T0 @X0 1 s@31674 ]
+[; ;AD18F128.h: 963: static volatile bit CMP1PCH0 @ ((unsigned)&CMP1CON*8)+2;
+"964
+[v _CMP1NCH1 `Vb ~T0 @X0 1 s@31673 ]
+[; ;AD18F128.h: 964: static volatile bit CMP1NCH1 @ ((unsigned)&CMP1CON*8)+1;
+"965
+[v _CMP1NCH0 `Vb ~T0 @X0 1 s@31672 ]
+[; ;AD18F128.h: 965: static volatile bit CMP1NCH0 @ ((unsigned)&CMP1CON*8)+0;
+"967
+[v _CMP2EN `Vb ~T0 @X0 1 s@31743 ]
+[; ;AD18F128.h: 967: static volatile bit CMP2EN @ ((unsigned)&CMP2CON0*8)+7;
+"968
+[v _CMP2OUT `Vb ~T0 @X0 1 s@31742 ]
+[; ;AD18F128.h: 968: static volatile bit CMP2OUT @ ((unsigned)&CMP2CON0*8)+6;
+"969
+[v _CMP2POS `Vb ~T0 @X0 1 s@31741 ]
+[; ;AD18F128.h: 969: static volatile bit CMP2POS @ ((unsigned)&CMP2CON0*8)+5;
+"970
+[v _C2OUT1EN `Vb ~T0 @X0 1 s@31740 ]
+[; ;AD18F128.h: 970: static volatile bit C2OUT1EN @ ((unsigned)&CMP2CON0*8)+4;
+"971
+[v _C2OUT0EN `Vb ~T0 @X0 1 s@31739 ]
+[; ;AD18F128.h: 971: static volatile bit C2OUT0EN @ ((unsigned)&CMP2CON0*8)+3;
+"972
+[v _CMP2PCH2 `Vb ~T0 @X0 1 s@31738 ]
+[; ;AD18F128.h: 972: static volatile bit CMP2PCH2 @ ((unsigned)&CMP2CON0*8)+2;
+"973
+[v _CMP2PCH1 `Vb ~T0 @X0 1 s@31737 ]
+[; ;AD18F128.h: 973: static volatile bit CMP2PCH1 @ ((unsigned)&CMP2CON0*8)+1;
+"974
+[v _CMP2PCH0 `Vb ~T0 @X0 1 s@31736 ]
+[; ;AD18F128.h: 974: static volatile bit CMP2PCH0 @ ((unsigned)&CMP2CON0*8)+0;
+"976
+[v _CMP2HYSN_VOL1 `Vb ~T0 @X0 1 s@31735 ]
+[; ;AD18F128.h: 976: static volatile bit CMP2HYSN_VOL1 @ ((unsigned)&CMP2CON1*8)+7;
+"977
+[v _CMP2HYSN_VOL0 `Vb ~T0 @X0 1 s@31734 ]
+[; ;AD18F128.h: 977: static volatile bit CMP2HYSN_VOL0 @ ((unsigned)&CMP2CON1*8)+6;
+"978
+[v _CMP2HYSP_VOL1 `Vb ~T0 @X0 1 s@31733 ]
+[; ;AD18F128.h: 978: static volatile bit CMP2HYSP_VOL1 @ ((unsigned)&CMP2CON1*8)+5;
+"979
+[v _CMP2HYSP_VOL0 `Vb ~T0 @X0 1 s@31732 ]
+[; ;AD18F128.h: 979: static volatile bit CMP2HYSP_VOL0 @ ((unsigned)&CMP2CON1*8)+4;
+"980
+[v _CMP2NCH2 `Vb ~T0 @X0 1 s@31730 ]
+[; ;AD18F128.h: 980: static volatile bit CMP2NCH2 @ ((unsigned)&CMP2CON1*8)+2;
+"981
+[v _CMP2NCH1 `Vb ~T0 @X0 1 s@31729 ]
+[; ;AD18F128.h: 981: static volatile bit CMP2NCH1 @ ((unsigned)&CMP2CON1*8)+1;
+"982
+[v _CMP2NCH0 `Vb ~T0 @X0 1 s@31728 ]
+[; ;AD18F128.h: 982: static volatile bit CMP2NCH0 @ ((unsigned)&CMP2CON1*8)+0;
+"984
+[v _CMP1HYSN_VOL1 `Vb ~T0 @X0 1 s@31727 ]
+[; ;AD18F128.h: 984: static volatile bit CMP1HYSN_VOL1 @ ((unsigned)&CMPCON1*8)+7;
+"985
+[v _CMP1HYSN_VOL0 `Vb ~T0 @X0 1 s@31726 ]
+[; ;AD18F128.h: 985: static volatile bit CMP1HYSN_VOL0 @ ((unsigned)&CMPCON1*8)+6;
+"986
+[v _CMP1HYSP_VOL1 `Vb ~T0 @X0 1 s@31725 ]
+[; ;AD18F128.h: 986: static volatile bit CMP1HYSP_VOL1 @ ((unsigned)&CMPCON1*8)+5;
+"987
+[v _CMP1HYSP_VOL0 `Vb ~T0 @X0 1 s@31724 ]
+[; ;AD18F128.h: 987: static volatile bit CMP1HYSP_VOL0 @ ((unsigned)&CMPCON1*8)+4;
+"988
+[v _CMP0HYSN_VOL1 `Vb ~T0 @X0 1 s@31723 ]
+[; ;AD18F128.h: 988: static volatile bit CMP0HYSN_VOL1 @ ((unsigned)&CMPCON1*8)+3;
+"989
+[v _CMP0HYSN_VOL0 `Vb ~T0 @X0 1 s@31722 ]
+[; ;AD18F128.h: 989: static volatile bit CMP0HYSN_VOL0 @ ((unsigned)&CMPCON1*8)+2;
+"990
+[v _CMP0HYSP_VOL1 `Vb ~T0 @X0 1 s@31721 ]
+[; ;AD18F128.h: 990: static volatile bit CMP0HYSP_VOL1 @ ((unsigned)&CMPCON1*8)+1;
+"991
+[v _CMP0HYSP_VOL0 `Vb ~T0 @X0 1 s@31720 ]
+[; ;AD18F128.h: 991: static volatile bit CMP0HYSP_VOL0 @ ((unsigned)&CMPCON1*8)+0;
+"994
+[v _CMPFILTER3 `Vb ~T0 @X0 1 s@31671 ]
+[; ;AD18F128.h: 994: static volatile bit CMPFILTER3 @ ((unsigned)&CMPCON*8)+7;
+"995
+[v _CMPFILTER2 `Vb ~T0 @X0 1 s@31670 ]
+[; ;AD18F128.h: 995: static volatile bit CMPFILTER2 @ ((unsigned)&CMPCON*8)+6;
+"996
+[v _CMPFILTER1 `Vb ~T0 @X0 1 s@31669 ]
+[; ;AD18F128.h: 996: static volatile bit CMPFILTER1 @ ((unsigned)&CMPCON*8)+5;
+"997
+[v _CMPFILTER0 `Vb ~T0 @X0 1 s@31668 ]
+[; ;AD18F128.h: 997: static volatile bit CMPFILTER0 @ ((unsigned)&CMPCON*8)+4;
+"998
+[v _C1OUT1EN `Vb ~T0 @X0 1 s@31667 ]
+[; ;AD18F128.h: 998: static volatile bit C1OUT1EN @ ((unsigned)&CMPCON*8)+3;
+"999
+[v _C1OUT0EN `Vb ~T0 @X0 1 s@31666 ]
+[; ;AD18F128.h: 999: static volatile bit C1OUT0EN @ ((unsigned)&CMPCON*8)+2;
+"1000
+[v _C0OUT1EN `Vb ~T0 @X0 1 s@31665 ]
+[; ;AD18F128.h: 1000: static volatile bit C0OUT1EN @ ((unsigned)&CMPCON*8)+1;
+"1001
+[v _C0OUT0EN `Vb ~T0 @X0 1 s@31664 ]
+[; ;AD18F128.h: 1001: static volatile bit C0OUT0EN @ ((unsigned)&CMPCON*8)+0;
+"1004
+[v _CMP0_OFFSETEN `Vb ~T0 @X0 1 s@31132 ]
+[; ;AD18F128.h: 1004: static volatile bit CMP0_OFFSETEN @ ((unsigned)&CMP0CON2*8)+4;
+"1005
+[v _CMP0_TRIM3 `Vb ~T0 @X0 1 s@31131 ]
+[; ;AD18F128.h: 1005: static volatile bit CMP0_TRIM3 @ ((unsigned)&CMP0CON2*8)+3;
+"1006
+[v _CMP0_TRIM2 `Vb ~T0 @X0 1 s@31130 ]
+[; ;AD18F128.h: 1006: static volatile bit CMP0_TRIM2 @ ((unsigned)&CMP0CON2*8)+2;
+"1007
+[v _CMP0_TRIM1 `Vb ~T0 @X0 1 s@31129 ]
+[; ;AD18F128.h: 1007: static volatile bit CMP0_TRIM1 @ ((unsigned)&CMP0CON2*8)+1;
+"1008
+[v _CMP0_TRIM0 `Vb ~T0 @X0 1 s@31128 ]
+[; ;AD18F128.h: 1008: static volatile bit CMP0_TRIM0 @ ((unsigned)&CMP0CON2*8)+0;
+"1011
+[v _CMP1_OFFSETEN `Vb ~T0 @X0 1 s@31124 ]
+[; ;AD18F128.h: 1011: static volatile bit CMP1_OFFSETEN @ ((unsigned)&CMP1CON2*8)+4;
+"1012
+[v _CMP1_TRIM3 `Vb ~T0 @X0 1 s@31123 ]
+[; ;AD18F128.h: 1012: static volatile bit CMP1_TRIM3 @ ((unsigned)&CMP1CON2*8)+3;
+"1013
+[v _CMP1_TRIM2 `Vb ~T0 @X0 1 s@31122 ]
+[; ;AD18F128.h: 1013: static volatile bit CMP1_TRIM2 @ ((unsigned)&CMP1CON2*8)+2;
+"1014
+[v _CMP1_TRIM1 `Vb ~T0 @X0 1 s@31121 ]
+[; ;AD18F128.h: 1014: static volatile bit CMP1_TRIM1 @ ((unsigned)&CMP1CON2*8)+1;
+"1015
+[v _CMP1_TRIM0 `Vb ~T0 @X0 1 s@31120 ]
+[; ;AD18F128.h: 1015: static volatile bit CMP1_TRIM0 @ ((unsigned)&CMP1CON2*8)+0;
+"1018
+[v _CMP2_OFFSETEN `Vb ~T0 @X0 1 s@31116 ]
+[; ;AD18F128.h: 1018: static volatile bit CMP2_OFFSETEN @ ((unsigned)&CMP2CON2*8)+4;
+"1019
+[v _CMP2_TRIM3 `Vb ~T0 @X0 1 s@31115 ]
+[; ;AD18F128.h: 1019: static volatile bit CMP2_TRIM3 @ ((unsigned)&CMP2CON2*8)+3;
+"1020
+[v _CMP2_TRIM2 `Vb ~T0 @X0 1 s@31114 ]
+[; ;AD18F128.h: 1020: static volatile bit CMP2_TRIM2 @ ((unsigned)&CMP2CON2*8)+2;
+"1021
+[v _CMP2_TRIM1 `Vb ~T0 @X0 1 s@31113 ]
+[; ;AD18F128.h: 1021: static volatile bit CMP2_TRIM1 @ ((unsigned)&CMP2CON2*8)+1;
+"1022
+[v _CMP2_TRIM0 `Vb ~T0 @X0 1 s@31112 ]
+[; ;AD18F128.h: 1022: static volatile bit CMP2_TRIM0 @ ((unsigned)&CMP2CON2*8)+0;
+"1025
+[v _CMP1LV `Vb ~T0 @X0 1 s@30854 ]
+[; ;AD18F128.h: 1025: static volatile bit CMP1LV @ ((unsigned)&CMPCON2*8)+6;
+"1026
+[v _CMP1M1 `Vb ~T0 @X0 1 s@30853 ]
+[; ;AD18F128.h: 1026: static volatile bit CMP1M1 @ ((unsigned)&CMPCON2*8)+5;
+"1027
+[v _CMP1M0 `Vb ~T0 @X0 1 s@30852 ]
+[; ;AD18F128.h: 1027: static volatile bit CMP1M0 @ ((unsigned)&CMPCON2*8)+4;
+"1028
+[v _CMP0LV `Vb ~T0 @X0 1 s@30850 ]
+[; ;AD18F128.h: 1028: static volatile bit CMP0LV @ ((unsigned)&CMPCON2*8)+2;
+"1029
+[v _CMP0M1 `Vb ~T0 @X0 1 s@30849 ]
+[; ;AD18F128.h: 1029: static volatile bit CMP0M1 @ ((unsigned)&CMPCON2*8)+1;
+"1030
+[v _CMP0M0 `Vb ~T0 @X0 1 s@30848 ]
+[; ;AD18F128.h: 1030: static volatile bit CMP0M0 @ ((unsigned)&CMPCON2*8)+0;
+"1033
+[v _CMP2LV `Vb ~T0 @X0 1 s@30842 ]
+[; ;AD18F128.h: 1033: static volatile bit CMP2LV @ ((unsigned)&CMPCON3*8)+2;
+"1034
+[v _CMP2M1 `Vb ~T0 @X0 1 s@30841 ]
+[; ;AD18F128.h: 1034: static volatile bit CMP2M1 @ ((unsigned)&CMPCON3*8)+1;
+"1035
+[v _CMP2M0 `Vb ~T0 @X0 1 s@30840 ]
+[; ;AD18F128.h: 1035: static volatile bit CMP2M0 @ ((unsigned)&CMPCON3*8)+0;
+"1038
+[v _LVDST `Vb ~T0 @X0 1 s@31660 ]
+[; ;AD18F128.h: 1038: static volatile bit LVDST @ ((unsigned)&DACCON*8)+4;
+"1039
+[v _DAC1VREF1 `Vb ~T0 @X0 1 s@31659 ]
+[; ;AD18F128.h: 1039: static volatile bit DAC1VREF1 @ ((unsigned)&DACCON*8)+3;
+"1040
+[v _DAC1VREF0 `Vb ~T0 @X0 1 s@31658 ]
+[; ;AD18F128.h: 1040: static volatile bit DAC1VREF0 @ ((unsigned)&DACCON*8)+2;
+"1041
+[v _DAC0VREF1 `Vb ~T0 @X0 1 s@31657 ]
+[; ;AD18F128.h: 1041: static volatile bit DAC0VREF1 @ ((unsigned)&DACCON*8)+1;
+"1042
+[v _DAC0VREF0 `Vb ~T0 @X0 1 s@31656 ]
+[; ;AD18F128.h: 1042: static volatile bit DAC0VREF0 @ ((unsigned)&DACCON*8)+0;
+"1044
+[v _DAC0EN `Vb ~T0 @X0 1 s@31654 ]
+[; ;AD18F128.h: 1044: static volatile bit DAC0EN @ ((unsigned)&DAC0CON*8)+6;
+"1045
+[v _DAC1EN `Vb ~T0 @X0 1 s@31646 ]
+[; ;AD18F128.h: 1045: static volatile bit DAC1EN @ ((unsigned)&DAC1CON*8)+6;
+"1048
+[v _FVROUTEN `Vb ~T0 @X0 1 s@31639 ]
+[; ;AD18F128.h: 1048: static volatile bit FVROUTEN @ ((unsigned)&FVRCON*8)+7;
+"1049
+[v _FVRPGA `Vb ~T0 @X0 1 s@31638 ]
+[; ;AD18F128.h: 1049: static volatile bit FVRPGA @ ((unsigned)&FVRCON*8)+6;
+"1050
+[v _FVREN `Vb ~T0 @X0 1 s@31637 ]
+[; ;AD18F128.h: 1050: static volatile bit FVREN @ ((unsigned)&FVRCON*8)+5;
+"1051
+[v _FVR_SEL2 `Vb ~T0 @X0 1 s@31634 ]
+[; ;AD18F128.h: 1051: static volatile bit FVR_SEL2 @ ((unsigned)&FVRCON*8)+2;
+"1052
+[v _FVR_SEL1 `Vb ~T0 @X0 1 s@31633 ]
+[; ;AD18F128.h: 1052: static volatile bit FVR_SEL1 @ ((unsigned)&FVRCON*8)+1;
+"1053
+[v _FVR_SEL0 `Vb ~T0 @X0 1 s@31632 ]
+[; ;AD18F128.h: 1053: static volatile bit FVR_SEL0 @ ((unsigned)&FVRCON*8)+0;
+"1056
+[v _FVR_A2D_OUT `Vb ~T0 @X0 1 s@31111 ]
+[; ;AD18F128.h: 1056: static volatile bit FVR_A2D_OUT @ ((unsigned)&FVRCON1*8)+7;
+"1057
+[v _FVRPGA1 `Vb ~T0 @X0 1 s@31110 ]
+[; ;AD18F128.h: 1057: static volatile bit FVRPGA1 @ ((unsigned)&FVRCON1*8)+6;
+"1058
+[v _FVR_OFFSET_EN `Vb ~T0 @X0 1 s@31109 ]
+[; ;AD18F128.h: 1058: static volatile bit FVR_OFFSET_EN @ ((unsigned)&FVRCON1*8)+5;
+"1059
+[v _FVR_TRIM4 `Vb ~T0 @X0 1 s@31108 ]
+[; ;AD18F128.h: 1059: static volatile bit FVR_TRIM4 @ ((unsigned)&FVRCON1*8)+4;
+"1060
+[v _FVR_TRIM3 `Vb ~T0 @X0 1 s@31107 ]
+[; ;AD18F128.h: 1060: static volatile bit FVR_TRIM3 @ ((unsigned)&FVRCON1*8)+3;
+"1061
+[v _FVR_TRIM2 `Vb ~T0 @X0 1 s@31106 ]
+[; ;AD18F128.h: 1061: static volatile bit FVR_TRIM2 @ ((unsigned)&FVRCON1*8)+2;
+"1062
+[v _FVR_TRIM1 `Vb ~T0 @X0 1 s@31105 ]
+[; ;AD18F128.h: 1062: static volatile bit FVR_TRIM1 @ ((unsigned)&FVRCON1*8)+1;
+"1063
+[v _FVR_TRIM0 `Vb ~T0 @X0 1 s@31104 ]
+[; ;AD18F128.h: 1063: static volatile bit FVR_TRIM0 @ ((unsigned)&FVRCON1*8)+0;
+"1068
+[v _LCDEN `Vb ~T0 @X0 1 s@31631 ]
+[; ;AD18F128.h: 1068: static volatile bit LCDEN @ ((unsigned)&LCDCON0*8)+7;
+"1070
+[v _COM7EN `Vb ~T0 @X0 1 s@31623 ]
+[; ;AD18F128.h: 1070: static volatile bit COM7EN @ ((unsigned)&LCDCON1*8)+7;
+"1071
+[v _COM6EN `Vb ~T0 @X0 1 s@31622 ]
+[; ;AD18F128.h: 1071: static volatile bit COM6EN @ ((unsigned)&LCDCON1*8)+6;
+"1072
+[v _COM5EN `Vb ~T0 @X0 1 s@31621 ]
+[; ;AD18F128.h: 1072: static volatile bit COM5EN @ ((unsigned)&LCDCON1*8)+5;
+"1073
+[v _COM4EN `Vb ~T0 @X0 1 s@31620 ]
+[; ;AD18F128.h: 1073: static volatile bit COM4EN @ ((unsigned)&LCDCON1*8)+4;
+"1074
+[v _COM3EN `Vb ~T0 @X0 1 s@31619 ]
+[; ;AD18F128.h: 1074: static volatile bit COM3EN @ ((unsigned)&LCDCON1*8)+3;
+"1075
+[v _COM2EN `Vb ~T0 @X0 1 s@31618 ]
+[; ;AD18F128.h: 1075: static volatile bit COM2EN @ ((unsigned)&LCDCON1*8)+2;
+"1076
+[v _COM1EN `Vb ~T0 @X0 1 s@31617 ]
+[; ;AD18F128.h: 1076: static volatile bit COM1EN @ ((unsigned)&LCDCON1*8)+1;
+"1077
+[v _COM0EN `Vb ~T0 @X0 1 s@31616 ]
+[; ;AD18F128.h: 1077: static volatile bit COM0EN @ ((unsigned)&LCDCON1*8)+0;
+"1080
+[v _LCDCSEL1 `Vb ~T0 @X0 1 s@31615 ]
+[; ;AD18F128.h: 1080: static volatile bit LCDCSEL1 @ ((unsigned)&LCDCON2*8)+7;
+"1081
+[v _LCDCSEL0 `Vb ~T0 @X0 1 s@31614 ]
+[; ;AD18F128.h: 1081: static volatile bit LCDCSEL0 @ ((unsigned)&LCDCON2*8)+6;
+"1083
+[v _COM9EN `Vb ~T0 @X0 1 s@31609 ]
+[; ;AD18F128.h: 1083: static volatile bit COM9EN @ ((unsigned)&LCDCON2*8)+1;
+"1084
+[v _COM8EN `Vb ~T0 @X0 1 s@31608 ]
+[; ;AD18F128.h: 1084: static volatile bit COM8EN @ ((unsigned)&LCDCON2*8)+0;
+"1087
+[v _COM17EN `Vb ~T0 @X0 1 s@31607 ]
+[; ;AD18F128.h: 1087: static volatile bit COM17EN @ ((unsigned)&LCDCON3*8)+7;
+"1088
+[v _COM16EN `Vb ~T0 @X0 1 s@31606 ]
+[; ;AD18F128.h: 1088: static volatile bit COM16EN @ ((unsigned)&LCDCON3*8)+6;
+"1089
+[v _COM15EN `Vb ~T0 @X0 1 s@31605 ]
+[; ;AD18F128.h: 1089: static volatile bit COM15EN @ ((unsigned)&LCDCON3*8)+5;
+"1090
+[v _COM14EN `Vb ~T0 @X0 1 s@31604 ]
+[; ;AD18F128.h: 1090: static volatile bit COM14EN @ ((unsigned)&LCDCON3*8)+4;
+"1091
+[v _COM13EN `Vb ~T0 @X0 1 s@31603 ]
+[; ;AD18F128.h: 1091: static volatile bit COM13EN @ ((unsigned)&LCDCON3*8)+3;
+"1092
+[v _COM12EN `Vb ~T0 @X0 1 s@31602 ]
+[; ;AD18F128.h: 1092: static volatile bit COM12EN @ ((unsigned)&LCDCON3*8)+2;
+"1093
+[v _COM11EN `Vb ~T0 @X0 1 s@31601 ]
+[; ;AD18F128.h: 1093: static volatile bit COM11EN @ ((unsigned)&LCDCON3*8)+1;
+"1094
+[v _COM10EN `Vb ~T0 @X0 1 s@31600 ]
+[; ;AD18F128.h: 1094: static volatile bit COM10EN @ ((unsigned)&LCDCON3*8)+0;
+"1097
+[v _BUOUTEN `Vb ~T0 @X0 1 s@31597 ]
+[; ;AD18F128.h: 1097: static volatile bit BUOUTEN @ ((unsigned)&BUCON*8)+5;
+"1098
+[v _BUEN `Vb ~T0 @X0 1 s@31596 ]
+[; ;AD18F128.h: 1098: static volatile bit BUEN @ ((unsigned)&BUCON*8)+4;
+"1099
+[v _BUSEL3 `Vb ~T0 @X0 1 s@31595 ]
+[; ;AD18F128.h: 1099: static volatile bit BUSEL3 @ ((unsigned)&BUCON*8)+3;
+"1100
+[v _BUSEL2 `Vb ~T0 @X0 1 s@31594 ]
+[; ;AD18F128.h: 1100: static volatile bit BUSEL2 @ ((unsigned)&BUCON*8)+2;
+"1101
+[v _BUSEL1 `Vb ~T0 @X0 1 s@31593 ]
+[; ;AD18F128.h: 1101: static volatile bit BUSEL1 @ ((unsigned)&BUCON*8)+1;
+"1102
+[v _BUSEL0 `Vb ~T0 @X0 1 s@31592 ]
+[; ;AD18F128.h: 1102: static volatile bit BUSEL0 @ ((unsigned)&BUCON*8)+0;
+"1105
+[v _ERR `Vb ~T0 @X0 1 s@31579 ]
+[; ;AD18F128.h: 1105: static volatile bit ERR @ ((unsigned)&IAPCTRL*8)+3;
+"1106
+[v _LOCK `Vb ~T0 @X0 1 s@31578 ]
+[; ;AD18F128.h: 1106: static volatile bit LOCK @ ((unsigned)&IAPCTRL*8)+2;
+"1107
+[v _ER `Vb ~T0 @X0 1 s@31577 ]
+[; ;AD18F128.h: 1107: static volatile bit ER @ ((unsigned)&IAPCTRL*8)+1;
+"1108
+[v _PG `Vb ~T0 @X0 1 s@31576 ]
+[; ;AD18F128.h: 1108: static volatile bit PG @ ((unsigned)&IAPCTRL*8)+0;
+"1110
+[v _SM2 `Vb ~T0 @X0 1 s@31531 ]
+[; ;AD18F128.h: 1110: static volatile bit SM2 @ ((unsigned)&SMCR*8)+3;
+"1111
+[v _SM1 `Vb ~T0 @X0 1 s@31530 ]
+[; ;AD18F128.h: 1111: static volatile bit SM1 @ ((unsigned)&SMCR*8)+2;
+"1112
+[v _SM0 `Vb ~T0 @X0 1 s@31529 ]
+[; ;AD18F128.h: 1112: static volatile bit SM0 @ ((unsigned)&SMCR*8)+1;
+"1113
+[v _SE `Vb ~T0 @X0 1 s@31528 ]
+[; ;AD18F128.h: 1113: static volatile bit SE @ ((unsigned)&SMCR*8)+0;
+"1115
+[v _FINTOSC2 `Vb ~T0 @X0 1 s@31526 ]
+[; ;AD18F128.h: 1115: static volatile bit FINTOSC2 @ ((unsigned)&OSCCON*8)+6;
+"1116
+[v _FINTOSC1 `Vb ~T0 @X0 1 s@31525 ]
+[; ;AD18F128.h: 1116: static volatile bit FINTOSC1 @ ((unsigned)&OSCCON*8)+5;
+"1117
+[v _FINTOSC0 `Vb ~T0 @X0 1 s@31524 ]
+[; ;AD18F128.h: 1117: static volatile bit FINTOSC0 @ ((unsigned)&OSCCON*8)+4;
+"1118
+[v _LIRC2MEN `Vb ~T0 @X0 1 s@31523 ]
+[; ;AD18F128.h: 1118: static volatile bit LIRC2MEN @ ((unsigned)&OSCCON*8)+3;
+"1119
+[v _CCPHYEN `Vb ~T0 @X0 1 s@31520 ]
+[; ;AD18F128.h: 1119: static volatile bit CCPHYEN @ ((unsigned)&OSCCON*8)+0;
+"1122
+[v _OPCLKEN `Vb ~T0 @X0 1 s@31519 ]
+[; ;AD18F128.h: 1122: static volatile bit OPCLKEN @ ((unsigned)&CLKCFG1*8)+7;
+"1123
+[v _UARTCLKEN `Vb ~T0 @X0 1 s@31518 ]
+[; ;AD18F128.h: 1123: static volatile bit UARTCLKEN @ ((unsigned)&CLKCFG1*8)+6;
+"1124
+[v _CKOE1 `Vb ~T0 @X0 1 s@31517 ]
+[; ;AD18F128.h: 1124: static volatile bit CKOE1 @ ((unsigned)&CLKCFG1*8)+5;
+"1125
+[v _CKOE0 `Vb ~T0 @X0 1 s@31516 ]
+[; ;AD18F128.h: 1125: static volatile bit CKOE0 @ ((unsigned)&CLKCFG1*8)+4;
+"1126
+[v _OSCF1 `Vb ~T0 @X0 1 s@31515 ]
+[; ;AD18F128.h: 1126: static volatile bit OSCF1 @ ((unsigned)&CLKCFG1*8)+3;
+"1127
+[v _OSCF0 `Vb ~T0 @X0 1 s@31514 ]
+[; ;AD18F128.h: 1127: static volatile bit OSCF0 @ ((unsigned)&CLKCFG1*8)+2;
+"1128
+[v _OSCM1 `Vb ~T0 @X0 1 s@31513 ]
+[; ;AD18F128.h: 1128: static volatile bit OSCM1 @ ((unsigned)&CLKCFG1*8)+1;
+"1129
+[v _OSCM0 `Vb ~T0 @X0 1 s@31512 ]
+[; ;AD18F128.h: 1129: static volatile bit OSCM0 @ ((unsigned)&CLKCFG1*8)+0;
+"1131
+[v _CMPCLKEN `Vb ~T0 @X0 1 s@31511 ]
+[; ;AD18F128.h: 1131: static volatile bit CMPCLKEN @ ((unsigned)&CLKCFG2*8)+7;
+"1132
+[v _DACCLKEN `Vb ~T0 @X0 1 s@31510 ]
+[; ;AD18F128.h: 1132: static volatile bit DACCLKEN @ ((unsigned)&CLKCFG2*8)+6;
+"1133
+[v _ADCCLKEN `Vb ~T0 @X0 1 s@31509 ]
+[; ;AD18F128.h: 1133: static volatile bit ADCCLKEN @ ((unsigned)&CLKCFG2*8)+5;
+"1134
+[v _CCPCLKEN `Vb ~T0 @X0 1 s@31508 ]
+[; ;AD18F128.h: 1134: static volatile bit CCPCLKEN @ ((unsigned)&CLKCFG2*8)+4;
+"1135
+[v _T3CLKEN `Vb ~T0 @X0 1 s@31507 ]
+[; ;AD18F128.h: 1135: static volatile bit T3CLKEN @ ((unsigned)&CLKCFG2*8)+3;
+"1136
+[v _T2CLKEN `Vb ~T0 @X0 1 s@31506 ]
+[; ;AD18F128.h: 1136: static volatile bit T2CLKEN @ ((unsigned)&CLKCFG2*8)+2;
+"1137
+[v _T1CLKEN `Vb ~T0 @X0 1 s@31505 ]
+[; ;AD18F128.h: 1137: static volatile bit T1CLKEN @ ((unsigned)&CLKCFG2*8)+1;
+"1138
+[v _T0CLKEN `Vb ~T0 @X0 1 s@31504 ]
+[; ;AD18F128.h: 1138: static volatile bit T0CLKEN @ ((unsigned)&CLKCFG2*8)+0;
+"1140
+[v _PLL `Vb ~T0 @X0 1 s@31503 ]
+[; ;AD18F128.h: 1140: static volatile bit PLL @ ((unsigned)&SIGCON*8)+7;
+"1141
+[v _LXTL_SEEDUP `Vb ~T0 @X0 1 s@31502 ]
+[; ;AD18F128.h: 1141: static volatile bit LXTL_SEEDUP @ ((unsigned)&SIGCON*8)+6;
+"1142
+[v _ENVDDL `Vb ~T0 @X0 1 s@31501 ]
+[; ;AD18F128.h: 1142: static volatile bit ENVDDL @ ((unsigned)&SIGCON*8)+5;
+"1143
+[v _PWM1_EN `Vb ~T0 @X0 1 s@31500 ]
+[; ;AD18F128.h: 1143: static volatile bit PWM1_EN @ ((unsigned)&SIGCON*8)+4;
+"1144
+[v _I2CCLKEN `Vb ~T0 @X0 1 s@31499 ]
+[; ;AD18F128.h: 1144: static volatile bit I2CCLKEN @ ((unsigned)&SIGCON*8)+3;
+"1145
+[v _ICE_TMREN `Vb ~T0 @X0 1 s@31498 ]
+[; ;AD18F128.h: 1145: static volatile bit ICE_TMREN @ ((unsigned)&SIGCON*8)+2;
+"1146
+[v _UART_MUX `Vb ~T0 @X0 1 s@31497 ]
+[; ;AD18F128.h: 1146: static volatile bit UART_MUX @ ((unsigned)&SIGCON*8)+1;
+"1147
+[v _SIGS `Vb ~T0 @X0 1 s@31496 ]
+[; ;AD18F128.h: 1147: static volatile bit SIGS @ ((unsigned)&SIGCON*8)+0;
+"1149
+[v _PA5MSK `Vb ~T0 @X0 1 s@31493 ]
+[; ;AD18F128.h: 1149: static volatile bit PA5MSK @ ((unsigned)&PAINTMASK*8)+5;
+"1150
+[v _PA4MSK `Vb ~T0 @X0 1 s@31492 ]
+[; ;AD18F128.h: 1150: static volatile bit PA4MSK @ ((unsigned)&PAINTMASK*8)+4;
+"1151
+[v _PA3MSK `Vb ~T0 @X0 1 s@31491 ]
+[; ;AD18F128.h: 1151: static volatile bit PA3MSK @ ((unsigned)&PAINTMASK*8)+3;
+"1152
+[v _PA2MSK `Vb ~T0 @X0 1 s@31490 ]
+[; ;AD18F128.h: 1152: static volatile bit PA2MSK @ ((unsigned)&PAINTMASK*8)+2;
+"1153
+[v _PA1MSK `Vb ~T0 @X0 1 s@31489 ]
+[; ;AD18F128.h: 1153: static volatile bit PA1MSK @ ((unsigned)&PAINTMASK*8)+1;
+"1154
+[v _PA0MSK `Vb ~T0 @X0 1 s@31488 ]
+[; ;AD18F128.h: 1154: static volatile bit PA0MSK @ ((unsigned)&PAINTMASK*8)+0;
+"1156
+[v _PB5MSK `Vb ~T0 @X0 1 s@31485 ]
+[; ;AD18F128.h: 1156: static volatile bit PB5MSK @ ((unsigned)&PBINTMASK*8)+5;
+"1157
+[v _PB4MSK `Vb ~T0 @X0 1 s@31484 ]
+[; ;AD18F128.h: 1157: static volatile bit PB4MSK @ ((unsigned)&PBINTMASK*8)+4;
+"1158
+[v _PB3MSK `Vb ~T0 @X0 1 s@31483 ]
+[; ;AD18F128.h: 1158: static volatile bit PB3MSK @ ((unsigned)&PBINTMASK*8)+3;
+"1159
+[v _PB2MSK `Vb ~T0 @X0 1 s@31482 ]
+[; ;AD18F128.h: 1159: static volatile bit PB2MSK @ ((unsigned)&PBINTMASK*8)+2;
+"1160
+[v _PB1MSK `Vb ~T0 @X0 1 s@31481 ]
+[; ;AD18F128.h: 1160: static volatile bit PB1MSK @ ((unsigned)&PBINTMASK*8)+1;
+"1161
+[v _PB0MSK `Vb ~T0 @X0 1 s@31480 ]
+[; ;AD18F128.h: 1161: static volatile bit PB0MSK @ ((unsigned)&PBINTMASK*8)+0;
+"1163
+[v _PC5MSK `Vb ~T0 @X0 1 s@31477 ]
+[; ;AD18F128.h: 1163: static volatile bit PC5MSK @ ((unsigned)&PCINTMASK*8)+5;
+"1164
+[v _PC4MSK `Vb ~T0 @X0 1 s@31476 ]
+[; ;AD18F128.h: 1164: static volatile bit PC4MSK @ ((unsigned)&PCINTMASK*8)+4;
+"1165
+[v _PC3MSK `Vb ~T0 @X0 1 s@31475 ]
+[; ;AD18F128.h: 1165: static volatile bit PC3MSK @ ((unsigned)&PCINTMASK*8)+3;
+"1166
+[v _PC2MSK `Vb ~T0 @X0 1 s@31474 ]
+[; ;AD18F128.h: 1166: static volatile bit PC2MSK @ ((unsigned)&PCINTMASK*8)+2;
+"1167
+[v _PC1MSK `Vb ~T0 @X0 1 s@31473 ]
+[; ;AD18F128.h: 1167: static volatile bit PC1MSK @ ((unsigned)&PCINTMASK*8)+1;
+"1168
+[v _PC0MSK `Vb ~T0 @X0 1 s@31472 ]
+[; ;AD18F128.h: 1168: static volatile bit PC0MSK @ ((unsigned)&PCINTMASK*8)+0;
+"1170
+[v _PD3MSK `Vb ~T0 @X0 1 s@31467 ]
+[; ;AD18F128.h: 1170: static volatile bit PD3MSK @ ((unsigned)&PDINTMASK*8)+3;
+"1171
+[v _PD2MSK `Vb ~T0 @X0 1 s@31466 ]
+[; ;AD18F128.h: 1171: static volatile bit PD2MSK @ ((unsigned)&PDINTMASK*8)+2;
+"1172
+[v _PD1MSK `Vb ~T0 @X0 1 s@31465 ]
+[; ;AD18F128.h: 1172: static volatile bit PD1MSK @ ((unsigned)&PDINTMASK*8)+1;
+"1173
+[v _PD0MSK `Vb ~T0 @X0 1 s@31464 ]
+[; ;AD18F128.h: 1173: static volatile bit PD0MSK @ ((unsigned)&PDINTMASK*8)+0;
+"1175
+[v _ER16EN `Vb ~T0 @X0 1 s@31446 ]
+[; ;AD18F128.h: 1175: static volatile bit ER16EN @ ((unsigned)&EECON1*8)+6;
+"1176
+[v _ERBEN `Vb ~T0 @X0 1 s@31445 ]
+[; ;AD18F128.h: 1176: static volatile bit ERBEN @ ((unsigned)&EECON1*8)+5;
+"1177
+[v _WRBEN `Vb ~T0 @X0 1 s@31444 ]
+[; ;AD18F128.h: 1177: static volatile bit WRBEN @ ((unsigned)&EECON1*8)+4;
+"1178
+[v _WERR `Vb ~T0 @X0 1 s@31443 ]
+[; ;AD18F128.h: 1178: static volatile bit WERR @ ((unsigned)&EECON1*8)+3;
+"1179
+[v _WREN `Vb ~T0 @X0 1 s@31442 ]
+[; ;AD18F128.h: 1179: static volatile bit WREN @ ((unsigned)&EECON1*8)+2;
+"1180
+[v _WR `Vb ~T0 @X0 1 s@31441 ]
+[; ;AD18F128.h: 1180: static volatile bit WR @ ((unsigned)&EECON1*8)+1;
+"1181
+[v _RD `Vb ~T0 @X0 1 s@31440 ]
+[; ;AD18F128.h: 1181: static volatile bit RD @ ((unsigned)&EECON1*8)+0;
+"1184
+[v _PA5AEN `Vb ~T0 @X0 1 s@31397 ]
+[; ;AD18F128.h: 1184: static volatile bit PA5AEN @ ((unsigned)&ANASEL0*8)+5;
+"1185
+[v _PA4AEN `Vb ~T0 @X0 1 s@31396 ]
+[; ;AD18F128.h: 1185: static volatile bit PA4AEN @ ((unsigned)&ANASEL0*8)+4;
+"1186
+[v _PA3AEN `Vb ~T0 @X0 1 s@31395 ]
+[; ;AD18F128.h: 1186: static volatile bit PA3AEN @ ((unsigned)&ANASEL0*8)+3;
+"1187
+[v _PA2AEN `Vb ~T0 @X0 1 s@31394 ]
+[; ;AD18F128.h: 1187: static volatile bit PA2AEN @ ((unsigned)&ANASEL0*8)+2;
+"1188
+[v _PA1AEN `Vb ~T0 @X0 1 s@31393 ]
+[; ;AD18F128.h: 1188: static volatile bit PA1AEN @ ((unsigned)&ANASEL0*8)+1;
+"1189
+[v _PA0AEN `Vb ~T0 @X0 1 s@31392 ]
+[; ;AD18F128.h: 1189: static volatile bit PA0AEN @ ((unsigned)&ANASEL0*8)+0;
+"1191
+[v _PB5AEN `Vb ~T0 @X0 1 s@31389 ]
+[; ;AD18F128.h: 1191: static volatile bit PB5AEN @ ((unsigned)&ANASEL1*8)+5;
+"1192
+[v _PB4AEN `Vb ~T0 @X0 1 s@31388 ]
+[; ;AD18F128.h: 1192: static volatile bit PB4AEN @ ((unsigned)&ANASEL1*8)+4;
+"1193
+[v _PB3AEN `Vb ~T0 @X0 1 s@31387 ]
+[; ;AD18F128.h: 1193: static volatile bit PB3AEN @ ((unsigned)&ANASEL1*8)+3;
+"1194
+[v _PB2AEN `Vb ~T0 @X0 1 s@31386 ]
+[; ;AD18F128.h: 1194: static volatile bit PB2AEN @ ((unsigned)&ANASEL1*8)+2;
+"1195
+[v _PB1AEN `Vb ~T0 @X0 1 s@31385 ]
+[; ;AD18F128.h: 1195: static volatile bit PB1AEN @ ((unsigned)&ANASEL1*8)+1;
+"1196
+[v _PB0AEN `Vb ~T0 @X0 1 s@31384 ]
+[; ;AD18F128.h: 1196: static volatile bit PB0AEN @ ((unsigned)&ANASEL1*8)+0;
+"1198
+[v _PC5AEN `Vb ~T0 @X0 1 s@31381 ]
+[; ;AD18F128.h: 1198: static volatile bit PC5AEN @ ((unsigned)&ANASEL2*8)+5;
+"1199
+[v _PC4AEN `Vb ~T0 @X0 1 s@31380 ]
+[; ;AD18F128.h: 1199: static volatile bit PC4AEN @ ((unsigned)&ANASEL2*8)+4;
+"1200
+[v _PC3AEN `Vb ~T0 @X0 1 s@31379 ]
+[; ;AD18F128.h: 1200: static volatile bit PC3AEN @ ((unsigned)&ANASEL2*8)+3;
+"1201
+[v _PC2AEN `Vb ~T0 @X0 1 s@31378 ]
+[; ;AD18F128.h: 1201: static volatile bit PC2AEN @ ((unsigned)&ANASEL2*8)+2;
+"1202
+[v _PC1AEN `Vb ~T0 @X0 1 s@31377 ]
+[; ;AD18F128.h: 1202: static volatile bit PC1AEN @ ((unsigned)&ANASEL2*8)+1;
+"1203
+[v _PC0AEN `Vb ~T0 @X0 1 s@31376 ]
+[; ;AD18F128.h: 1203: static volatile bit PC0AEN @ ((unsigned)&ANASEL2*8)+0;
+"1205
+[v _PD3AEN `Vb ~T0 @X0 1 s@30827 ]
+[; ;AD18F128.h: 1205: static volatile bit PD3AEN @ ((unsigned)&ANASEL3*8)+3;
+"1206
+[v _PD2AEN `Vb ~T0 @X0 1 s@30826 ]
+[; ;AD18F128.h: 1206: static volatile bit PD2AEN @ ((unsigned)&ANASEL3*8)+2;
+"1207
+[v _PD1AEN `Vb ~T0 @X0 1 s@30825 ]
+[; ;AD18F128.h: 1207: static volatile bit PD1AEN @ ((unsigned)&ANASEL3*8)+1;
+"1208
+[v _PD0AEN `Vb ~T0 @X0 1 s@30824 ]
+[; ;AD18F128.h: 1208: static volatile bit PD0AEN @ ((unsigned)&ANASEL3*8)+0;
+"1210
+[v _CSRC `Vb ~T0 @X0 1 s@31351 ]
+[; ;AD18F128.h: 1210: static volatile bit CSRC @ ((unsigned)&TXSTA*8)+7;
+"1211
+[v _TX9 `Vb ~T0 @X0 1 s@31350 ]
+[; ;AD18F128.h: 1211: static volatile bit TX9 @ ((unsigned)&TXSTA*8)+6;
+"1212
+[v _TXEN `Vb ~T0 @X0 1 s@31349 ]
+[; ;AD18F128.h: 1212: static volatile bit TXEN @ ((unsigned)&TXSTA*8)+5;
+"1213
+[v _SYNC `Vb ~T0 @X0 1 s@31348 ]
+[; ;AD18F128.h: 1213: static volatile bit SYNC @ ((unsigned)&TXSTA*8)+4;
+"1214
+[v _TX_PARTY `Vb ~T0 @X0 1 s@31347 ]
+[; ;AD18F128.h: 1214: static volatile bit TX_PARTY @ ((unsigned)&TXSTA*8)+3;
+"1215
+[v _BRGH `Vb ~T0 @X0 1 s@31346 ]
+[; ;AD18F128.h: 1215: static volatile bit BRGH @ ((unsigned)&TXSTA*8)+2;
+"1216
+[v _TMRT `Vb ~T0 @X0 1 s@31345 ]
+[; ;AD18F128.h: 1216: static volatile bit TMRT @ ((unsigned)&TXSTA*8)+1;
+"1217
+[v _TX9D `Vb ~T0 @X0 1 s@31344 ]
+[; ;AD18F128.h: 1217: static volatile bit TX9D @ ((unsigned)&TXSTA*8)+0;
+"1219
+[v _SPEN `Vb ~T0 @X0 1 s@31343 ]
+[; ;AD18F128.h: 1219: static volatile bit SPEN @ ((unsigned)&RCSTA*8)+7;
+"1220
+[v _RX9 `Vb ~T0 @X0 1 s@31342 ]
+[; ;AD18F128.h: 1220: static volatile bit RX9 @ ((unsigned)&RCSTA*8)+6;
+"1221
+[v _SREN `Vb ~T0 @X0 1 s@31341 ]
+[; ;AD18F128.h: 1221: static volatile bit SREN @ ((unsigned)&RCSTA*8)+5;
+"1222
+[v _CREN `Vb ~T0 @X0 1 s@31340 ]
+[; ;AD18F128.h: 1222: static volatile bit CREN @ ((unsigned)&RCSTA*8)+4;
+"1223
+[v _BGRM `Vb ~T0 @X0 1 s@31339 ]
+[; ;AD18F128.h: 1223: static volatile bit BGRM @ ((unsigned)&RCSTA*8)+3;
+"1224
+[v _FERR `Vb ~T0 @X0 1 s@31338 ]
+[; ;AD18F128.h: 1224: static volatile bit FERR @ ((unsigned)&RCSTA*8)+2;
+"1225
+[v _OERR `Vb ~T0 @X0 1 s@31337 ]
+[; ;AD18F128.h: 1225: static volatile bit OERR @ ((unsigned)&RCSTA*8)+1;
+"1226
+[v _RX9D `Vb ~T0 @X0 1 s@31336 ]
+[; ;AD18F128.h: 1226: static volatile bit RX9D @ ((unsigned)&RCSTA*8)+0;
+"1228
+[v _INVMODE `Vb ~T0 @X0 1 s@31335 ]
+[; ;AD18F128.h: 1228: static volatile bit INVMODE @ ((unsigned)&UARTCON*8)+7;
+"1229
+[v _PARITY `Vb ~T0 @X0 1 s@31334 ]
+[; ;AD18F128.h: 1229: static volatile bit PARITY @ ((unsigned)&UARTCON*8)+6;
+"1230
+[v _ODD_EVEN `Vb ~T0 @X0 1 s@31333 ]
+[; ;AD18F128.h: 1230: static volatile bit ODD_EVEN @ ((unsigned)&UARTCON*8)+5;
+"1231
+[v _BCLK `Vb ~T0 @X0 1 s@31332 ]
+[; ;AD18F128.h: 1231: static volatile bit BCLK @ ((unsigned)&UARTCON*8)+4;
+"1232
+[v _HALF_DUPLEX `Vb ~T0 @X0 1 s@31331 ]
+[; ;AD18F128.h: 1232: static volatile bit HALF_DUPLEX @ ((unsigned)&UARTCON*8)+3;
+"1233
+[v _DLSB `Vb ~T0 @X0 1 s@31330 ]
+[; ;AD18F128.h: 1233: static volatile bit DLSB @ ((unsigned)&UARTCON*8)+2;
+"1234
+[v _STOP_BIT1 `Vb ~T0 @X0 1 s@31329 ]
+[; ;AD18F128.h: 1234: static volatile bit STOP_BIT1 @ ((unsigned)&UARTCON*8)+1;
+"1235
+[v _STOP_BIT0 `Vb ~T0 @X0 1 s@31328 ]
+[; ;AD18F128.h: 1235: static volatile bit STOP_BIT0 @ ((unsigned)&UARTCON*8)+0;
+"1237
+[v _ACKDLYON `Vb ~T0 @X0 1 s@31327 ]
+[; ;AD18F128.h: 1237: static volatile bit ACKDLYON @ ((unsigned)&I2CACKDLY*8)+7;
+"1238
+[v _ACKDLY6 `Vb ~T0 @X0 1 s@31326 ]
+[; ;AD18F128.h: 1238: static volatile bit ACKDLY6 @ ((unsigned)&I2CACKDLY*8)+6;
+"1239
+[v _ACKDLY5 `Vb ~T0 @X0 1 s@31325 ]
+[; ;AD18F128.h: 1239: static volatile bit ACKDLY5 @ ((unsigned)&I2CACKDLY*8)+5;
+"1240
+[v _ACKDLY4 `Vb ~T0 @X0 1 s@31324 ]
+[; ;AD18F128.h: 1240: static volatile bit ACKDLY4 @ ((unsigned)&I2CACKDLY*8)+4;
+"1241
+[v _ACKDLY3 `Vb ~T0 @X0 1 s@31323 ]
+[; ;AD18F128.h: 1241: static volatile bit ACKDLY3 @ ((unsigned)&I2CACKDLY*8)+3;
+"1242
+[v _ACKDLY2 `Vb ~T0 @X0 1 s@31322 ]
+[; ;AD18F128.h: 1242: static volatile bit ACKDLY2 @ ((unsigned)&I2CACKDLY*8)+2;
+"1243
+[v _ACKDLY1 `Vb ~T0 @X0 1 s@31321 ]
+[; ;AD18F128.h: 1243: static volatile bit ACKDLY1 @ ((unsigned)&I2CACKDLY*8)+1;
+"1244
+[v _ACKDLY0 `Vb ~T0 @X0 1 s@31320 ]
+[; ;AD18F128.h: 1244: static volatile bit ACKDLY0 @ ((unsigned)&I2CACKDLY*8)+0;
+"1246
+[v _SMP1 `Vb ~T0 @X0 1 s@31279 ]
+[; ;AD18F128.h: 1246: static volatile bit SMP1 @ ((unsigned)&I2CSTAT*8)+7;
+"1247
+[v _SMP0 `Vb ~T0 @X0 1 s@31278 ]
+[; ;AD18F128.h: 1247: static volatile bit SMP0 @ ((unsigned)&I2CSTAT*8)+6;
+"1248
+[v _A `Vb ~T0 @X0 1 s@31277 ]
+[; ;AD18F128.h: 1248: static volatile bit A @ ((unsigned)&I2CSTAT*8)+5;
+"1249
+[v _D `Vb ~T0 @X0 1 s@31277 ]
+[; ;AD18F128.h: 1249: static volatile bit D @ ((unsigned)&I2CSTAT*8)+5;
+"1250
+[v _P `Vb ~T0 @X0 1 s@31276 ]
+[; ;AD18F128.h: 1250: static volatile bit P @ ((unsigned)&I2CSTAT*8)+4;
+"1251
+[v _S `Vb ~T0 @X0 1 s@31275 ]
+[; ;AD18F128.h: 1251: static volatile bit S @ ((unsigned)&I2CSTAT*8)+3;
+"1252
+[v _R `Vb ~T0 @X0 1 s@31274 ]
+[; ;AD18F128.h: 1252: static volatile bit R @ ((unsigned)&I2CSTAT*8)+2;
+"1253
+[v _W `Vb ~T0 @X0 1 s@31274 ]
+[; ;AD18F128.h: 1253: static volatile bit W @ ((unsigned)&I2CSTAT*8)+2;
+"1254
+[v _BPRX `Vb ~T0 @X0 1 s@31273 ]
+[; ;AD18F128.h: 1254: static volatile bit BPRX @ ((unsigned)&I2CSTAT*8)+1;
+"1255
+[v _BPTX `Vb ~T0 @X0 1 s@31272 ]
+[; ;AD18F128.h: 1255: static volatile bit BPTX @ ((unsigned)&I2CSTAT*8)+0;
+"1258
+[v _ADD0EN `Vb ~T0 @X0 1 s@31303 ]
+[; ;AD18F128.h: 1258: static volatile bit ADD0EN @ ((unsigned)&I2CADDR0*8)+7;
+"1261
+[v _ADD1EN `Vb ~T0 @X0 1 s@31295 ]
+[; ;AD18F128.h: 1261: static volatile bit ADD1EN @ ((unsigned)&I2CADDR1*8)+7;
+"1264
+[v _WCOL `Vb ~T0 @X0 1 s@31271 ]
+[; ;AD18F128.h: 1264: static volatile bit WCOL @ ((unsigned)&I2CCON0*8)+7;
+"1265
+[v _I2COV `Vb ~T0 @X0 1 s@31270 ]
+[; ;AD18F128.h: 1265: static volatile bit I2COV @ ((unsigned)&I2CCON0*8)+6;
+"1266
+[v _I2CEN `Vb ~T0 @X0 1 s@31269 ]
+[; ;AD18F128.h: 1266: static volatile bit I2CEN @ ((unsigned)&I2CCON0*8)+5;
+"1267
+[v _I2STCEN `Vb ~T0 @X0 1 s@31268 ]
+[; ;AD18F128.h: 1267: static volatile bit I2STCEN @ ((unsigned)&I2CCON0*8)+4;
+"1268
+[v _ACKDLYWREN `Vb ~T0 @X0 1 s@31267 ]
+[; ;AD18F128.h: 1268: static volatile bit ACKDLYWREN @ ((unsigned)&I2CCON0*8)+3;
+"1269
+[v _ACKDLY9EN `Vb ~T0 @X0 1 s@31266 ]
+[; ;AD18F128.h: 1269: static volatile bit ACKDLY9EN @ ((unsigned)&I2CCON0*8)+2;
+"1271
+[v _GCEN `Vb ~T0 @X0 1 s@31263 ]
+[; ;AD18F128.h: 1271: static volatile bit GCEN @ ((unsigned)&I2CCON1*8)+7;
+"1272
+[v _ACKSTAT `Vb ~T0 @X0 1 s@31262 ]
+[; ;AD18F128.h: 1272: static volatile bit ACKSTAT @ ((unsigned)&I2CCON1*8)+6;
+"1273
+[v _ACKGET `Vb ~T0 @X0 1 s@31261 ]
+[; ;AD18F128.h: 1273: static volatile bit ACKGET @ ((unsigned)&I2CCON1*8)+5;
+"1274
+[v _ACKEN `Vb ~T0 @X0 1 s@31260 ]
+[; ;AD18F128.h: 1274: static volatile bit ACKEN @ ((unsigned)&I2CCON1*8)+4;
+"1276
+[v _I2C_FLOATIE `Vb ~T0 @X0 1 s@31252 ]
+[; ;AD18F128.h: 1276: static volatile bit I2C_FLOATIE @ ((unsigned)&I2CIE*8)+4;
+"1277
+[v _I2C_STOPIE `Vb ~T0 @X0 1 s@31251 ]
+[; ;AD18F128.h: 1277: static volatile bit I2C_STOPIE @ ((unsigned)&I2CIE*8)+3;
+"1278
+[v _I2C_STARTIE `Vb ~T0 @X0 1 s@31250 ]
+[; ;AD18F128.h: 1278: static volatile bit I2C_STARTIE @ ((unsigned)&I2CIE*8)+2;
+"1279
+[v _I2C_TXIE `Vb ~T0 @X0 1 s@31249 ]
+[; ;AD18F128.h: 1279: static volatile bit I2C_TXIE @ ((unsigned)&I2CIE*8)+1;
+"1280
+[v _I2C_RCIE `Vb ~T0 @X0 1 s@31248 ]
+[; ;AD18F128.h: 1280: static volatile bit I2C_RCIE @ ((unsigned)&I2CIE*8)+0;
+"1282
+[v _I2C_FLOATIF `Vb ~T0 @X0 1 s@31244 ]
+[; ;AD18F128.h: 1282: static volatile bit I2C_FLOATIF @ ((unsigned)&I2CIF*8)+4;
+"1283
+[v _I2C_STOPIF `Vb ~T0 @X0 1 s@31243 ]
+[; ;AD18F128.h: 1283: static volatile bit I2C_STOPIF @ ((unsigned)&I2CIF*8)+3;
+"1284
+[v _I2C_STARTIF `Vb ~T0 @X0 1 s@31242 ]
+[; ;AD18F128.h: 1284: static volatile bit I2C_STARTIF @ ((unsigned)&I2CIF*8)+2;
+"1285
+[v _I2C_TXIF `Vb ~T0 @X0 1 s@31241 ]
+[; ;AD18F128.h: 1285: static volatile bit I2C_TXIF @ ((unsigned)&I2CIF*8)+1;
+"1286
+[v _I2C_RCIF `Vb ~T0 @X0 1 s@31240 ]
+[; ;AD18F128.h: 1286: static volatile bit I2C_RCIF @ ((unsigned)&I2CIF*8)+0;
+"1288
+[v _I2C_FLOATIP `Vb ~T0 @X0 1 s@31236 ]
+[; ;AD18F128.h: 1288: static volatile bit I2C_FLOATIP @ ((unsigned)&I2CIP*8)+4;
+"1289
+[v _I2C_STOPIP `Vb ~T0 @X0 1 s@31235 ]
+[; ;AD18F128.h: 1289: static volatile bit I2C_STOPIP @ ((unsigned)&I2CIP*8)+3;
+"1290
+[v _I2C_STARTIP `Vb ~T0 @X0 1 s@31234 ]
+[; ;AD18F128.h: 1290: static volatile bit I2C_STARTIP @ ((unsigned)&I2CIP*8)+2;
+"1291
+[v _I2C_TXIP `Vb ~T0 @X0 1 s@31233 ]
+[; ;AD18F128.h: 1291: static volatile bit I2C_TXIP @ ((unsigned)&I2CIP*8)+1;
+"1292
+[v _I2C_RCIP `Vb ~T0 @X0 1 s@31232 ]
+[; ;AD18F128.h: 1292: static volatile bit I2C_RCIP @ ((unsigned)&I2CIP*8)+0;
+"1295
+[v _TX0_MPORT1 `Vb ~T0 @X0 1 s@31212 ]
+[; ;AD18F128.h: 1295: static volatile bit TX0_MPORT1 @ ((unsigned)&TX0_MAP*8)+4;
+"1296
+[v _TX0_MPORT0 `Vb ~T0 @X0 1 s@31211 ]
+[; ;AD18F128.h: 1296: static volatile bit TX0_MPORT0 @ ((unsigned)&TX0_MAP*8)+3;
+"1297
+[v _TX0_MPIN2 `Vb ~T0 @X0 1 s@31210 ]
+[; ;AD18F128.h: 1297: static volatile bit TX0_MPIN2 @ ((unsigned)&TX0_MAP*8)+2;
+"1298
+[v _TX0_MPIN1 `Vb ~T0 @X0 1 s@31209 ]
+[; ;AD18F128.h: 1298: static volatile bit TX0_MPIN1 @ ((unsigned)&TX0_MAP*8)+1;
+"1299
+[v _TX0_MPIN0 `Vb ~T0 @X0 1 s@31208 ]
+[; ;AD18F128.h: 1299: static volatile bit TX0_MPIN0 @ ((unsigned)&TX0_MAP*8)+0;
+"1301
+[v _RX0_MPORT1 `Vb ~T0 @X0 1 s@31204 ]
+[; ;AD18F128.h: 1301: static volatile bit RX0_MPORT1 @ ((unsigned)&RX0_MAP*8)+4;
+"1302
+[v _RX0_MPORT0 `Vb ~T0 @X0 1 s@31203 ]
+[; ;AD18F128.h: 1302: static volatile bit RX0_MPORT0 @ ((unsigned)&RX0_MAP*8)+3;
+"1303
+[v _RX0_MPIN2 `Vb ~T0 @X0 1 s@31202 ]
+[; ;AD18F128.h: 1303: static volatile bit RX0_MPIN2 @ ((unsigned)&RX0_MAP*8)+2;
+"1304
+[v _RX0_MPIN1 `Vb ~T0 @X0 1 s@31201 ]
+[; ;AD18F128.h: 1304: static volatile bit RX0_MPIN1 @ ((unsigned)&RX0_MAP*8)+1;
+"1305
+[v _RX0_MPIN0 `Vb ~T0 @X0 1 s@31200 ]
+[; ;AD18F128.h: 1305: static volatile bit RX0_MPIN0 @ ((unsigned)&RX0_MAP*8)+0;
+"1307
+[v _SDA_MPORT1 `Vb ~T0 @X0 1 s@31196 ]
+[; ;AD18F128.h: 1307: static volatile bit SDA_MPORT1 @ ((unsigned)&SDA_MAP*8)+4;
+"1308
+[v _SDA_MPORT0 `Vb ~T0 @X0 1 s@31195 ]
+[; ;AD18F128.h: 1308: static volatile bit SDA_MPORT0 @ ((unsigned)&SDA_MAP*8)+3;
+"1309
+[v _SDA_MPIN2 `Vb ~T0 @X0 1 s@31194 ]
+[; ;AD18F128.h: 1309: static volatile bit SDA_MPIN2 @ ((unsigned)&SDA_MAP*8)+2;
+"1310
+[v _SDA_MPIN1 `Vb ~T0 @X0 1 s@31193 ]
+[; ;AD18F128.h: 1310: static volatile bit SDA_MPIN1 @ ((unsigned)&SDA_MAP*8)+1;
+"1311
+[v _SDA_MPIN0 `Vb ~T0 @X0 1 s@31192 ]
+[; ;AD18F128.h: 1311: static volatile bit SDA_MPIN0 @ ((unsigned)&SDA_MAP*8)+0;
+"1313
+[v _SCL_MPORT1 `Vb ~T0 @X0 1 s@31188 ]
+[; ;AD18F128.h: 1313: static volatile bit SCL_MPORT1 @ ((unsigned)&SCL_MAP*8)+4;
+"1314
+[v _SCL_MPORT0 `Vb ~T0 @X0 1 s@31187 ]
+[; ;AD18F128.h: 1314: static volatile bit SCL_MPORT0 @ ((unsigned)&SCL_MAP*8)+3;
+"1315
+[v _SCL_MPIN2 `Vb ~T0 @X0 1 s@31186 ]
+[; ;AD18F128.h: 1315: static volatile bit SCL_MPIN2 @ ((unsigned)&SCL_MAP*8)+2;
+"1316
+[v _SCL_MPIN1 `Vb ~T0 @X0 1 s@31185 ]
+[; ;AD18F128.h: 1316: static volatile bit SCL_MPIN1 @ ((unsigned)&SCL_MAP*8)+1;
+"1317
+[v _SCL_MPIN0 `Vb ~T0 @X0 1 s@31184 ]
+[; ;AD18F128.h: 1317: static volatile bit SCL_MPIN0 @ ((unsigned)&SCL_MAP*8)+0;
+"1319
+[v _PWM10_MPORT1 `Vb ~T0 @X0 1 s@31180 ]
+[; ;AD18F128.h: 1319: static volatile bit PWM10_MPORT1 @ ((unsigned)&PWM10_MAP*8)+4;
+"1320
+[v _PWM10_MPORT0 `Vb ~T0 @X0 1 s@31179 ]
+[; ;AD18F128.h: 1320: static volatile bit PWM10_MPORT0 @ ((unsigned)&PWM10_MAP*8)+3;
+"1321
+[v _PWM10_MPIN2 `Vb ~T0 @X0 1 s@31178 ]
+[; ;AD18F128.h: 1321: static volatile bit PWM10_MPIN2 @ ((unsigned)&PWM10_MAP*8)+2;
+"1322
+[v _PWM10_MPIN1 `Vb ~T0 @X0 1 s@31177 ]
+[; ;AD18F128.h: 1322: static volatile bit PWM10_MPIN1 @ ((unsigned)&PWM10_MAP*8)+1;
+"1323
+[v _PWM10_MPIN0 `Vb ~T0 @X0 1 s@31176 ]
+[; ;AD18F128.h: 1323: static volatile bit PWM10_MPIN0 @ ((unsigned)&PWM10_MAP*8)+0;
+"1325
+[v _PWM11_MPORT1 `Vb ~T0 @X0 1 s@31172 ]
+[; ;AD18F128.h: 1325: static volatile bit PWM11_MPORT1 @ ((unsigned)&PWM11_MAP*8)+4;
+"1326
+[v _PWM11_MPORT0 `Vb ~T0 @X0 1 s@31171 ]
+[; ;AD18F128.h: 1326: static volatile bit PWM11_MPORT0 @ ((unsigned)&PWM11_MAP*8)+3;
+"1327
+[v _PWM11_MPIN2 `Vb ~T0 @X0 1 s@31170 ]
+[; ;AD18F128.h: 1327: static volatile bit PWM11_MPIN2 @ ((unsigned)&PWM11_MAP*8)+2;
+"1328
+[v _PWM11_MPIN1 `Vb ~T0 @X0 1 s@31169 ]
+[; ;AD18F128.h: 1328: static volatile bit PWM11_MPIN1 @ ((unsigned)&PWM11_MAP*8)+1;
+"1329
+[v _PWM11_MPIN0 `Vb ~T0 @X0 1 s@31168 ]
+[; ;AD18F128.h: 1329: static volatile bit PWM11_MPIN0 @ ((unsigned)&PWM11_MAP*8)+0;
+"1331
+[v _PWM12_MPORT1 `Vb ~T0 @X0 1 s@31164 ]
+[; ;AD18F128.h: 1331: static volatile bit PWM12_MPORT1 @ ((unsigned)&PWM12_MAP*8)+4;
+"1332
+[v _PWM12_MPORT0 `Vb ~T0 @X0 1 s@31163 ]
+[; ;AD18F128.h: 1332: static volatile bit PWM12_MPORT0 @ ((unsigned)&PWM12_MAP*8)+3;
+"1333
+[v _PWM12_MPIN2 `Vb ~T0 @X0 1 s@31162 ]
+[; ;AD18F128.h: 1333: static volatile bit PWM12_MPIN2 @ ((unsigned)&PWM12_MAP*8)+2;
+"1334
+[v _PWM12_MPIN1 `Vb ~T0 @X0 1 s@31161 ]
+[; ;AD18F128.h: 1334: static volatile bit PWM12_MPIN1 @ ((unsigned)&PWM12_MAP*8)+1;
+"1335
+[v _PWM12_MPIN0 `Vb ~T0 @X0 1 s@31160 ]
+[; ;AD18F128.h: 1335: static volatile bit PWM12_MPIN0 @ ((unsigned)&PWM12_MAP*8)+0;
+"1337
+[v _PWM13_MPORT1 `Vb ~T0 @X0 1 s@31156 ]
+[; ;AD18F128.h: 1337: static volatile bit PWM13_MPORT1 @ ((unsigned)&PWM13_MAP*8)+4;
+"1338
+[v _PWM13_MPORT0 `Vb ~T0 @X0 1 s@31155 ]
+[; ;AD18F128.h: 1338: static volatile bit PWM13_MPORT0 @ ((unsigned)&PWM13_MAP*8)+3;
+"1339
+[v _PWM13_MPIN2 `Vb ~T0 @X0 1 s@31154 ]
+[; ;AD18F128.h: 1339: static volatile bit PWM13_MPIN2 @ ((unsigned)&PWM13_MAP*8)+2;
+"1340
+[v _PWM13_MPIN1 `Vb ~T0 @X0 1 s@31153 ]
+[; ;AD18F128.h: 1340: static volatile bit PWM13_MPIN1 @ ((unsigned)&PWM13_MAP*8)+1;
+"1341
+[v _PWM13_MPIN0 `Vb ~T0 @X0 1 s@31152 ]
+[; ;AD18F128.h: 1341: static volatile bit PWM13_MPIN0 @ ((unsigned)&PWM13_MAP*8)+0;
+"1343
+[v _PWM14_MPORT1 `Vb ~T0 @X0 1 s@31148 ]
+[; ;AD18F128.h: 1343: static volatile bit PWM14_MPORT1 @ ((unsigned)&PWM14_MAP*8)+4;
+"1344
+[v _PWM14_MPORT0 `Vb ~T0 @X0 1 s@31147 ]
+[; ;AD18F128.h: 1344: static volatile bit PWM14_MPORT0 @ ((unsigned)&PWM14_MAP*8)+3;
+"1345
+[v _PWM14_MPIN2 `Vb ~T0 @X0 1 s@31146 ]
+[; ;AD18F128.h: 1345: static volatile bit PWM14_MPIN2 @ ((unsigned)&PWM14_MAP*8)+2;
+"1346
+[v _PWM14_MPIN1 `Vb ~T0 @X0 1 s@31145 ]
+[; ;AD18F128.h: 1346: static volatile bit PWM14_MPIN1 @ ((unsigned)&PWM14_MAP*8)+1;
+"1347
+[v _PWM14_MPIN0 `Vb ~T0 @X0 1 s@31144 ]
+[; ;AD18F128.h: 1347: static volatile bit PWM14_MPIN0 @ ((unsigned)&PWM14_MAP*8)+0;
+"1349
+[v _PWM15_MPORT1 `Vb ~T0 @X0 1 s@31140 ]
+[; ;AD18F128.h: 1349: static volatile bit PWM15_MPORT1 @ ((unsigned)&PWM15_MAP*8)+4;
+"1350
+[v _PWM15_MPORT0 `Vb ~T0 @X0 1 s@31139 ]
+[; ;AD18F128.h: 1350: static volatile bit PWM15_MPORT0 @ ((unsigned)&PWM15_MAP*8)+3;
+"1351
+[v _PWM15_MPIN2 `Vb ~T0 @X0 1 s@31138 ]
+[; ;AD18F128.h: 1351: static volatile bit PWM15_MPIN2 @ ((unsigned)&PWM15_MAP*8)+2;
+"1352
+[v _PWM15_MPIN1 `Vb ~T0 @X0 1 s@31137 ]
+[; ;AD18F128.h: 1352: static volatile bit PWM15_MPIN1 @ ((unsigned)&PWM15_MAP*8)+1;
+"1353
+[v _PWM15_MPIN0 `Vb ~T0 @X0 1 s@31136 ]
+[; ;AD18F128.h: 1353: static volatile bit PWM15_MPIN0 @ ((unsigned)&PWM15_MAP*8)+0;
+"1358
+[v _CRCINIT `Vb ~T0 @X0 1 s@31096 ]
+[; ;AD18F128.h: 1358: static volatile bit CRCINIT @ ((unsigned)&CRC32CON*8)+0;
+"1361
+[v _SYNC64 `Vb ~T0 @X0 1 s@31055 ]
+[; ;AD18F128.h: 1361: static volatile bit SYNC64 @ ((unsigned)&BMCRST*8)+7;
+"1362
+[v _SYNC1 `Vb ~T0 @X0 1 s@31054 ]
+[; ;AD18F128.h: 1362: static volatile bit SYNC1 @ ((unsigned)&BMCRST*8)+6;
+"1363
+[v _SYNC2 `Vb ~T0 @X0 1 s@31053 ]
+[; ;AD18F128.h: 1363: static volatile bit SYNC2 @ ((unsigned)&BMCRST*8)+5;
+"1364
+[v _SYNC3 `Vb ~T0 @X0 1 s@31052 ]
+[; ;AD18F128.h: 1364: static volatile bit SYNC3 @ ((unsigned)&BMCRST*8)+4;
+"1365
+[v _RST1 `Vb ~T0 @X0 1 s@31051 ]
+[; ;AD18F128.h: 1365: static volatile bit RST1 @ ((unsigned)&BMCRST*8)+3;
+"1366
+[v _RST2 `Vb ~T0 @X0 1 s@31050 ]
+[; ;AD18F128.h: 1366: static volatile bit RST2 @ ((unsigned)&BMCRST*8)+2;
+"1367
+[v _EOP `Vb ~T0 @X0 1 s@31049 ]
+[; ;AD18F128.h: 1367: static volatile bit EOP @ ((unsigned)&BMCRST*8)+1;
+"1368
+[v _DATA `Vb ~T0 @X0 1 s@31048 ]
+[; ;AD18F128.h: 1368: static volatile bit DATA @ ((unsigned)&BMCRST*8)+0;
+"1370
+[v _PDERR `Vb ~T0 @X0 1 s@31047 ]
+[; ;AD18F128.h: 1370: static volatile bit PDERR @ ((unsigned)&PDRCT*8)+7;
+"1371
+[v _OVER `Vb ~T0 @X0 1 s@31046 ]
+[; ;AD18F128.h: 1371: static volatile bit OVER @ ((unsigned)&PDRCT*8)+6;
+"1372
+[v _WDT `Vb ~T0 @X0 1 s@31045 ]
+[; ;AD18F128.h: 1372: static volatile bit WDT @ ((unsigned)&PDRCT*8)+5;
+"1373
+[v _RXFLT_TEREN `Vb ~T0 @X0 1 s@31044 ]
+[; ;AD18F128.h: 1373: static volatile bit RXFLT_TEREN @ ((unsigned)&PDRCT*8)+4;
+"1374
+[v _TXINIVAL `Vb ~T0 @X0 1 s@31043 ]
+[; ;AD18F128.h: 1374: static volatile bit TXINIVAL @ ((unsigned)&PDRCT*8)+3;
+"1375
+[v _LDO1P2_EN `Vb ~T0 @X0 1 s@31042 ]
+[; ;AD18F128.h: 1375: static volatile bit LDO1P2_EN @ ((unsigned)&PDRCT*8)+2;
+"1376
+[v _CC1SEL `Vb ~T0 @X0 1 s@31041 ]
+[; ;AD18F128.h: 1376: static volatile bit CC1SEL @ ((unsigned)&PDRCT*8)+1;
+"1377
+[v _PDRCEN `Vb ~T0 @X0 1 s@31040 ]
+[; ;AD18F128.h: 1377: static volatile bit PDRCEN @ ((unsigned)&PDRCT*8)+0;
+"1380
+[v _PDTXDLY3 `Vb ~T0 @X0 1 s@31015 ]
+[; ;AD18F128.h: 1380: static volatile bit PDTXDLY3 @ ((unsigned)&PDTCT*8)+7;
+"1381
+[v _PDTXDLY2 `Vb ~T0 @X0 1 s@31014 ]
+[; ;AD18F128.h: 1381: static volatile bit PDTXDLY2 @ ((unsigned)&PDTCT*8)+6;
+"1382
+[v _PDTXDLY1 `Vb ~T0 @X0 1 s@31013 ]
+[; ;AD18F128.h: 1382: static volatile bit PDTXDLY1 @ ((unsigned)&PDTCT*8)+5;
+"1383
+[v _PDTXDLY0 `Vb ~T0 @X0 1 s@31012 ]
+[; ;AD18F128.h: 1383: static volatile bit PDTXDLY0 @ ((unsigned)&PDTCT*8)+4;
+"1384
+[v _PDTXBF `Vb ~T0 @X0 1 s@31011 ]
+[; ;AD18F128.h: 1384: static volatile bit PDTXBF @ ((unsigned)&PDTCT*8)+3;
+"1385
+[v _PDTX4BL `Vb ~T0 @X0 1 s@31010 ]
+[; ;AD18F128.h: 1385: static volatile bit PDTX4BL @ ((unsigned)&PDTCT*8)+2;
+"1386
+[v _PDTX5BL `Vb ~T0 @X0 1 s@31009 ]
+[; ;AD18F128.h: 1386: static volatile bit PDTX5BL @ ((unsigned)&PDTCT*8)+1;
+"1387
+[v _PDTXEN `Vb ~T0 @X0 1 s@31008 ]
+[; ;AD18F128.h: 1387: static volatile bit PDTXEN @ ((unsigned)&PDTCT*8)+0;
+"1389
+[v _MCSAMPE5 `Vb ~T0 @X0 1 s@30967 ]
+[; ;AD18F128.h: 1389: static volatile bit MCSAMPE5 @ ((unsigned)&MCTCON*8)+7;
+"1390
+[v _MCSAMPE4 `Vb ~T0 @X0 1 s@30966 ]
+[; ;AD18F128.h: 1390: static volatile bit MCSAMPE4 @ ((unsigned)&MCTCON*8)+6;
+"1391
+[v _MCSAMPE3 `Vb ~T0 @X0 1 s@30965 ]
+[; ;AD18F128.h: 1391: static volatile bit MCSAMPE3 @ ((unsigned)&MCTCON*8)+5;
+"1392
+[v _MCSAMPE2 `Vb ~T0 @X0 1 s@30964 ]
+[; ;AD18F128.h: 1392: static volatile bit MCSAMPE2 @ ((unsigned)&MCTCON*8)+4;
+"1393
+[v _MCSAMPE1 `Vb ~T0 @X0 1 s@30963 ]
+[; ;AD18F128.h: 1393: static volatile bit MCSAMPE1 @ ((unsigned)&MCTCON*8)+3;
+"1394
+[v _MCSAMPE0 `Vb ~T0 @X0 1 s@30962 ]
+[; ;AD18F128.h: 1394: static volatile bit MCSAMPE0 @ ((unsigned)&MCTCON*8)+2;
+"1395
+[v _MCTON `Vb ~T0 @X0 1 s@30960 ]
+[; ;AD18F128.h: 1395: static volatile bit MCTON @ ((unsigned)&MCTCON*8)+0;
+"1398
+[v _CC2PDEN `Vb ~T0 @X0 1 s@30959 ]
+[; ;AD18F128.h: 1398: static volatile bit CC2PDEN @ ((unsigned)&CCRPCON0*8)+7;
+"1399
+[v _CC1PDEN `Vb ~T0 @X0 1 s@30958 ]
+[; ;AD18F128.h: 1399: static volatile bit CC1PDEN @ ((unsigned)&CCRPCON0*8)+6;
+"1400
+[v _CUR21 `Vb ~T0 @X0 1 s@30957 ]
+[; ;AD18F128.h: 1400: static volatile bit CUR21 @ ((unsigned)&CCRPCON0*8)+5;
+"1401
+[v _CUR20 `Vb ~T0 @X0 1 s@30956 ]
+[; ;AD18F128.h: 1401: static volatile bit CUR20 @ ((unsigned)&CCRPCON0*8)+4;
+"1402
+[v _TEMP_SW `Vb ~T0 @X0 1 s@30955 ]
+[; ;AD18F128.h: 1402: static volatile bit TEMP_SW @ ((unsigned)&CCRPCON0*8)+3;
+"1403
+[v _CCAB_SEL `Vb ~T0 @X0 1 s@30954 ]
+[; ;AD18F128.h: 1403: static volatile bit CCAB_SEL @ ((unsigned)&CCRPCON0*8)+2;
+"1404
+[v _CUR11 `Vb ~T0 @X0 1 s@30953 ]
+[; ;AD18F128.h: 1404: static volatile bit CUR11 @ ((unsigned)&CCRPCON0*8)+1;
+"1405
+[v _CUR10 `Vb ~T0 @X0 1 s@30952 ]
+[; ;AD18F128.h: 1405: static volatile bit CUR10 @ ((unsigned)&CCRPCON0*8)+0;
+"1407
+[v _RP_TRIM4 `Vb ~T0 @X0 1 s@30951 ]
+[; ;AD18F128.h: 1407: static volatile bit RP_TRIM4 @ ((unsigned)&CCRPCON1*8)+7;
+"1408
+[v _RP_TRIM3 `Vb ~T0 @X0 1 s@30950 ]
+[; ;AD18F128.h: 1408: static volatile bit RP_TRIM3 @ ((unsigned)&CCRPCON1*8)+6;
+"1409
+[v _RP_TRIM2 `Vb ~T0 @X0 1 s@30949 ]
+[; ;AD18F128.h: 1409: static volatile bit RP_TRIM2 @ ((unsigned)&CCRPCON1*8)+5;
+"1410
+[v _RP_TRIM1 `Vb ~T0 @X0 1 s@30948 ]
+[; ;AD18F128.h: 1410: static volatile bit RP_TRIM1 @ ((unsigned)&CCRPCON1*8)+4;
+"1411
+[v _RP_TRIM0 `Vb ~T0 @X0 1 s@30947 ]
+[; ;AD18F128.h: 1411: static volatile bit RP_TRIM0 @ ((unsigned)&CCRPCON1*8)+3;
+"1412
+[v _PDRXOUTEN `Vb ~T0 @X0 1 s@30946 ]
+[; ;AD18F128.h: 1412: static volatile bit PDRXOUTEN @ ((unsigned)&CCRPCON1*8)+2;
+"1413
+[v _RP2EN `Vb ~T0 @X0 1 s@30945 ]
+[; ;AD18F128.h: 1413: static volatile bit RP2EN @ ((unsigned)&CCRPCON1*8)+1;
+"1414
+[v _RP1EN `Vb ~T0 @X0 1 s@30944 ]
+[; ;AD18F128.h: 1414: static volatile bit RP1EN @ ((unsigned)&CCRPCON1*8)+0;
+"1416
+[v _PD_DTEN `Vb ~T0 @X0 1 s@30943 ]
+[; ;AD18F128.h: 1416: static volatile bit PD_DTEN @ ((unsigned)&BMCTX*8)+7;
+"1417
+[v _CCDAT `Vb ~T0 @X0 1 s@30942 ]
+[; ;AD18F128.h: 1417: static volatile bit CCDAT @ ((unsigned)&BMCTX*8)+6;
+"1418
+[v _DT3 `Vb ~T0 @X0 1 s@30939 ]
+[; ;AD18F128.h: 1418: static volatile bit DT3 @ ((unsigned)&BMCTX*8)+3;
+"1419
+[v _DT2 `Vb ~T0 @X0 1 s@30938 ]
+[; ;AD18F128.h: 1419: static volatile bit DT2 @ ((unsigned)&BMCTX*8)+2;
+"1420
+[v _DT1 `Vb ~T0 @X0 1 s@30937 ]
+[; ;AD18F128.h: 1420: static volatile bit DT1 @ ((unsigned)&BMCTX*8)+1;
+"1421
+[v _DT0 `Vb ~T0 @X0 1 s@30936 ]
+[; ;AD18F128.h: 1421: static volatile bit DT0 @ ((unsigned)&BMCTX*8)+0;
+[; ;DataType.h: 9: typedef signed char s8;
+[; ;DataType.h: 10: typedef signed short int s16;
+[; ;DataType.h: 11: typedef signed long s32;
+[; ;DataType.h: 13: typedef unsigned char u8;
+[; ;DataType.h: 14: typedef unsigned short int u16;
+[; ;DataType.h: 15: typedef unsigned long u32;
+[; ;DataType.h: 17: typedef signed char const sc8;
+[; ;DataType.h: 18: typedef signed short const sc16;
+[; ;DataType.h: 19: typedef signed long const sc32;
+[; ;DataType.h: 21: typedef unsigned char const uc8;
+[; ;DataType.h: 22: typedef unsigned short const uc16;
+[; ;DataType.h: 23: typedef unsigned long const uc32;
+[; ;DataType.h: 26: typedef volatile signed char vs8;
+[; ;DataType.h: 27: typedef volatile signed short int vs16;
+[; ;DataType.h: 28: typedef volatile signed long vs32;
+[; ;DataType.h: 30: typedef volatile unsigned char vu8;
+[; ;DataType.h: 31: typedef volatile unsigned short int vu16;
+[; ;DataType.h: 32: typedef volatile unsigned long vu32;
+[; ;task.h: 13: typedef struct task {
+[; ;task.h: 14: unsigned int interval;
+[; ;task.h: 15: unsigned int counter;
+[; ;task.h: 16: unsigned char id1;
+[; ;task.h: 17: unsigned char id2;
+[; ;task.h: 18: unsigned char active;
+[; ;task.h: 19: unsigned char ready;
+[; ;task.h: 20: unsigned char maxSuc;
+[; ;task.h: 21: unsigned char sucCnt;
+[; ;task.h: 22: } task;
+[; ;task.h: 24: void task_init(void) ;
+[; ;task.h: 27: char add_task(unsigned char id1,unsigned char id2, unsigned long interval_ms,unsigned char suc_max);
+[; ;task.h: 29: char add_task_id(unsigned char id1,unsigned char id2, unsigned long interval_ms,unsigned char suc_max,char task_id);
+[; ;task.h: 31: void remove_task(int task_id);
+[; ;task.h: 34: void find_task(unsigned char id1,unsigned char id2,task* task_);
+[; ;task.h: 45: extern task task_list[8];
+[; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 43: struct __prbuf
+[; ;stdio.h: 44: {
+[; ;stdio.h: 45: char * ptr;
+[; ;stdio.h: 46: void (* func)(char);
+[; ;stdio.h: 47: };
+[; ;errno.h: 29: extern int errno;
+[; ;conio.h: 12: extern void init_uart(void);
+[; ;conio.h: 14: extern char getch(void);
+[; ;conio.h: 15: extern char getche(void);
+[; ;conio.h: 16: extern void putch(char);
+[; ;conio.h: 17: extern void ungetch(char);
+[; ;conio.h: 19: extern __bit kbhit(void);
+[; ;conio.h: 23: extern char * cgets(char *);
+[; ;conio.h: 24: extern void cputs(const char *);
+[; ;stdio.h: 88: extern int cprintf(char *, ...);
+[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 183: extern char * gets(char *);
+[; ;stdio.h: 184: extern int puts(const char *);
+[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 195: extern int printf(const char *, ...);
+[; ;periph.h: 31: extern u16 cnt0,timer0cnt;
+[; ;periph.h: 32: extern u8 tim0flag;
+[; ;periph.h: 34: void GPIO_Init(void);
+[; ;periph.h: 35: void timer1_init(void);
+[; ;periph.h: 36: char timer0_cnt(unsigned int ms,unsigned char lab);
+[; ;periph.h: 37: void fvr_init(void);
+[; ;periph.h: 38: u16 adc_bat(void);
+[; ;periph.h: 39: void dac_init(void);
+[; ;periph.h: 40: void cmp_init(void);
+[; ;aip33626.h: 9: void aip33626_init(void);
+[; ;aip33626.h: 11: void aip33626_allDisplay_(u8 num);
+[; ;aip33626.h: 12: void aip33626_allDisplay(u8* num);
+[; ;aip33626.h: 13: void arr_col_init(u8 num);
+[; ;aip33626.h: 14: void new_col(u8 you,u8 dian,u8 mode_you,u8 mode_dian,u8 mode,u8 mode_sub);
+[; ;aip33626.h: 15: void aip33626_ram(unsigned char addr,unsigned char dat);
+[; ;aip33626.h: 18: void aip33626_sys_begin(task* task_);
+[; ;aip33626.h: 20: void aip33626_flash(task* task_);
+[; ;aip33626.h: 22: void aip33626_breath(task* task_);
+[; ;aip33626.h: 24: void aip33626_breath_stop(task* task_);
+[; ;aip33626.h: 26: void aip33626_nol_doub(task* task_);
+[; ;aip33626.h: 28: void aip33626_smo_reset(task* task_);
+[; ;aip33626.h: 30: void aip33626_batFull( task* task_);
+[; ;aip33626.h: 32: void aip33626_freeChrg(task* task_);
+[; ;aip33626.h: 35: extern u8 col_cnt;
+[; ;aip33626.h: 36: extern u8 arr_col[128];
+[; ;aip33626.h: 37: extern u8 col_init;
+[; ;aip33626.h: 38: extern u8 aip33626_task_id;
+[; ;si_mic.h: 6: void si_mic_task(task* task_);
+[; ;si_mic.h: 9: extern u8 mode_sub;
+[; ;si_mic.h: 10: extern char si_mic_task_id;
+[; ;si_mic.h: 11: extern u8 dl0_flag,dl1_flag;
+[; ;si_mic.h: 12: extern u8 duty0,duty1;
+[; ;si_mic.h: 14: extern u8 breath_state;
+[; ;si_mic.h: 16: extern u8 you,mode_you;
+[; ;si_mic.h: 18: extern u8 dl_init;
+[; ;pwm.h: 7: void pwm_task(void);
+[; ;pwm.h: 9: extern char pwm_task_id;
+[; ;pwm.h: 10: void pwm_init(void);
+[; ;key.h: 7: void key_task(task* task_);
+[; ;key.h: 10: void key_timer_task(task* task_);
+[; ;key.h: 12: extern char key_timer_id;
+[; ;key.h: 13: extern char key_task_id;
+[; ;key.h: 14: extern u8 mode;
+[; ;key.h: 15: extern u8 state_key;
+[; ;chrg.h: 6: void chrg_task(task* task_);
+[; ;chrg.h: 7: extern u8 state_chrg;
+[; ;chrg.h: 8: extern char chrg_task_id;
+[; ;chrg.h: 9: extern u8 task_1_7_flag;
+[; ;smo_det.h: 7: void smo_det_task(task* task_);
+[; ;smo_det.h: 9: extern u8 state_smo_det;
+[; ;smo_det.h: 10: extern u8 smo_det_task_id;
+[; ;smo_det.h: 11: extern u8 smo_det1_o,smo_det2_o;
+[; ;smo_det.h: 12: extern u8 cr_flag;
+[; ;bat.h: 8: void bat_task(task* task_);
+[; ;bat.h: 10: extern u8 dian,mode_dian;
+[; ;bat.h: 11: extern u8 low_bat_flag;
+[; ;bat.h: 12: extern char bat_task_id;
+[; ;bat.h: 13: extern u16 bat;
+[; ;uart.h: 6: void uart_init(void);
+[; ;uart.h: 7: void uart_txnum(unsigned int p,unsigned char len);
+[; ;uart.h: 8: void uart_txln(const char * p);
+[; ;uart.h: 9: void uart_txfloat(float p,unsigned char len1,unsigned char len2);
+[; ;sleep.h: 6: extern char sleep_task_id;
+[; ;sleep.h: 9: void sleep_task(task* task_);
+"4 .\src\key.c
+[v _t `uc ~T0 @X0 1 e ]
+[i _t
+-> -> 20 `i `uc
+]
+[; ;key.c: 4: u8 t=20;
+"5
+[v _key_o `uc ~T0 @X0 1 e ]
+[i _key_o
+-> -> 0 `i `uc
+]
+[; ;key.c: 5: u8 key_o=0;
+"6
+[v _key_timer_flag `uc ~T0 @X0 1 e ]
+[i _key_timer_flag
+-> -> 0 `i `uc
+]
+[; ;key.c: 6: u8 key_timer_flag=0;
+"7
+[v _key_timer_id `uc ~T0 @X0 1 e ]
+[; ;key.c: 7: char key_timer_id;
+"8
+[v _key_task_id `uc ~T0 @X0 1 e ]
+[; ;key.c: 8: char key_task_id;
+"9
+[v _mode `uc ~T0 @X0 1 e ]
+[i _mode
+-> -> 0 `i `uc
+]
+[; ;key.c: 9: u8 mode=0;
+"13
+[v _state_key `uc ~T0 @X0 1 e ]
+[i _state_key
+-> -> 2 `i `uc
+]
+[; ;key.c: 13: u8 state_key=2;
+"16
+[v _key_task `(v ~T0 @X0 1 ef1`*S1 ]
+"17
+{
+[; ;key.c: 16: void key_task(task* task_)
+[; ;key.c: 17: {
+[e :U _key_task ]
+"16
+[v _task_ `*S1 ~T0 @X0 1 r1 ]
+"17
+[f ]
+[; ;key.c: 18: if(PIND2==0 && key_o==1)
+"18
+[e $ ! && == -> _PIND2 `i -> 0 `i == -> _key_o `i -> 1 `i 4  ]
+[; ;key.c: 19: {
+"19
+{
+[; ;key.c: 20: if(key_timer_flag==1)
+"20
+[e $ ! == -> _key_timer_flag `i -> 1 `i 5  ]
+[; ;key.c: 21: {
+"21
+{
+[; ;key.c: 22: t=task_list[key_timer_id].sucCnt;
+"22
+[e = _t . *U + &U _task_list * -> _key_timer_id `ux -> -> # *U &U _task_list `ui `ux 7 ]
+[; ;key.c: 23: if(t<=13)
+"23
+[e $ ! <= -> _t `i -> 13 `i 6  ]
+[; ;key.c: 24: {
+"24
+{
+[; ;key.c: 25: mode++;
+"25
+[e ++ _mode -> -> 1 `i `uc ]
+[; ;key.c: 26: mode&=1;
+"26
+[e =& _mode -> -> 1 `i `uc ]
+[; ;key.c: 32: key_timer_flag=0;
+"32
+[e = _key_timer_flag -> -> 0 `i `uc ]
+[; ;key.c: 33: t=15;
+"33
+[e = _t -> -> 15 `i `uc ]
+"34
+}
+[e :U 6 ]
+"35
+}
+[; ;key.c: 34: }
+[; ;key.c: 35: }
+[e $U 7  ]
+"36
+[e :U 5 ]
+[; ;key.c: 36: else
+[; ;key.c: 37: {
+"37
+{
+[; ;key.c: 38: key_timer_flag=1;
+"38
+[e = _key_timer_flag -> -> 1 `i `uc ]
+"39
+}
+[e :U 7 ]
+"40
+}
+[; ;key.c: 39: }
+[; ;key.c: 40: }
+[e $U 8  ]
+"41
+[e :U 4 ]
+[; ;key.c: 41: else if(PIND2==1&&key_o==0)
+[e $ ! && == -> _PIND2 `i -> 1 `i == -> _key_o `i -> 0 `i 9  ]
+[; ;key.c: 42: {
+"42
+{
+[; ;key.c: 43: if(task_list[aip33626_task_id].active==0 && task_1_7_flag==0)
+"43
+[e $ ! && == -> . *U + &U _task_list * -> _aip33626_task_id `ux -> -> # *U &U _task_list `ui `ux 4 `i -> 0 `i == -> _task_1_7_flag `i -> 0 `i 10  ]
+[; ;key.c: 44: {
+"44
+{
+[; ;key.c: 45: mode_sub=0;
+"45
+[e = _mode_sub -> -> 0 `i `uc ]
+[; ;key.c: 46: state_key=0;
+"46
+[e = _state_key -> -> 0 `i `uc ]
+[; ;key.c: 47: add_task_id(1,3,
+[; ;key.c: 48: 50,40,aip33626_task_id);
+"48
+[e ( _add_task_id (4 , , , , -> -> 1 `i `uc -> -> 3 `i `uc -> -> -> 50 `i `l `ul -> -> 40 `i `uc _aip33626_task_id ]
+[; ;key.c: 49: state_chrg=3;
+"49
+[e = _state_chrg -> -> 3 `i `uc ]
+"52
+}
+[e :U 10 ]
+"53
+}
+[e :U 9 ]
+"54
+[e :U 8 ]
+[; ;key.c: 52: }
+[; ;key.c: 53: }
+[; ;key.c: 54: key_o=PIND2;
+[e = _key_o -> -> _PIND2 `i `uc ]
+[; ;key.c: 55: if(PIND2==0)
+"55
+[e $ ! == -> _PIND2 `i -> 0 `i 11  ]
+[; ;key.c: 56: {
+"56
+{
+[; ;key.c: 57: task_->sucCnt++;
+"57
+[e ++ . *U _task_ 7 -> -> 1 `i `uc ]
+[; ;key.c: 58: if(task_->sucCnt>=187)
+"58
+[e $ ! >= -> . *U _task_ 7 `i -> 187 `i 12  ]
+[; ;key.c: 59: {
+"59
+{
+[; ;key.c: 60: task_->sucCnt=0;
+"60
+[e = . *U _task_ 7 -> -> 0 `i `uc ]
+[; ;key.c: 61: if(cr_flag)
+"61
+[e $ ! != -> _cr_flag `i -> -> -> 0 `i `uc `i 13  ]
+[; ;key.c: 62: {
+"62
+{
+[; ;key.c: 63: cr_flag=0;
+"63
+[e = _cr_flag -> -> 0 `i `uc ]
+[; ;key.c: 64: you=6;
+"64
+[e = _you -> -> 6 `i `uc ]
+[; ;key.c: 65: mode_you=0;
+"65
+[e = _mode_you -> -> 0 `i `uc ]
+[; ;key.c: 66: task_list[aip33626_task_id].active=0;
+"66
+[e = . *U + &U _task_list * -> _aip33626_task_id `ux -> -> # *U &U _task_list `ui `ux 4 -> -> 0 `i `uc ]
+[; ;key.c: 67: add_task_id(1,6,
+[; ;key.c: 68: 250,24,aip33626_task_id);
+"68
+[e ( _add_task_id (4 , , , , -> -> 1 `i `uc -> -> 6 `i `uc -> -> -> 250 `i `l `ul -> -> 24 `i `uc _aip33626_task_id ]
+[; ;key.c: 69: breath_state=3;
+"69
+[e = _breath_state -> -> 3 `i `uc ]
+[; ;key.c: 70: state_key=2;
+"70
+[e = _state_key -> -> 2 `i `uc ]
+[; ;key.c: 71: state_smo_det=3;
+"71
+[e = _state_smo_det -> -> 3 `i `uc ]
+[; ;key.c: 72: state_chrg=3;
+"72
+[e = _state_chrg -> -> 3 `i `uc ]
+"73
+}
+[e :U 13 ]
+"76
+}
+[e :U 12 ]
+"78
+}
+[; ;key.c: 73: }
+[; ;key.c: 76: }
+[; ;key.c: 78: }
+[e $U 14  ]
+"79
+[e :U 11 ]
+[; ;key.c: 79: else
+[; ;key.c: 80: {
+"80
+{
+[; ;key.c: 81: task_->sucCnt=0;
+"81
+[e = . *U _task_ 7 -> -> 0 `i `uc ]
+"82
+}
+[e :U 14 ]
+[; ;key.c: 82: }
+[; ;key.c: 83: switch (state_key)
+"83
+[e $U 16  ]
+[; ;key.c: 84: {
+"84
+{
+[; ;key.c: 85: case 0:
+"85
+[e :U 17 ]
+[; ;key.c: 86: if(task_list[aip33626_task_id].active==0)
+"86
+[e $ ! == -> . *U + &U _task_list * -> _aip33626_task_id `ux -> -> # *U &U _task_list `ui `ux 4 `i -> 0 `i 18  ]
+[; ;key.c: 87: {
+"87
+{
+[; ;key.c: 88: mode_sub=2;
+"88
+[e = _mode_sub -> -> 2 `i `uc ]
+[; ;key.c: 89: state_key=1;
+"89
+[e = _state_key -> -> 1 `i `uc ]
+[; ;key.c: 90: add_task_id(1,4,
+[; ;key.c: 91: 250,21,aip33626_task_id);
+"91
+[e ( _add_task_id (4 , , , , -> -> 1 `i `uc -> -> 4 `i `uc -> -> -> 250 `i `l `ul -> -> 21 `i `uc _aip33626_task_id ]
+"92
+}
+[e :U 18 ]
+[; ;key.c: 92: }
+[; ;key.c: 93: break;
+"93
+[e $U 15  ]
+[; ;key.c: 94: case 1:
+"94
+[e :U 19 ]
+[; ;key.c: 95: if(task_list[aip33626_task_id].active==0)
+"95
+[e $ ! == -> . *U + &U _task_list * -> _aip33626_task_id `ux -> -> # *U &U _task_list `ui `ux 4 `i -> 0 `i 20  ]
+[; ;key.c: 96: {
+"96
+{
+[; ;key.c: 97: mode_sub=1;
+"97
+[e = _mode_sub -> -> 1 `i `uc ]
+[; ;key.c: 98: state_key=2;
+"98
+[e = _state_key -> -> 2 `i `uc ]
+[; ;key.c: 99: add_task_id(1,3,
+[; ;key.c: 100: 50,40,aip33626_task_id);
+"100
+[e ( _add_task_id (4 , , , , -> -> 1 `i `uc -> -> 3 `i `uc -> -> -> 50 `i `l `ul -> -> 40 `i `uc _aip33626_task_id ]
+"101
+}
+[e :U 20 ]
+[; ;key.c: 101: }
+[; ;key.c: 102: break;
+"102
+[e $U 15  ]
+[; ;key.c: 104: default:
+"104
+[e :U 21 ]
+[; ;key.c: 105: break;
+"105
+[e $U 15  ]
+"106
+}
+[; ;key.c: 106: }
+[e $U 15  ]
+"83
+[e :U 16 ]
+[e [\ _state_key , $ -> -> 0 `i `uc 17
+ , $ -> -> 1 `i `uc 19
+ 21 ]
+"106
+[e :U 15 ]
+[; ;key.c: 107: }
+"107
+[e :UE 3 ]
+}
+"110
+[v _key_timer_task `(v ~T0 @X0 1 ef1`*S1 ]
+"111
+{
+[; ;key.c: 110: void key_timer_task(task* task_)
+[; ;key.c: 111: {
+[e :U _key_timer_task ]
+"110
+[v _task_ `*S1 ~T0 @X0 1 r1 ]
+"111
+[f ]
+[; ;key.c: 112: if(key_timer_flag)
+"112
+[e $ ! != -> _key_timer_flag `i -> -> -> 0 `i `uc `i 23  ]
+[; ;key.c: 113: {
+"113
+{
+[; ;key.c: 114: task_->sucCnt++;
+"114
+[e ++ . *U _task_ 7 -> -> 1 `i `uc ]
+[; ;key.c: 115: if(task_->sucCnt>=14)
+"115
+[e $ ! >= -> . *U _task_ 7 `i -> 14 `i 24  ]
+[; ;key.c: 116: {
+"116
+{
+[; ;key.c: 117: key_timer_flag=0;
+"117
+[e = _key_timer_flag -> -> 0 `i `uc ]
+"118
+}
+[e :U 24 ]
+"119
+}
+[; ;key.c: 118: }
+[; ;key.c: 119: }
+[e $U 25  ]
+"120
+[e :U 23 ]
+[; ;key.c: 120: else
+[; ;key.c: 121: {
+"121
+{
+[; ;key.c: 122: task_->sucCnt=0;
+"122
+[e = . *U _task_ 7 -> -> 0 `i `uc ]
+"123
+}
+[e :U 25 ]
+[; ;key.c: 123: }
+[; ;key.c: 124: }
+"124
+[e :UE 22 ]
+}

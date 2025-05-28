@@ -1,0 +1,3299 @@
+Microchip MPLAB XC8 Compiler V1.41 ()
+
+Linker command line:
+
+\
+  --edf=c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\dat\en_msgs.txt \
+  -cs -h+output\AD18F128_Demo.sym --cmf=output\AD18F128_Demo.cmf -z \
+  -Q18XAD18F128 -oC:\Users\Administrator\AppData\Local\Temp\sdk0.2 \
+  -Moutput\AD18F128_Demo.map -ver=XC8 -ASTACK=0180h-01ffh -pstack=STACK \
+  -ACODE=00h-03FFFh -ACONST=00h-03FFFh -ASMALLCONST=0200h-02FFhx62 \
+  -AMEDIUMCONST=0200h-03FFFh -ACOMRAM=01h-07Fh -AABS1=00h-01FFh \
+  -ABIGRAM=01h-01FFh -ARAM=080h-0FFh,0100h-01FFh -ABANK0=080h-0FFh \
+  -ABANK1=0100h-01FFh -ASFR=0F00h-0F7Fhx2 \
+  -preset_vec=00h,intcode=08h,intcodelo=018h,powerup,init -pramtop=0200h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F000FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\Administrator\AppData\Local\Temp\sdk0.obj \
+  output\AD18F128_Demo.obj 
+
+Object code version is 3.11
+
+Machine type is 18XAD18F128
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Administrator\AppData\Local\Temp\sdk0.obj
+                init                                 26       26        4        C       0
+                reset_vec                             0        0        4        0       0
+output\AD18F128_Demo.obj
+                intcodelo                            18       18        E        C       0
+                intcode                               8        8        6        4       0
+                temp                                 7E       7E        1        1       1
+                smallconst                          200      200       A2      100       0
+                config                           300000   300000        8   300000       0
+                text57                             14A6     14A6       E0      151       0
+                intcode_body                        D20      D20      202      151       0
+                text54                             12CA     12CA       F4      151       0
+                text53                             24C2     24C2       20      151       0
+                text52                             21FE     21FE       4E      151       0
+                text51                             23E8     23E8       2A      151       0
+                text50                             24A0     24A0       22      151       0
+                text49                             251E     251E       1E      151       0
+                text48                             25A4     25A4       16      151       0
+                text47                             2330     2330       42      151       0
+                text46                             23B0     23B0       38      151       0
+                text45                             2500     2500       1E      151       0
+                text44                              6A4      6A4      386      151       0
+                text43                             1DF2     1DF2       7C      151       0
+                text42                             2372     2372       3E      151       0
+                text41                             2574     2574       1A      151       0
+                text40                             1FCE     1FCE       6A      151       0
+                text39                             2158     2158       58      151       0
+                text38                             1B14     1B14       A8      151       0
+                text37                             2558     2558       1C      151       0
+                text36                             1EE6     1EE6       76      151       0
+                text35                             1D74     1D74       7E      151       0
+                text34                             1BBC     1BBC       A6      151       0
+                text33                             19A2     19A2       BA      151       0
+                text32                              F22      F22      15C      151       0
+                text31                             11CC     11CC       FE      151       0
+                text30                             2412     2412       26      151       0
+                text29                             1CEE     1CEE       86      151       0
+                text28                             107E     107E      14E      151       0
+                text27                             1818     1818       C8      151       0
+                text26                             1A5C     1A5C       B8      151       0
+                text25                             2438     2438       24      151       0
+                text24                             22E4     22E4       4C      151       0
+                text23                             2298     2298       4C      151       0
+                text22                             20FE     20FE       5A      151       0
+                text21                             209E     209E       60      151       0
+                text20                              2A2      2A2      402      151       0
+                text19                             224C     224C       4C      151       0
+                text18                             258E     258E       16      151       0
+                text17                             25F0     25F0       12      151       0
+                text16                             25DE     25DE       12      151       0
+                text15                             1E6E     1E6E       78      151       0
+                text14                             1662     1662       DC      151       0
+                text13                             25CC     25CC       12      151       0
+                text12                             173E     173E       DA      151       0
+                text11                             21B0     21B0       4E      151       0
+                text10                             24E2     24E2       1E      151       0
+                text9                              25BA     25BA       12      151       0
+                text8                              13BE     13BE       E8      151       0
+                text7                              247E     247E       22      151       0
+                text6                              1C62     1C62       8C      151       0
+                text5                              253C     253C       1C      151       0
+                text4                              2038     2038       66      151       0
+                text3                              1586     1586       DC      151       0
+                text2                              18E0     18E0       C2      151       0
+                text1                              245C     245C       22      151       0
+                text0                               A2A      A2A      2F6      151       0
+                cstackCOMRAM                          1        1       44        1       1
+                bssBANK1                            100      100       80      100       1
+                dataBANK0                            D6       D6        C       80       1
+                bssBANK0                             80       80       56       80       1
+                dataCOMRAM                           70       70        E        1       1
+                bssCOMRAM                            45       45       2B        1       1
+                cinit                              1F5C     1F5C       72      151       0
+                idataBANK0                         2610     2610        C      151       0
+                idataCOMRAM                        2602     2602        E      151       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                intcodelo                            18       18        E         0
+                intcode                               8        8        6         0
+                init                                 26       26        4         0
+                reset_vec                             0        0        4         0
+                text57                             14A6     14A6       E0         0
+                intcode_body                        D20      D20      202         0
+                text54                             12CA     12CA       F4         0
+                text53                             24C2     24C2       20         0
+                text52                             21FE     21FE       4E         0
+                text51                             23E8     23E8       2A         0
+                text50                             24A0     24A0       22         0
+                text49                             251E     251E       1E         0
+                text48                             25A4     25A4       16         0
+                text47                             2330     2330       42         0
+                text46                             23B0     23B0       38         0
+                text45                             2500     2500       1E         0
+                text44                              6A4      6A4      386         0
+                text43                             1DF2     1DF2       7C         0
+                text42                             2372     2372       3E         0
+                text41                             2574     2574       1A         0
+                text40                             1FCE     1FCE       6A         0
+                text39                             2158     2158       58         0
+                text38                             1B14     1B14       A8         0
+                text37                             2558     2558       1C         0
+                text36                             1EE6     1EE6       76         0
+                text35                             1D74     1D74       7E         0
+                text34                             1BBC     1BBC       A6         0
+                text33                             19A2     19A2       BA         0
+                text32                              F22      F22      15C         0
+                text31                             11CC     11CC       FE         0
+                text30                             2412     2412       26         0
+                text29                             1CEE     1CEE       86         0
+                text28                             107E     107E      14E         0
+                text27                             1818     1818       C8         0
+                text26                             1A5C     1A5C       B8         0
+                text25                             2438     2438       24         0
+                text24                             22E4     22E4       4C         0
+                text23                             2298     2298       4C         0
+                text22                             20FE     20FE       5A         0
+                text21                             209E     209E       60         0
+                text20                              2A2      2A2      402         0
+                text19                             224C     224C       4C         0
+                text18                             258E     258E       16         0
+                text17                             25F0     25F0       12         0
+                text16                             25DE     25DE       12         0
+                text15                             1E6E     1E6E       78         0
+                text14                             1662     1662       DC         0
+                text13                             25CC     25CC       12         0
+                text12                             173E     173E       DA         0
+                text11                             21B0     21B0       4E         0
+                text10                             24E2     24E2       1E         0
+                text9                              25BA     25BA       12         0
+                text8                              13BE     13BE       E8         0
+                text7                              247E     247E       22         0
+                text6                              1C62     1C62       8C         0
+                text5                              253C     253C       1C         0
+                text4                              2038     2038       66         0
+                text3                              1586     1586       DC         0
+                text2                              18E0     18E0       C2         0
+                text1                              245C     245C       22         0
+                text0                               A2A      A2A      2F6         0
+                cinit                              1F5C     1F5C       72         0
+                idataBANK0                         2610     2610        C         0
+                idataCOMRAM                        2602     2602        E         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                          200      200       A2         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                temp                                 7E       7E        1         1
+                cstackCOMRAM                          1        1       44         1
+                dataCOMRAM                           70       70        E         1
+                bssCOMRAM                            45       45       2B         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                dataBANK0                            D6       D6        C         1
+                bssBANK0                             80       80       56         1
+
+        CLASS   BANK1          
+                bssBANK1                            100      100       80         1
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        8         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  00007E  00007F         1       1  COMRAM  
+                intcode                        000008  000006  00000E         4       0  CODE    
+                intcodelo                      000018  000012  00002A         C       0  CODE    
+                bssBANK0                       000080  000062  0000E2        80       1  BANK0   
+                bssBANK1                       000100  000080  000180       100       1  BANK1   
+                smallconst                     000200  0000A2  0002A2       100       0  SMALLCON
+                text20                         0002A2  00237A  00261C       151       0  CODE    
+                config                         300000  000008  300008    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000E2-0000FF               1E
+        BANK1            000180-0001FF               80
+        BIGRAM           00007F-00007F                1
+                         0000E2-0000FF               1E
+                         000180-0001FF               80
+        CODE             000004-000007                4
+                         00000E-000017                A
+                         00002A-0001FF              1D6
+                         00261C-003FFF             19E4
+        COMRAM           00007F-00007F                1
+        CONFIG           300008-30000D                6
+        CONST            000004-000007                4
+                         00000E-000017                A
+                         00002A-0001FF              1D6
+                         00261C-003FFF             19E4
+        EEDATA           F00000-F000FF              100
+        IDLOC            200000-200007                8
+        MEDIUMCONST      00261C-003FFF             19E4
+        RAM              0000E2-0000FF               1E
+                         000180-0001FF               80
+        SFR              000F00-000FFF               80
+        SMALLCONST       00261C-003FFF              100
+        STACK            000180-0001FF               80
+
+                                  Symbol Table
+
+?___awdiv                      cstackCOMRAM 000002
+?___ftadd                      cstackCOMRAM 00001D
+?___ftmul                      cstackCOMRAM 00000E
+?___ftpack                     cstackCOMRAM 000002
+?___fttol                      cstackCOMRAM 000029
+?___lbtoft                     cstackCOMRAM 00000A
+?___lldiv                      cstackCOMRAM 000002
+?___lltoft                     cstackCOMRAM 00000A
+?___lmul                       cstackCOMRAM 000002
+?_adc_bat                      cstackCOMRAM 00000F
+AD18F128@ADCCLKEN              (abs)        007B15
+AD18F128@ADCON0                (abs)        000FA6
+AD18F128@ADCON1                (abs)        000FA5
+AD18F128@ADCON3                (abs)        000F13
+AD18F128@ADCON4                (abs)        000F12
+AD18F128@ADIE                  (abs)        007CDD
+AD18F128@ADIF                  (abs)        007CE5
+AD18F128@ADON                  (abs)        007D30
+AD18F128@ADRESH                (abs)        000FA8
+AD18F128@ADRESH1               (abs)        000F17
+AD18F128@ADRESH2               (abs)        000F15
+AD18F128@ADRESL                (abs)        000FA7
+AD18F128@ADRESL1               (abs)        000F16
+AD18F128@ADRESL2               (abs)        000F14
+AD18F128@ANASEL0               (abs)        000F54
+AD18F128@ANASEL1               (abs)        000F53
+AD18F128@ANASEL2               (abs)        000F52
+AD18F128@ANASEL3               (abs)        000F0D
+AD18F128@CLKCFG1               (abs)        000F63
+AD18F128@CMP0CON2              (abs)        000F33
+AD18F128@CMP0EN                (abs)        007BC7
+AD18F128@CMP0IE                (abs)        007CF0
+AD18F128@CMP0IF                (abs)        007CF8
+AD18F128@CMP0NCH0              (abs)        007BC0
+AD18F128@CMP0NCH1              (abs)        007BC1
+AD18F128@CMP0OUT               (abs)        007BC6
+AD18F128@CMP0PCH0              (abs)        007BC2
+AD18F128@CMP0PCH1              (abs)        007BC3
+AD18F128@CMP0PCH2              (abs)        007BC4
+AD18F128@CMP0POS               (abs)        007BC5
+AD18F128@CMP1CON2              (abs)        000F32
+AD18F128@CMP1EN                (abs)        007BBF
+AD18F128@CMP1IE                (abs)        007CF1
+AD18F128@CMP1IF                (abs)        007CF9
+AD18F128@CMP1NCH0              (abs)        007BB8
+AD18F128@CMP1NCH1              (abs)        007BB9
+AD18F128@CMP1OUT               (abs)        007BBE
+AD18F128@CMP1PCH0              (abs)        007BBA
+AD18F128@CMP1PCH1              (abs)        007BBB
+AD18F128@CMP1PCH2              (abs)        007BBC
+AD18F128@CMP1POS               (abs)        007BBD
+AD18F128@CMPCLKEN              (abs)        007B17
+AD18F128@CMPCON                (abs)        000F76
+AD18F128@CMPCON1               (abs)        000F7D
+AD18F128@CMPFILTER0            (abs)        007BB4
+AD18F128@CMPFILTER1            (abs)        007BB5
+AD18F128@CMPFILTER2            (abs)        007BB6
+AD18F128@CMPFILTER3            (abs)        007BB7
+AD18F128@DAC0CON               (abs)        000F74
+AD18F128@DAC0EN                (abs)        007BA6
+AD18F128@DAC0VREF0             (abs)        007BA8
+AD18F128@DAC0VREF1             (abs)        007BA9
+AD18F128@DAC1CON               (abs)        000F73
+AD18F128@DAC1EN                (abs)        007B9E
+AD18F128@DAC1VREF0             (abs)        007BAA
+AD18F128@DAC1VREF1             (abs)        007BAB
+AD18F128@FVRCON                (abs)        000F72
+AD18F128@FVRCON1               (abs)        000F30
+AD18F128@FVREN                 (abs)        007B95
+AD18F128@FVRPGA                (abs)        007B96
+AD18F128@FVRPGA1               (abs)        007986
+AD18F128@FVR_A2D_OUT           (abs)        007987
+AD18F128@FVR_OFFSET_EN         (abs)        007985
+AD18F128@GIE                   (abs)        007F97
+AD18F128@GO                    (abs)        007D31
+AD18F128@OSCCON                (abs)        000F64
+AD18F128@PA4MSK                (abs)        007B04
+AD18F128@PAIE                  (abs)        007CF5
+AD18F128@PAIF                  (abs)        007CFD
+AD18F128@PAOD                  (abs)        000F94
+AD18F128@PAPD                  (abs)        000F8C
+AD18F128@PAPU                  (abs)        000F84
+AD18F128@PB0AEN                (abs)        007A98
+AD18F128@PB0MSK                (abs)        007AF8
+AD18F128@PB0PU                 (abs)        007C28
+AD18F128@PB1AEN                (abs)        007A99
+AD18F128@PB1MSK                (abs)        007AF9
+AD18F128@PB1PU                 (abs)        007C29
+AD18F128@PB3                   (abs)        007C0B
+AD18F128@PBIE                  (abs)        007CF6
+AD18F128@PBIF                  (abs)        007CFE
+AD18F128@PBOD                  (abs)        000F95
+AD18F128@PBPD                  (abs)        000F8D
+AD18F128@PBPU                  (abs)        000F85
+AD18F128@PC1                   (abs)        007C11
+AD18F128@PC2                   (abs)        007C12
+AD18F128@PC3MSK                (abs)        007AF3
+AD18F128@PCIE                  (abs)        007CF7
+AD18F128@PCIF                  (abs)        007CFF
+AD18F128@PCOD                  (abs)        000F96
+AD18F128@PCPD                  (abs)        000F8E
+AD18F128@PCPU                  (abs)        000F86
+AD18F128@PD0                   (abs)        007C18
+AD18F128@PD2MSK                (abs)        007AEA
+AD18F128@PDIE                  (abs)        007D0F
+AD18F128@PDIF                  (abs)        007D17
+AD18F128@PDOD                  (abs)        000F97
+AD18F128@PDPD                  (abs)        000F8F
+AD18F128@PDPU                  (abs)        000F87
+AD18F128@PINA4                 (abs)        007C44
+AD18F128@PINA5                 (abs)        007C45
+AD18F128@PINB0                 (abs)        007C48
+AD18F128@PINB1                 (abs)        007C49
+AD18F128@PINC3                 (abs)        007C53
+AD18F128@PIND2                 (abs)        007C5A
+AD18F128@PORTA                 (abs)        000F80
+AD18F128@PORTB                 (abs)        000F81
+AD18F128@PORTC                 (abs)        000F82
+AD18F128@PORTD                 (abs)        000F83
+AD18F128@PR0                   (abs)        000FD6
+AD18F128@PR2H                  (abs)        000FCA
+AD18F128@PR2L                  (abs)        000FCB
+AD18F128@PR3H                  (abs)        000FB9
+AD18F128@PR3L                  (abs)        000FB8
+AD18F128@SMCR                  (abs)        000F65
+AD18F128@SMTA                  (abs)        000F98
+AD18F128@SPEN                  (abs)        007A6F
+AD18F128@T0CLKEN               (abs)        007B10
+AD18F128@T0CON                 (abs)        000FD7
+AD18F128@T0CS0                 (abs)        007EBD
+AD18F128@T1CLKEN               (abs)        007B11
+AD18F128@T1CON0                (abs)        000FCF
+AD18F128@T2CLKEN               (abs)        007B12
+AD18F128@T2CON                 (abs)        000FC9
+AD18F128@T3CLKEN               (abs)        007B13
+AD18F128@T3CON                 (abs)        000FBC
+AD18F128@TMR0                  (abs)        000FD5
+AD18F128@TMR0IE                (abs)        007D08
+AD18F128@TMR0IF                (abs)        007D10
+AD18F128@TMR1H                 (abs)        000FD1
+AD18F128@TMR1IE                (abs)        007D09
+AD18F128@TMR1IF                (abs)        007D11
+AD18F128@TMR1L                 (abs)        000FD0
+AD18F128@TMR1ON                (abs)        007E78
+AD18F128@TMR2H                 (abs)        000FCC
+AD18F128@TMR2IE                (abs)        007D0A
+AD18F128@TMR2IF                (abs)        007D12
+AD18F128@TMR2L                 (abs)        000FCD
+AD18F128@TMR2ON                (abs)        007E4A
+AD18F128@TMR3H                 (abs)        000FBB
+AD18F128@TMR3IE                (abs)        007D0B
+AD18F128@TMR3IF                (abs)        007D13
+AD18F128@TMR3L                 (abs)        000FBA
+AD18F128@TMR3ON                (abs)        007DE2
+AD18F128@TRISA                 (abs)        000F90
+AD18F128@TRISB                 (abs)        000F91
+AD18F128@TRISC                 (abs)        000F92
+AD18F128@TRISD                 (abs)        000F93
+AD18F128@UARTCLKEN             (abs)        007B1E
+CMP0_cal@VOOS1                 cstackCOMRAM 00000C
+CMP0_cal@i                     cstackCOMRAM 00000E
+CMP0_cal@start                 cstackCOMRAM 00000D
+CMP0_offset@OFFSET             cstackCOMRAM 000002
+CMP0_offset@tmp                cstackCOMRAM 000003
+CMP1_cal@VOOS1                 cstackCOMRAM 00000C
+CMP1_cal@i                     cstackCOMRAM 00000E
+CMP1_cal@start                 cstackCOMRAM 00000D
+CMP1_offset@OFFSET             cstackCOMRAM 000002
+CMP1_offset@tmp                cstackCOMRAM 000003
+FVR_CAL@VOOS1                  cstackCOMRAM 00000C
+FVR_CAL@i                      cstackCOMRAM 00000E
+FVR_CAL@start                  cstackCOMRAM 00000D
+FVR_Offset@OFFSET              cstackCOMRAM 000002
+FVR_Offset@tmp                 cstackCOMRAM 000003
+PL10                           text20       00062C
+PL12                           text20       00063C
+PL14                           text20       00064A
+PL16                           text44       0009A6
+PL18                           text20       000654
+PL2                            text20       0005E2
+PL20                           text20       00065A
+PL22                           text20       000664
+PL24                           text44       0009DC
+PL26                           text20       00066C
+PL28                           text44       0009FE
+PL30                           text32       001078
+PL32                           text44       000A0A
+PL34                           text33       001A3C
+PL36                           text54       001368
+PL38                           text22       002134
+PL4                            text32       001068
+PL40                           text22       002146
+PL42                           text8        00148E
+PL44                           text54       00137C
+PL46                           text33       001A50
+PL48                           text20       000674
+PL50                           text54       001388
+PL52                           text28       0011B0
+PL54                           text6        001CD4
+PL56                           text20       000680
+PL58                           text27       0018CA
+PL6                            text20       0005F8
+PL60                           text44       000A18
+PL62                           text8        00149A
+PL64                           text3        001656
+PL66                           text54       001392
+PL68                           text54       00139E
+PL70                           text54       0013AA
+PL72                           text34       001C58
+PL74                           text28       0011C0
+PL76                           text54       0013B6
+PL78                           text20       000686
+PL8                            text20       000622
+PL80                           text29       001D60
+PL82                           text6        001CE4
+PL84                           text20       000690
+PL86                           text20       00069A
+PL88                           text27       0018D8
+PL90                           text29       001D6A
+PL92                           text44       000A22
+_CMP0_cal                      text14       001662
+_CMP0_offset                   text16       0025DE
+_CMP1_cal                      text12       00173E
+_CMP1_offset                   text13       0025CC
+_FVR_CAL                       text8        0013BE
+_FVR_Offset                    text9        0025BA
+_GPIO_Init                     text19       00224C
+_ISR_h                         intcode      000008
+_ISR_l                         intcodelo    000018
+_PC0                           (abs)        007C10
+_PINA4                         (abs)        007C44
+_PINC3                         (abs)        007C53
+__HRAM                         (abs)        000000
+__Habs1                        abs1         000000
+__Hbank0                       bank0        000000
+__Hbank1                       bank1        000000
+__Hbigbss                      bigbss       000000
+__Hbigdata                     bigdata      000000
+__Hbigram                      bigram       000000
+__Hbss                         bss          000000
+__HbssBANK0                    bssBANK0     000000
+__HbssBANK1                    bssBANK1     000000
+__HbssCOMRAM                   bssCOMRAM    000000
+__Hcinit                       cinit        000000
+__Hclrtext                     clrtext      000000
+__Hcomram                      comram       000000
+__Hconfig                      config       300008
+__Hconst                       const        000000
+__HcstackCOMRAM                cstackCOMRAM 000000
+__Hdata                        data         000000
+__HdataBANK0                   dataBANK0    000000
+__HdataCOMRAM                  dataCOMRAM   000000
+__Heeprom_data                 eeprom_data  000000
+__Hfarbss                      farbss       000000
+__Hfardata                     fardata      000000
+__Hibigdata                    ibigdata     000000
+__Hidata                       idata        000000
+__HidataBANK0                  idataBANK0   000000
+__HidataCOMRAM                 idataCOMRAM  000000
+__Hidloc                       idloc        000000
+__Hifardata                    ifardata     000000
+__Hinit                        init         00002A
+__Hintcode                     intcode      00000E
+__Hintcode_body                intcode_body 000000
+__Hintcodelo                   intcodelo    000026
+__Hintentry                    intentry     000000
+__Hintret                      intret       000000
+__Hintsave_regs                intsave_regs 000000
+__Hirdata                      irdata       000000
+__Hmediumconst                 mediumconst  000000
+__HnvFARRAM                    nvFARRAM     000000
+__Hnvbit                       nvbit        000000
+__Hnvrram                      nvrram       000000
+__Hpa_nodes0                   pa_nodes0    000000
+__Hparam                       rparam       000000
+__Hpowerup                     powerup      000026
+__Hram                         ram          000000
+__Hramtop                      ramtop       000200
+__Hrbit                        rbit         000000
+__Hrbss                        rbss         000000
+__Hrdata                       rdata        000000
+__Hreset_vec                   reset_vec    000004
+__Hrparam                      rparam       000000
+__Hsfr                         sfr          000000
+__Hsmallconst                  smallconst   0002A2
+__Hspace_0                     (abs)        300008
+__Hspace_1                     (abs)        000180
+__Hspace_2                     (abs)        000000
+__Hstack                       stack        000000
+__Hstruct                      struct       000000
+__Htemp                        temp         00007F
+__Htext                        text         000000
+__Htext0                       text0        000000
+__Htext1                       text1        000000
+__Htext10                      text10       000000
+__Htext11                      text11       000000
+__Htext12                      text12       000000
+__Htext13                      text13       000000
+__Htext14                      text14       000000
+__Htext15                      text15       000000
+__Htext16                      text16       000000
+__Htext17                      text17       000000
+__Htext18                      text18       000000
+__Htext19                      text19       000000
+__Htext2                       text2        000000
+__Htext20                      text20       000000
+__Htext21                      text21       000000
+__Htext22                      text22       000000
+__Htext23                      text23       000000
+__Htext24                      text24       000000
+__Htext25                      text25       000000
+__Htext26                      text26       000000
+__Htext27                      text27       000000
+__Htext28                      text28       000000
+__Htext29                      text29       000000
+__Htext3                       text3        000000
+__Htext30                      text30       000000
+__Htext31                      text31       000000
+__Htext32                      text32       000000
+__Htext33                      text33       000000
+__Htext34                      text34       000000
+__Htext35                      text35       000000
+__Htext36                      text36       000000
+__Htext37                      text37       000000
+__Htext38                      text38       000000
+__Htext39                      text39       000000
+__Htext4                       text4        000000
+__Htext40                      text40       000000
+__Htext41                      text41       000000
+__Htext42                      text42       000000
+__Htext43                      text43       000000
+__Htext44                      text44       000000
+__Htext45                      text45       000000
+__Htext46                      text46       000000
+__Htext47                      text47       000000
+__Htext48                      text48       000000
+__Htext49                      text49       000000
+__Htext5                       text5        000000
+__Htext50                      text50       000000
+__Htext51                      text51       000000
+__Htext52                      text52       000000
+__Htext53                      text53       000000
+__Htext54                      text54       000000
+__Htext57                      text57       000000
+__Htext6                       text6        000000
+__Htext7                       text7        000000
+__Htext8                       text8        000000
+__Htext9                       text9        000000
+__LRAM                         (abs)        000001
+__Labs1                        abs1         000000
+__Lbank0                       bank0        000000
+__Lbank1                       bank1        000000
+__Lbigbss                      bigbss       000000
+__Lbigdata                     bigdata      000000
+__Lbigram                      bigram       000000
+__Lbss                         bss          000000
+__LbssBANK0                    bssBANK0     000000
+__LbssBANK1                    bssBANK1     000000
+__LbssCOMRAM                   bssCOMRAM    000000
+__Lcinit                       cinit        000000
+__Lclrtext                     clrtext      000000
+__Lcomram                      comram       000000
+__Lconfig                      config       300000
+__Lconst                       const        000000
+__LcstackCOMRAM                cstackCOMRAM 000000
+__Ldata                        data         000000
+__LdataBANK0                   dataBANK0    000000
+__LdataCOMRAM                  dataCOMRAM   000000
+__Leeprom_data                 eeprom_data  000000
+__Lfarbss                      farbss       000000
+__Lfardata                     fardata      000000
+__Libigdata                    ibigdata     000000
+__Lidata                       idata        000000
+__LidataBANK0                  idataBANK0   000000
+__LidataCOMRAM                 idataCOMRAM  000000
+__Lidloc                       idloc        000000
+__Lifardata                    ifardata     000000
+__Linit                        init         000026
+__Lintcode                     intcode      000008
+__Lintcode_body                intcode_body 000000
+__Lintcodelo                   intcodelo    000018
+__Lintentry                    intentry     000000
+__Lintret                      intret       000000
+__Lintsave_regs                intsave_regs 000000
+__Lirdata                      irdata       000000
+__Lmediumconst                 mediumconst  000000
+__LnvFARRAM                    nvFARRAM     000000
+__Lnvbit                       nvbit        000000
+__Lnvrram                      nvrram       000000
+__Lpa_nodes0                   pa_nodes0    000000
+__Lparam                       rparam       000000
+__Lpowerup                     powerup      000026
+__Lram                         ram          000000
+__Lramtop                      ramtop       000200
+__Lrbit                        rbit         000000
+__Lrbss                        rbss         000000
+__Lrdata                       rdata        000000
+__Lreset_vec                   reset_vec    000000
+__Lrparam                      rparam       000000
+__Lsfr                         sfr          000000
+__Lsmallconst                  smallconst   000200
+__Lspace_0                     (abs)        000000
+__Lspace_1                     (abs)        000000
+__Lspace_2                     (abs)        000000
+__Lstack                       stack        000000
+__Lstruct                      struct       000000
+__Ltemp                        temp         00007E
+__Ltext                        text         000000
+__Ltext0                       text0        000000
+__Ltext1                       text1        000000
+__Ltext10                      text10       000000
+__Ltext11                      text11       000000
+__Ltext12                      text12       000000
+__Ltext13                      text13       000000
+__Ltext14                      text14       000000
+__Ltext15                      text15       000000
+__Ltext16                      text16       000000
+__Ltext17                      text17       000000
+__Ltext18                      text18       000000
+__Ltext19                      text19       000000
+__Ltext2                       text2        000000
+__Ltext20                      text20       000000
+__Ltext21                      text21       000000
+__Ltext22                      text22       000000
+__Ltext23                      text23       000000
+__Ltext24                      text24       000000
+__Ltext25                      text25       000000
+__Ltext26                      text26       000000
+__Ltext27                      text27       000000
+__Ltext28                      text28       000000
+__Ltext29                      text29       000000
+__Ltext3                       text3        000000
+__Ltext30                      text30       000000
+__Ltext31                      text31       000000
+__Ltext32                      text32       000000
+__Ltext33                      text33       000000
+__Ltext34                      text34       000000
+__Ltext35                      text35       000000
+__Ltext36                      text36       000000
+__Ltext37                      text37       000000
+__Ltext38                      text38       000000
+__Ltext39                      text39       000000
+__Ltext4                       text4        000000
+__Ltext40                      text40       000000
+__Ltext41                      text41       000000
+__Ltext42                      text42       000000
+__Ltext43                      text43       000000
+__Ltext44                      text44       000000
+__Ltext45                      text45       000000
+__Ltext46                      text46       000000
+__Ltext47                      text47       000000
+__Ltext48                      text48       000000
+__Ltext49                      text49       000000
+__Ltext5                       text5        000000
+__Ltext50                      text50       000000
+__Ltext51                      text51       000000
+__Ltext52                      text52       000000
+__Ltext53                      text53       000000
+__Ltext54                      text54       000000
+__Ltext57                      text57       000000
+__Ltext6                       text6        000000
+__Ltext7                       text7        000000
+__Ltext8                       text8        000000
+__Ltext9                       text9        000000
+__S0                           (abs)        300008
+__S1                           (abs)        000180
+__S2                           (abs)        000000
+___awdiv                       text15       001E6E
+___awdiv@counter               cstackCOMRAM 000006
+___awdiv@dividend              cstackCOMRAM 000002
+___awdiv@divisor               cstackCOMRAM 000004
+___awdiv@quotient              cstackCOMRAM 000008
+___awdiv@sign                  cstackCOMRAM 000007
+___ftadd                       text28       00107E
+___ftadd@exp1                  cstackCOMRAM 000028
+___ftadd@exp2                  cstackCOMRAM 000027
+___ftadd@f1                    cstackCOMRAM 00001D
+___ftadd@f2                    cstackCOMRAM 000020
+___ftadd@sign                  cstackCOMRAM 000026
+___ftmul                       text27       001818
+___ftmul@cntr                  cstackCOMRAM 00001B
+___ftmul@exp                   cstackCOMRAM 000017
+___ftmul@f1                    cstackCOMRAM 00000E
+___ftmul@f2                    cstackCOMRAM 000011
+___ftmul@f3_as_product         cstackCOMRAM 000018
+___ftmul@sign                  cstackCOMRAM 00001C
+___ftpack                      text29       001CEE
+___ftpack@arg                  cstackCOMRAM 000002
+___ftpack@exp                  cstackCOMRAM 000005
+___ftpack@sign                 cstackCOMRAM 000006
+___fttol                       text26       001A5C
+___fttol@exp1                  cstackCOMRAM 000037
+___fttol@f1                    cstackCOMRAM 000029
+___fttol@lval                  cstackCOMRAM 000033
+___fttol@sign1                 cstackCOMRAM 000032
+___inthi_sp                    stack        000000
+___intlo_sp                    stack        000000
+___lbtoft                      text25       002438
+___lbtoft@c                    cstackCOMRAM 00000D
+___lldiv                       text36       001EE6
+___lldiv@counter               cstackCOMRAM 00000E
+___lldiv@dividend              cstackCOMRAM 000002
+___lldiv@divisor               cstackCOMRAM 000006
+___lldiv@quotient              cstackCOMRAM 00000A
+___lltoft                      text24       0022E4
+___lltoft@c                    cstackCOMRAM 00000A
+___lltoft@exp                  cstackCOMRAM 000012
+___lmul                        text23       002298
+___lmul@multiplicand           cstackCOMRAM 000006
+___lmul@multiplier             cstackCOMRAM 000002
+___lmul@product                cstackCOMRAM 00000A
+___param_bank                  (abs)        000000
+___rparam_used                 (abs)        000001
+___sp                          stack        000000
+__accesstop                    (abs)        000080
+__activetblptr                 (abs)        000002
+__end_ofPL10                   text20       00063C
+__end_ofPL12                   text20       00064A
+__end_ofPL14                   text20       000654
+__end_ofPL16                   text44       0009DC
+__end_ofPL18                   text20       00065A
+__end_ofPL2                    text20       0005F8
+__end_ofPL20                   text20       000664
+__end_ofPL22                   text20       00066C
+__end_ofPL24                   text44       0009FE
+__end_ofPL26                   text20       000674
+__end_ofPL28                   text44       000A0A
+__end_ofPL30                   text32       00107E
+__end_ofPL32                   text44       000A18
+__end_ofPL34                   text33       001A50
+__end_ofPL36                   text54       00137C
+__end_ofPL38                   text22       002146
+__end_ofPL4                    text32       001078
+__end_ofPL40                   text22       002158
+__end_ofPL42                   text8        00149A
+__end_ofPL44                   text54       001388
+__end_ofPL46                   text33       001A5C
+__end_ofPL48                   text20       000680
+__end_ofPL50                   text54       001392
+__end_ofPL52                   text28       0011C0
+__end_ofPL54                   text6        001CE4
+__end_ofPL56                   text20       000686
+__end_ofPL58                   text27       0018D8
+__end_ofPL6                    text20       000622
+__end_ofPL60                   text44       000A22
+__end_ofPL62                   text8        0014A6
+__end_ofPL64                   text3        001662
+__end_ofPL66                   text54       00139E
+__end_ofPL68                   text54       0013AA
+__end_ofPL70                   text54       0013B6
+__end_ofPL72                   text34       001C62
+__end_ofPL74                   text28       0011CC
+__end_ofPL76                   text54       0013BE
+__end_ofPL78                   text20       000690
+__end_ofPL8                    text20       00062C
+__end_ofPL80                   text29       001D6A
+__end_ofPL82                   text6        001CEE
+__end_ofPL84                   text20       00069A
+__end_ofPL86                   text20       0006A4
+__end_ofPL88                   text27       0018E0
+__end_ofPL90                   text29       001D74
+__end_ofPL92                   text44       000A2A
+__end_of_CMP0_cal              text14       00173E
+__end_of_CMP0_offset           text16       0025F0
+__end_of_CMP1_cal              text12       001818
+__end_of_CMP1_offset           text13       0025DE
+__end_of_FVR_CAL               text8        00148E
+__end_of_FVR_Offset            text9        0025CC
+__end_of_GPIO_Init             text19       002298
+__end_of_ISR_h                 intcode_body 000F22
+__end_of_ISR_l                 intcodelo    000026
+__end_of___awdiv               text15       001EE6
+__end_of___ftadd               text28       0011B0
+__end_of___ftmul               text27       0018CA
+__end_of___ftpack              text29       001D60
+__end_of___fttol               text26       001B14
+__end_of___lbtoft              text25       00245C
+__end_of___lldiv               text36       001F5C
+__end_of___lltoft              text24       002330
+__end_of___lmul                text23       0022E4
+__end_of__initialization       cinit        001FC0
+__end_of_adc_bat               text35       001DF2
+__end_of_add_task              text54       001368
+__end_of_add_task_id           text33       001A3C
+__end_of_aip33626_allDisplay   text47       002372
+__end_of_aip33626_allDisplay_  text46       0023E8
+__end_of_aip33626_batFull      text40       002038
+__end_of_aip33626_breath       text43       001E6E
+__end_of_aip33626_breath_stop  text42       0023B0
+__end_of_aip33626_flash        text41       00258E
+__end_of_aip33626_freeChrg     text39       0021B0
+__end_of_aip33626_init         text17       002602
+__end_of_aip33626_sendcmd      text49       00253C
+__end_of_aip33626_smo_reset    text38       001BBC
+__end_of_aip33626_sursor       text48       0025BA
+__end_of_aip33626_sys_begin    text37       002574
+__end_of_arr_cnt               smallconst   000281
+__end_of_arr_col_init          text45       00251E
+__end_of_arr_q                 smallconst   000299
+__end_of_bat_task              text34       001C58
+__end_of_chrg_task             text32       001068
+__end_of_cmp_init              text11       0021FE
+__end_of_dac_init              text10       002500
+__end_of_find_task             text2        0019A2
+__end_of_fvr_init              text7        0024A0
+__end_of_key_task              text31       0012CA
+__end_of_key_timer_task        text30       002438
+__end_of_main                  text0        000D20
+__end_of_myi2c_init            text18       0025A4
+__end_of_myi2c_reciveack       text53       0024E2
+__end_of_myi2c_sendbyte        text52       00224C
+__end_of_myi2c_start           text51       002412
+__end_of_myi2c_stop            text50       0024C2
+__end_of_new_col               text44       0009A6
+__end_of_p                     smallconst   0002A1
+__end_of_pwm_init              text22       002134
+__end_of_pwm_task              text57       001586
+__end_of_si_mic_task           text20       0005E2
+__end_of_sleep_mode            text6        001CD4
+__end_of_sleep_task            text4        00209E
+__end_of_smo_det_task          text3        001656
+__end_of_task_init             text1        00247E
+__end_of_timer0_cnt            text21       0020FE
+__end_of_timer1_init           text5        002558
+__initialization               cinit        001F5C
+__mediumconst                  mediumconst  000000
+__pbssBANK0                    bssBANK0     000080
+__pbssBANK1                    bssBANK1     000100
+__pbssCOMRAM                   bssCOMRAM    000045
+__pcinit                       cinit        001F5C
+__pcstackCOMRAM                cstackCOMRAM 000001
+__pdataBANK0                   dataBANK0    0000D6
+__pdataCOMRAM                  dataCOMRAM   000070
+__pidataBANK0                  idataBANK0   002610
+__pidataCOMRAM                 idataCOMRAM  002602
+__pintcode                     intcode      000008
+__pintcode_body                intcode_body 000D20
+__pintcodelo                   intcodelo    000018
+__psmallconst                  smallconst   000200
+__ptext0                       text0        000A2A
+__ptext1                       text1        00245C
+__ptext10                      text10       0024E2
+__ptext11                      text11       0021B0
+__ptext12                      text12       00173E
+__ptext13                      text13       0025CC
+__ptext14                      text14       001662
+__ptext15                      text15       001E6E
+__ptext16                      text16       0025DE
+__ptext17                      text17       0025F0
+__ptext18                      text18       00258E
+__ptext19                      text19       00224C
+__ptext2                       text2        0018E0
+__ptext20                      text20       0002A2
+__ptext21                      text21       00209E
+__ptext22                      text22       0020FE
+__ptext23                      text23       002298
+__ptext24                      text24       0022E4
+__ptext25                      text25       002438
+__ptext26                      text26       001A5C
+__ptext27                      text27       001818
+__ptext28                      text28       00107E
+__ptext29                      text29       001CEE
+__ptext3                       text3        001586
+__ptext30                      text30       002412
+__ptext31                      text31       0011CC
+__ptext32                      text32       000F22
+__ptext33                      text33       0019A2
+__ptext34                      text34       001BBC
+__ptext35                      text35       001D74
+__ptext36                      text36       001EE6
+__ptext37                      text37       002558
+__ptext38                      text38       001B14
+__ptext39                      text39       002158
+__ptext4                       text4        002038
+__ptext40                      text40       001FCE
+__ptext41                      text41       002574
+__ptext42                      text42       002372
+__ptext43                      text43       001DF2
+__ptext44                      text44       0006A4
+__ptext45                      text45       002500
+__ptext46                      text46       0023B0
+__ptext47                      text47       002330
+__ptext48                      text48       0025A4
+__ptext49                      text49       00251E
+__ptext5                       text5        00253C
+__ptext50                      text50       0024A0
+__ptext51                      text51       0023E8
+__ptext52                      text52       0021FE
+__ptext53                      text53       0024C2
+__ptext54                      text54       0012CA
+__ptext57                      text57       0014A6
+__ptext6                       text6        001C62
+__ptext7                       text7        00247E
+__ptext8                       text8        0013BE
+__ptext9                       text9        0025BA
+__ramtop                       ramtop       000200
+__size_of_CMP0_cal             (abs)        000000
+__size_of_CMP0_offset          (abs)        000000
+__size_of_CMP1_cal             (abs)        000000
+__size_of_CMP1_offset          (abs)        000000
+__size_of_FVR_CAL              (abs)        000000
+__size_of_FVR_Offset           (abs)        000000
+__size_of_GPIO_Init            (abs)        000000
+__size_of_ISR_h                (abs)        000000
+__size_of_ISR_l                (abs)        000000
+__size_of___awdiv              (abs)        000000
+__size_of___ftadd              (abs)        000000
+__size_of___ftmul              (abs)        000000
+__size_of___ftpack             (abs)        000000
+__size_of___fttol              (abs)        000000
+__size_of___lbtoft             (abs)        000000
+__size_of___lldiv              (abs)        000000
+__size_of___lltoft             (abs)        000000
+__size_of___lmul               (abs)        000000
+__size_of_adc_bat              (abs)        000000
+__size_of_add_task             (abs)        000000
+__size_of_add_task_id          (abs)        000000
+__size_of_aip33626_allDisplay  (abs)        000000
+__size_of_aip33626_allDisplay_ (abs)        000000
+__size_of_aip33626_batFull     (abs)        000000
+__size_of_aip33626_breath      (abs)        000000
+__size_of_aip33626_breath_stop (abs)        000000
+__size_of_aip33626_flash       (abs)        000000
+__size_of_aip33626_freeChrg    (abs)        000000
+__size_of_aip33626_init        (abs)        000000
+__size_of_aip33626_sendcmd     (abs)        000000
+__size_of_aip33626_smo_reset   (abs)        000000
+__size_of_aip33626_sursor      (abs)        000000
+__size_of_aip33626_sys_begin   (abs)        000000
+__size_of_arr_col_init         (abs)        000000
+__size_of_bat_task             (abs)        000000
+__size_of_chrg_task            (abs)        000000
+__size_of_cmp_init             (abs)        000000
+__size_of_dac_init             (abs)        000000
+__size_of_find_task            (abs)        000000
+__size_of_fvr_init             (abs)        000000
+__size_of_key_task             (abs)        000000
+__size_of_key_timer_task       (abs)        000000
+__size_of_main                 (abs)        000000
+__size_of_myi2c_init           (abs)        000000
+__size_of_myi2c_reciveack      (abs)        000000
+__size_of_myi2c_sendbyte       (abs)        000000
+__size_of_myi2c_start          (abs)        000000
+__size_of_myi2c_stop           (abs)        000000
+__size_of_new_col              (abs)        000000
+__size_of_pwm_init             (abs)        000000
+__size_of_pwm_task             (abs)        000000
+__size_of_si_mic_task          (abs)        000000
+__size_of_sleep_mode           (abs)        000000
+__size_of_sleep_task           (abs)        000000
+__size_of_smo_det_task         (abs)        000000
+__size_of_task_init            (abs)        000000
+__size_of_timer0_cnt           (abs)        000000
+__size_of_timer1_init          (abs)        000000
+__smallconst                   smallconst   000200
+_adc_bat                       text35       001D74
+_adc_ok                        bssCOMRAM    000057
+_add_task                      text54       0012CA
+_add_task_id                   text33       0019A2
+_aip33626_allDisplay           text47       002330
+_aip33626_allDisplay_          text46       0023B0
+_aip33626_batFull              text40       001FCE
+_aip33626_breath               text43       001DF2
+_aip33626_breath_stop          text42       002372
+_aip33626_flash                text41       002574
+_aip33626_freeChrg             text39       002158
+_aip33626_init                 text17       0025F0
+_aip33626_sendcmd              text49       00251E
+_aip33626_smo_reset            text38       001B14
+_aip33626_sursor               text48       0025A4
+_aip33626_sys_begin            text37       002558
+_aip33626_task_id              bssCOMRAM    000067
+_arr_cnt                       smallconst   000201
+_arr_col                       bssBANK1     000100
+_arr_col_init                  text45       002500
+_arr_q                         smallconst   000281
+_bat                           dataCOMRAM   000070
+_bat_o                         bssCOMRAM    00004F
+_bat_task                      text34       001BBC
+_breath_init                   dataCOMRAM   000072
+_breath_state                  dataCOMRAM   00007A
+_cb_flag                       bssCOMRAM    000051
+_cd_fz                         bssCOMRAM    00005F
+_chrg_task                     text32       000F22
+_cmp_init                      text11       0021B0
+_cnt0                          bssCOMRAM    00004D
+_col_cnt                       bssCOMRAM    000068
+_col_init                      dataCOMRAM   00007B
+_cr_flag                       bssCOMRAM    00005D
+_dac_init                      text10       0024E2
+_dian                          dataCOMRAM   00007C
+_dl0_flag                      bssCOMRAM    000063
+_dl1_flag                      bssCOMRAM    000062
+_dl_init                       bssCOMRAM    000059
+_duty0                         bssCOMRAM    00006F
+_duty1                         bssCOMRAM    00006E
+_find_task                     text2        0018E0
+_fvr_init                      text7        00247E
+_key_o                         bssCOMRAM    00005C
+_key_task                      text31       0011CC
+_key_timer_flag                bssCOMRAM    00005B
+_key_timer_id                  bssCOMRAM    00005A
+_key_timer_task                text30       002412
+_low_bat_flag                  bssCOMRAM    000061
+_main                          text0        000A2A
+_mode                          bssCOMRAM    000069
+_mode_dian                     bssCOMRAM    00006A
+_mode_sub                      bssCOMRAM    00006D
+_mode_you                      bssCOMRAM    00006B
+_myi2c_init                    text18       00258E
+_myi2c_reciveack               text53       0024C2
+_myi2c_sendbyte                text52       0021FE
+_myi2c_start                   text51       0023E8
+_myi2c_stop                    text50       0024A0
+_new_col                       text44       0006A4
+_new_col$1181                  cstackCOMRAM 00000D
+_p                             smallconst   000299
+_p0                            bssCOMRAM    000047
+_p1                            bssCOMRAM    000045
+_pwm_init                      text22       0020FE
+_pwm_task                      text57       0014A6
+_si_mic_task                   text20       0002A2
+_sim_mic_o                     bssCOMRAM    000054
+_sleep_mode                    text6        001C62
+_sleep_task                    text4        002038
+_smo_det1_o                    dataCOMRAM   000075
+_smo_det2_o                    dataCOMRAM   000074
+_smo_det_task                  text3        001586
+_smo_timerout                  bssCOMRAM    000055
+_state_chrg                    dataCOMRAM   000077
+_state_key                     dataCOMRAM   000079
+_state_pwm                     bssCOMRAM    000053
+_state_pwm_cnt                 bssCOMRAM    000052
+_state_q                       bssCOMRAM    000065
+_state_smo_det                 dataCOMRAM   000078
+_t                             dataCOMRAM   000076
+_t1                            bssCOMRAM    000066
+_t_pwm                         bssCOMRAM    00004B
+_t_pwm_                        bssCOMRAM    000049
+_task_1_7_flag                 bssCOMRAM    00006C
+_task_1_7_init                 bssCOMRAM    00005E
+_task_init                     text1        00245C
+_task_list                     bssBANK0     000086
+_temp1                         dataBANK0    0000DE
+_temp2                         dataBANK0    0000DA
+_temp3                         dataBANK0    0000D6
+_tim0flag                      bssCOMRAM    000058
+_timer0_cnt                    text21       00209E
+_timer0cnt                     bssBANK0     000084
+_timer1_init                   text5        00253C
+_usb_det_o                     bssCOMRAM    000060
+_you                           dataCOMRAM   00007D
+_you_cnt                       bssBANK0     000080
+adc_bat@t                      cstackCOMRAM 000013
+adc_bat@t_                     cstackCOMRAM 000015
+add_task@i                     cstackCOMRAM 00000F
+add_task@id1                   cstackCOMRAM 00000C
+add_task@id2                   cstackCOMRAM 000002
+add_task@interval_ms           cstackCOMRAM 000003
+add_task@interval_ticks        cstackCOMRAM 00000D
+add_task@suc_max               cstackCOMRAM 000007
+add_task_id@id1                cstackCOMRAM 00000D
+add_task_id@id2                cstackCOMRAM 000002
+add_task_id@interval_ms        cstackCOMRAM 000003
+add_task_id@interval_ticks     cstackCOMRAM 00000E
+add_task_id@suc_max            cstackCOMRAM 000007
+add_task_id@task_id            cstackCOMRAM 000008
+aip33626_allDisplay@i          cstackCOMRAM 00000B
+aip33626_allDisplay@num        cstackCOMRAM 000009
+aip33626_allDisplay_@i         cstackCOMRAM 00000A
+aip33626_allDisplay_@num       cstackCOMRAM 000009
+aip33626_batFull@task_         cstackCOMRAM 00000C
+aip33626_breath@task_          cstackCOMRAM 000013
+aip33626_breath_stop@task_     cstackCOMRAM 000013
+aip33626_flash@task_           cstackCOMRAM 00000B
+aip33626_freeChrg@task_        cstackCOMRAM 00000E
+aip33626_sendcmd@cmd           cstackCOMRAM 000007
+aip33626_smo_reset@task_       cstackCOMRAM 00000C
+aip33626_sursor@site           cstackCOMRAM 000008
+aip33626_sys_begin@task_       cstackCOMRAM 00000B
+arr_col_init@i                 cstackCOMRAM 000003
+arr_col_init@num               cstackCOMRAM 000002
+bat_task@task_                 cstackCOMRAM 000019
+btemp                          temp         00007E
+chrg_task@task_                cstackCOMRAM 000019
+config_word1                   config       300000
+config_word2                   config       300002
+config_word3                   config       300004
+config_word4                   config       300006
+end_of_initialization          cinit        001FC0
+find_task@id1                  cstackCOMRAM 000042
+find_task@id2                  cstackCOMRAM 000040
+find_task@task_                cstackCOMRAM 000041
+int$flags                      temp         00007E
+int_func                       intcode_body 000D20
+intlevel0                      text         000000
+intlevel1                      text         000000
+intlevel2                      text         000000
+intlevel3                      text         000000
+key_task@task_                 cstackCOMRAM 000010
+key_timer_task@task_           cstackCOMRAM 000002
+myi2c_sendbyte@by              cstackCOMRAM 000005
+myi2c_sendbyte@i               cstackCOMRAM 000006
+new_col@dian                   cstackCOMRAM 000002
+new_col@i                      cstackCOMRAM 000012
+new_col@mode                   cstackCOMRAM 000005
+new_col@mode_dian              cstackCOMRAM 000004
+new_col@mode_sub               cstackCOMRAM 000006
+new_col@mode_sub_2             bssCOMRAM    000064
+new_col@mode_you               cstackCOMRAM 000003
+new_col@t                      cstackCOMRAM 000011
+new_col@t2                     cstackCOMRAM 00000F
+new_col@you                    cstackCOMRAM 000010
+si_mic_task@task_              cstackCOMRAM 000038
+si_mic_task@temp               cstackCOMRAM 00003A
+si_mic_task@tt                 cstackCOMRAM 00003C
+sleep_task@task_               cstackCOMRAM 00000F
+smo_det_task@task_             cstackCOMRAM 000010
+stackhi                        (abs)        0001FF
+stacklo                        (abs)        000180
+start                          init         000026
+start_initialization           cinit        001F5C
+task_init@i                    cstackCOMRAM 000002
+timer0_cnt@init_flag           dataCOMRAM   000073
+timer0_cnt@lab                 cstackCOMRAM 000004
+timer0_cnt@ls_lab              bssCOMRAM    000056
+timer0_cnt@ms                  cstackCOMRAM 000002
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 68 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          2       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels required when called:   10
+ This function calls:
+		_GPIO_Init
+		_add_task
+		_add_task_id
+		_aip33626_init
+		_cmp_init
+		_dac_init
+		_find_task
+		_fvr_init
+		_task_init
+		_timer1_init
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _task_init *****************
+ Defined at:
+		line 7 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _find_task *****************
+ Defined at:
+		line 92 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+  id1             1    wreg     unsigned char 
+  id2             1   63[COMRAM] unsigned char 
+  task_           1   64[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+  id1             1   65[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         2       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         3       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_aip33626_batFull
+		_aip33626_breath
+		_aip33626_breath_stop
+		_aip33626_flash
+		_aip33626_freeChrg
+		_aip33626_smo_reset
+		_aip33626_sys_begin
+		_bat_task
+		_chrg_task
+		_key_task
+		_key_timer_task
+		_si_mic_task
+		_sleep_task
+		_smo_det_task
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _smo_det_task *****************
+ Defined at:
+		line 11 in file ".\src\smo_det.c"
+ Parameters:    Size  Location     Type
+  task_           1   15[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_add_task_id
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _sleep_task *****************
+ Defined at:
+		line 119 in file ".\src\sleep.c"
+ Parameters:    Size  Location     Type
+  task_           1   14[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_GPIO_Init
+		_aip33626_init
+		_cmp_init
+		_dac_init
+		_fvr_init
+		_sleep_mode
+		_timer1_init
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _timer1_init *****************
+ Defined at:
+		line 82 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _sleep_mode *****************
+ Defined at:
+		line 5 in file ".\src\sleep.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _fvr_init *****************
+ Defined at:
+		line 289 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_FVR_CAL
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _FVR_CAL *****************
+ Defined at:
+		line 228 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   13[COMRAM] unsigned char 
+  start           1   12[COMRAM] unsigned char 
+  VOOS1           1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         3       0       0
+      Temps:          2       0       0
+      Totals:         5       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_FVR_Offset
+		___awdiv
+ This function is called by:
+		_fvr_init
+ This function uses a non-reentrant model
+
+
+ *************** function _FVR_Offset *****************
+ Defined at:
+		line 214 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+  OFFSET          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  OFFSET          1    1[COMRAM] unsigned char 
+  tmp             1    2[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          0       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_FVR_CAL
+ This function uses a non-reentrant model
+
+
+ *************** function _dac_init *****************
+ Defined at:
+		line 329 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _cmp_init *****************
+ Defined at:
+		line 502 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_CMP0_cal
+		_CMP1_cal
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _CMP1_cal *****************
+ Defined at:
+		line 443 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   13[COMRAM] unsigned char 
+  start           1   12[COMRAM] unsigned char 
+  VOOS1           1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         3       0       0
+      Temps:          2       0       0
+      Totals:         5       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_CMP1_offset
+		___awdiv
+ This function is called by:
+		_cmp_init
+ This function uses a non-reentrant model
+
+
+ *************** function _CMP1_offset *****************
+ Defined at:
+		line 430 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+  OFFSET          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  OFFSET          1    1[COMRAM] unsigned char 
+  tmp             1    2[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          0       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_CMP1_cal
+ This function uses a non-reentrant model
+
+
+ *************** function _CMP0_cal *****************
+ Defined at:
+		line 367 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   13[COMRAM] unsigned char 
+  start           1   12[COMRAM] unsigned char 
+  VOOS1           1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         3       0       0
+      Temps:          2       0       0
+      Totals:         5       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_CMP0_offset
+		___awdiv
+ This function is called by:
+		_cmp_init
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 8 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    1[COMRAM] int 
+  divisor         2    3[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    7[COMRAM] int 
+  sign            1    6[COMRAM] unsigned char 
+  counter         1    5[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    1[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         4       0       0
+      Locals:         4       0       0
+      Temps:          0       0       0
+      Totals:         8       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_FVR_CAL
+		_CMP0_cal
+		_CMP1_cal
+ This function uses a non-reentrant model
+
+
+ *************** function _CMP0_offset *****************
+ Defined at:
+		line 355 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+  OFFSET          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  OFFSET          1    1[COMRAM] unsigned char 
+  tmp             1    2[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          0       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_CMP0_cal
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_init *****************
+ Defined at:
+		line 32 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_aip33626_sendcmd
+		_myi2c_init
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _myi2c_init *****************
+ Defined at:
+		line 28 in file ".\src\myi2c.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_init
+ This function uses a non-reentrant model
+
+
+ *************** function _GPIO_Init *****************
+ Defined at:
+		line 41 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+		_sleep_task
+ This function uses a non-reentrant model
+
+
+ *************** function _si_mic_task *****************
+ Defined at:
+		line 28 in file ".\src\si_mic.c"
+ Parameters:    Size  Location     Type
+  task_           1   55[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+  temp            2   57[COMRAM] unsigned short 
+  tt              4   59[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         6       0       0
+      Temps:          1       0       0
+      Totals:         8       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		___ftadd
+		___ftmul
+		___fttol
+		___lbtoft
+		___lldiv
+		___lltoft
+		___lmul
+		_add_task_id
+		_pwm_init
+		_timer0_cnt
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _timer0_cnt *****************
+ Defined at:
+		line 162 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+  ms              2    1[COMRAM] unsigned int 
+  lab             1    3[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         3       0       0
+      Locals:         0       0       0
+      Temps:          2       0       0
+      Totals:         5       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function _pwm_init *****************
+ Defined at:
+		line 117 in file ".\src\pwm.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lmul *****************
+ Defined at:
+		line 15 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\Umul32.c"
+ Parameters:    Size  Location     Type
+  multiplier      4    1[COMRAM] unsigned long 
+  multiplicand    4    5[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  product         4    9[COMRAM] unsigned long 
+ Return value:  Size  Location     Type
+                  4    1[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         8       0       0
+      Locals:         4       0       0
+      Temps:          0       0       0
+      Totals:        12       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lltoft *****************
+ Defined at:
+		line 35 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lltoft.c"
+ Parameters:    Size  Location     Type
+  c               4    9[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  exp             1   17[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  3    9[COMRAM] float 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         4       0       0
+      Locals:         1       0       0
+      Temps:          4       0       0
+      Totals:         9       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		___ftpack
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lbtoft *****************
+ Defined at:
+		line 27 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lbtoft.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1   12[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  3    9[COMRAM] float 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         3       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         4       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		___ftpack
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___fttol *****************
+ Defined at:
+		line 44 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\fttol.c"
+ Parameters:    Size  Location     Type
+  f1              3   40[COMRAM] float 
+ Auto vars:     Size  Location     Type
+  lval            4   50[COMRAM] unsigned long 
+  exp1            1   54[COMRAM] unsigned char 
+  sign1           1   49[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4   40[COMRAM] long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         4       0       0
+      Locals:         6       0       0
+      Temps:          5       0       0
+      Totals:        15       0       0
+Total ram usage:       15 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___ftmul *****************
+ Defined at:
+		line 62 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftmul.c"
+ Parameters:    Size  Location     Type
+  f1              3   13[COMRAM] float 
+  f2              3   16[COMRAM] float 
+ Auto vars:     Size  Location     Type
+  f3_as_produc    3   23[COMRAM] unsigned um
+  sign            1   27[COMRAM] unsigned char 
+  cntr            1   26[COMRAM] unsigned char 
+  exp             1   22[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  3   13[COMRAM] float 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         6       0       0
+      Locals:         6       0       0
+      Temps:          3       0       0
+      Totals:        15       0       0
+Total ram usage:       15 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		___ftpack
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___ftadd *****************
+ Defined at:
+		line 86 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftadd.c"
+ Parameters:    Size  Location     Type
+  f1              3   28[COMRAM] float 
+  f2              3   31[COMRAM] float 
+ Auto vars:     Size  Location     Type
+  exp1            1   39[COMRAM] unsigned char 
+  exp2            1   38[COMRAM] unsigned char 
+  sign            1   37[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  3   28[COMRAM] float 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         6       0       0
+      Locals:         3       0       0
+      Temps:          3       0       0
+      Totals:        12       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		___ftpack
+ This function is called by:
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___ftpack *****************
+ Defined at:
+		line 62 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\float.c"
+ Parameters:    Size  Location     Type
+  arg             3    1[COMRAM] unsigned um
+  exp             1    4[COMRAM] unsigned char 
+  sign            1    5[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  3    1[COMRAM] float 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         5       0       0
+      Locals:         0       0       0
+      Temps:          3       0       0
+      Totals:         8       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		___ftadd
+		___ftmul
+		___lbtoft
+		___lltoft
+ This function uses a non-reentrant model
+
+
+ *************** function _key_timer_task *****************
+ Defined at:
+		line 110 in file ".\src\key.c"
+ Parameters:    Size  Location     Type
+  task_           1    1[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _key_task *****************
+ Defined at:
+		line 16 in file ".\src\key.c"
+ Parameters:    Size  Location     Type
+  task_           1   15[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_add_task_id
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _chrg_task *****************
+ Defined at:
+		line 17 in file ".\src\chrg.c"
+ Parameters:    Size  Location     Type
+  task_           1   24[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_adc_bat
+		_add_task_id
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _add_task_id *****************
+ Defined at:
+		line 47 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+  id1             1    wreg     unsigned char 
+  id2             1    1[COMRAM] unsigned char 
+  interval_ms     4    2[COMRAM] unsigned long 
+  suc_max         1    6[COMRAM] unsigned char 
+  task_id         1    7[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  id1             1   12[COMRAM] unsigned char 
+  interval_tic    2   13[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         7       0       0
+      Locals:         3       0       0
+      Temps:          4       0       0
+      Totals:        14       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_chrg_task
+		_key_task
+		_main
+		_si_mic_task
+		_smo_det_task
+ This function uses a non-reentrant model
+
+
+ *************** function _bat_task *****************
+ Defined at:
+		line 9 in file ".\src\bat.c"
+ Parameters:    Size  Location     Type
+  task_           1   24[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_adc_bat
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _adc_bat *****************
+ Defined at:
+		line 303 in file ".\src\periph.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  t_              4   20[COMRAM] unsigned long 
+  t               2   18[COMRAM] unsigned short 
+ Return value:  Size  Location     Type
+                  2   14[COMRAM] unsigned short 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         2       0       0
+      Locals:         6       0       0
+      Temps:          2       0       0
+      Totals:        10       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		___lldiv
+ This function is called by:
+		_bat_task
+		_chrg_task
+ This function uses a non-reentrant model
+
+
+ *************** function ___lldiv *****************
+ Defined at:
+		line 8 in file "c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lldiv.c"
+ Parameters:    Size  Location     Type
+  dividend        4    1[COMRAM] unsigned long 
+  divisor         4    5[COMRAM] unsigned long 
+ Auto vars:     Size  Location     Type
+  quotient        4    9[COMRAM] unsigned long 
+  counter         1   13[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  4    1[COMRAM] unsigned long 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         8       0       0
+      Locals:         5       0       0
+      Temps:          0       0       0
+      Totals:        13       0       0
+Total ram usage:       13 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_adc_bat
+		_si_mic_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_sys_begin *****************
+ Defined at:
+		line 916 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   10[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay_
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_smo_reset *****************
+ Defined at:
+		line 1061 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   11[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay
+		_arr_col_init
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_freeChrg *****************
+ Defined at:
+		line 1157 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   13[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_aip33626_allDisplay
+		_aip33626_allDisplay_
+		_aip33626_batFull
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_batFull *****************
+ Defined at:
+		line 1106 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   11[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay
+		_arr_col_init
+ This function is called by:
+		_aip33626_freeChrg
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_flash *****************
+ Defined at:
+		line 929 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   10[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay_
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_breath_stop *****************
+ Defined at:
+		line 969 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   18[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay
+		_new_col
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_breath *****************
+ Defined at:
+		line 943 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  task_           1   18[COMRAM] PTR struct task
+		 -> task_list(80), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         1       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_aip33626_allDisplay
+		_aip33626_allDisplay_
+		_arr_col_init
+		_new_col
+ This function is called by:
+		_find_task
+ This function uses a non-reentrant model
+
+
+ *************** function _new_col *****************
+ Defined at:
+		line 486 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  you             1    wreg     unsigned char 
+  dian            1    1[COMRAM] unsigned char 
+  mode_you        1    2[COMRAM] unsigned char 
+  mode_dian       1    3[COMRAM] unsigned char 
+  mode            1    4[COMRAM] unsigned char 
+  mode_sub        1    5[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  you             1   15[COMRAM] unsigned char 
+  i               1   17[COMRAM] unsigned char 
+  t               1   16[COMRAM] unsigned char 
+  t2              1   14[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         5       0       0
+      Locals:         6       0       0
+      Temps:          6       0       0
+      Totals:        17       0       0
+Total ram usage:       17 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_breath
+		_aip33626_breath_stop
+ This function uses a non-reentrant model
+
+
+ *************** function _arr_col_init *****************
+ Defined at:
+		line 84 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  num             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  num             1    1[COMRAM] unsigned char 
+  i               1    2[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          0       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_breath
+		_aip33626_smo_reset
+		_aip33626_batFull
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_allDisplay_ *****************
+ Defined at:
+		line 42 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  num             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  num             1    8[COMRAM] unsigned char 
+  i               1    9[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          0       0       0
+      Totals:         2       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_aip33626_sursor
+		_myi2c_reciveack
+		_myi2c_sendbyte
+		_myi2c_start
+		_myi2c_stop
+ This function is called by:
+		_aip33626_sys_begin
+		_aip33626_flash
+		_aip33626_breath
+		_aip33626_freeChrg
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_allDisplay *****************
+ Defined at:
+		line 59 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  num             2    8[COMRAM] PTR unsigned char 
+		 -> arr_col(128), 
+ Auto vars:     Size  Location     Type
+  i               1   10[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         2       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         3       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_aip33626_sursor
+		_myi2c_reciveack
+		_myi2c_sendbyte
+		_myi2c_start
+		_myi2c_stop
+ This function is called by:
+		_aip33626_breath
+		_aip33626_breath_stop
+		_aip33626_smo_reset
+		_aip33626_batFull
+		_aip33626_freeChrg
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_sursor *****************
+ Defined at:
+		line 15 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  site            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  site            1    7[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_aip33626_sendcmd
+ This function is called by:
+		_aip33626_allDisplay_
+		_aip33626_allDisplay
+ This function uses a non-reentrant model
+
+
+ *************** function _aip33626_sendcmd *****************
+ Defined at:
+		line 5 in file ".\src\aip33626.c"
+ Parameters:    Size  Location     Type
+  cmd             1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  cmd             1    6[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_myi2c_reciveack
+		_myi2c_sendbyte
+		_myi2c_start
+		_myi2c_stop
+ This function is called by:
+		_aip33626_sursor
+		_aip33626_init
+ This function uses a non-reentrant model
+
+
+ *************** function _myi2c_stop *****************
+ Defined at:
+		line 47 in file ".\src\myi2c.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_sendcmd
+		_aip33626_allDisplay_
+		_aip33626_allDisplay
+ This function uses a non-reentrant model
+
+
+ *************** function _myi2c_start *****************
+ Defined at:
+		line 36 in file ".\src\myi2c.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_sendcmd
+		_aip33626_allDisplay_
+		_aip33626_allDisplay
+ This function uses a non-reentrant model
+
+
+ *************** function _myi2c_sendbyte *****************
+ Defined at:
+		line 58 in file ".\src\myi2c.c"
+ Parameters:    Size  Location     Type
+  by              1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  by              1    4[COMRAM] unsigned char 
+  i               1    5[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         2       0       0
+      Temps:          3       0       0
+      Totals:         5       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_sendcmd
+		_aip33626_allDisplay_
+		_aip33626_allDisplay
+ This function uses a non-reentrant model
+
+
+ *************** function _myi2c_reciveack *****************
+ Defined at:
+		line 114 in file ".\src\myi2c.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  byte            1    0        unsigned char 
+  cnt             1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         1       0       0
+      Temps:          0       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_aip33626_sendcmd
+		_aip33626_allDisplay_
+		_aip33626_allDisplay
+ This function uses a non-reentrant model
+
+
+ *************** function _add_task *****************
+ Defined at:
+		line 15 in file ".\src\task.c"
+ Parameters:    Size  Location     Type
+  id1             1    wreg     unsigned char 
+  id2             1    1[COMRAM] unsigned char 
+  interval_ms     4    2[COMRAM] unsigned long 
+  suc_max         1    6[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  id1             1   11[COMRAM] unsigned char 
+  i               2   14[COMRAM] int 
+  interval_tic    2   12[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         6       0       0
+      Locals:         5       0       0
+      Temps:          4       0       0
+      Totals:        15       0       0
+Total ram usage:       15 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR_l *****************
+ Defined at:
+		line 250 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          1       0       0
+      Totals:         1       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+ *************** function _ISR_h *****************
+ Defined at:
+		line 150 in file ".\src\main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_pwm_task
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _pwm_task *****************
+ Defined at:
+		line 138 in file ".\src\pwm.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1
+      Params:         0       0       0
+      Locals:         0       0       0
+      Temps:          0       0       0
+      Totals:         0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_ISR_h
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+.\src\pwm.c
+		_pwm_task      		CODE           	14A6	0000	225
+		_pwm_init      		CODE           	20FE	0000	55
+
+.\src\pwm.c estimated size: 280
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\awdiv.c
+		___awdiv       		CODE           	1E6E	0000	121
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\awdiv.c estimated size: 121
+
+.\src\periph.c
+		_CMP0_cal      		CODE           	1662	0000	221
+		_CMP1_cal      		CODE           	173E	0000	219
+		_FVR_Offset    		CODE           	25BA	0000	19
+		_timer0_cnt    		CODE           	209E	0000	97
+		_FVR_CAL       		CODE           	13BE	0000	209
+		_cmp_init      		CODE           	21B0	0000	79
+		_GPIO_Init     		CODE           	224C	0000	77
+		_adc_bat       		CODE           	1D74	0000	127
+		_CMP0_offset   		CODE           	25DE	0000	19
+		_dac_init      		CODE           	24E2	0000	31
+		_timer1_init   		CODE           	253C	0000	29
+		_CMP1_offset   		CODE           	25CC	0000	19
+		_fvr_init      		CODE           	247E	0000	35
+
+.\src\periph.c estimated size: 1181
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\Umul32.c
+		___lmul        		CODE           	2298	0000	77
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\Umul32.c estimated size: 77
+
+.\src\key.c
+		_key_timer_task		CODE           	2412	0000	39
+		_key_task      		CODE           	11CC	0000	255
+
+.\src\key.c estimated size: 294
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lldiv.c
+		___lldiv       		CODE           	1EE6	0000	119
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lldiv.c estimated size: 119
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\fttol.c
+		___fttol       		CODE           	1A5C	0000	185
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\fttol.c estimated size: 185
+
+.\src\si_mic.c
+		_si_mic_task   		CODE           	02A2	0000	833
+
+.\src\si_mic.c estimated size: 833
+
+.\src\myi2c.c
+		_myi2c_reciveack		CODE           	24C2	0000	33
+		_myi2c_stop    		CODE           	24A0	0000	35
+		_myi2c_start   		CODE           	23E8	0000	43
+		_myi2c_init    		CODE           	258E	0000	23
+		_myi2c_sendbyte		CODE           	21FE	0000	79
+
+.\src\myi2c.c estimated size: 213
+
+.\src\smo_det.c
+		_smo_det_task  		CODE           	1586	0000	209
+
+.\src\smo_det.c estimated size: 209
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lbtoft.c
+		___lbtoft      		CODE           	2438	0000	37
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lbtoft.c estimated size: 37
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftadd.c
+		___ftadd       		CODE           	107E	0000	307
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftadd.c estimated size: 307
+
+.\src\main.c
+		_ISR_h         		CODE           	0008	0000	521
+		_main          		CODE           	0A2A	0000	759
+		_ISR_l         		CODE           	0018	0000	15
+
+.\src\main.c estimated size: 1295
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lltoft.c
+		___lltoft      		CODE           	22E4	0000	77
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\lltoft.c estimated size: 77
+
+.\src\chrg.c
+		_chrg_task     		CODE           	0F22	0000	327
+
+.\src\chrg.c estimated size: 327
+
+.\src\sleep.c
+		_sleep_task    		CODE           	2038	0000	103
+		_sleep_mode    		CODE           	1C62	0000	115
+
+.\src\sleep.c estimated size: 218
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\float.c
+		___ftpack      		CODE           	1CEE	0000	115
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\float.c estimated size: 115
+
+shared
+		PL12           		CODE           	063C	0000	15
+		PL50           		CODE           	1388	0000	11
+		PL8            		CODE           	0622	0000	11
+		PL22           		CODE           	0664	0000	9
+		PL60           		CODE           	0A18	0000	11
+		PL32           		CODE           	0A0A	0000	15
+		PL70           		CODE           	13AA	0000	13
+		_arr_q         		SMALLCONST     	0281	0000	25
+		PL42           		CODE           	148E	0000	13
+		PL80           		CODE           	1D60	0000	11
+		PL14           		CODE           	064A	0000	11
+		PL52           		CODE           	11B0	0000	17
+		PL90           		CODE           	1D6A	0000	11
+		PL24           		CODE           	09DC	0000	35
+		PL62           		CODE           	149A	0000	13
+		PL34           		CODE           	1A3C	0000	21
+		PL72           		CODE           	1C58	0000	11
+		PL44           		CODE           	137C	0000	13
+		PL82           		CODE           	1CE4	0000	11
+		PL16           		CODE           	09A6	0000	55
+		PL54           		CODE           	1CD4	0000	17
+		PL92           		CODE           	0A22	0000	9
+		PL26           		CODE           	066C	0000	9
+		PL64           		CODE           	1656	0000	13
+		PL36           		CODE           	1368	0000	21
+		PL74           		CODE           	11C0	0000	13
+		PL46           		CODE           	1A50	0000	13
+		PL84           		CODE           	0690	0000	11
+		PL18           		CODE           	0654	0000	7
+		PL56           		CODE           	0680	0000	7
+		_p             		SMALLCONST     	0299	0000	9
+		PL28           		CODE           	09FE	0000	13
+		PL66           		CODE           	1392	0000	13
+		_arr_cnt       		SMALLCONST     	0201	0000	129
+		PL38           		CODE           	2134	0000	19
+		PL76           		CODE           	13B6	0000	9
+		PL48           		CODE           	0674	0000	13
+		PL86           		CODE           	069A	0000	11
+		PL58           		CODE           	18CA	0000	15
+		PL68           		CODE           	139E	0000	13
+		PL78           		CODE           	0686	0000	11
+		PL88           		CODE           	18D8	0000	9
+		__initialization		CODE           	1F5C	0000	101
+		PL2            		CODE           	05E2	0000	23
+		PL10           		CODE           	062C	0000	17
+		PL4            		CODE           	1068	0000	17
+		PL20           		CODE           	065A	0000	11
+		PL30           		CODE           	1078	0000	7
+		PL6            		CODE           	05F8	0000	43
+		PL40           		CODE           	2146	0000	19
+
+shared estimated size: 954
+
+.\src\aip33626.c
+		_aip33626_smo_reset		CODE           	1B14	0000	169
+		_aip33626_allDisplay_		CODE           	23B0	0000	57
+		_arr_col_init  		CODE           	2500	0000	31
+		_new_col       		CODE           	06A4	0000	771
+		_aip33626_sendcmd		CODE           	251E	0000	31
+		_aip33626_batFull		CODE           	1FCE	0000	107
+		_aip33626_init 		CODE           	25F0	0000	19
+		_aip33626_breath_stop		CODE           	2372	0000	63
+		_aip33626_freeChrg		CODE           	2158	0000	89
+		_aip33626_flash		CODE           	2574	0000	27
+		_aip33626_breath		CODE           	1DF2	0000	125
+		_aip33626_sys_begin		CODE           	2558	0000	29
+		_aip33626_sursor		CODE           	25A4	0000	23
+		_aip33626_allDisplay		CODE           	2330	0000	67
+
+.\src\aip33626.c estimated size: 1608
+
+.\src\task.c
+		_add_task      		CODE           	12CA	0000	159
+		_add_task_id   		CODE           	19A2	0000	155
+		_task_init     		CODE           	245C	0000	35
+		_find_task     		CODE           	18E0	0000	195
+
+.\src\task.c estimated size: 544
+
+.\src\bat.c
+		_bat_task      		CODE           	1BBC	0000	157
+
+.\src\bat.c estimated size: 157
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftmul.c
+		___ftmul       		CODE           	1818	0000	179
+
+c:\Users\Administrator\.vscode\extensions\ad.adide-1.1.4\resource\Microchip\xc8\v1.41\sources\common\ftmul.c estimated size: 179
+
