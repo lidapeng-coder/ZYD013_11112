@@ -276,7 +276,6 @@ extern s8 ui_id;
 								if(nixie_z[1][0]&pin5_on){LED5=ledon;tris5=tris_w;}\
 								if(nixie_z[1][0]&pin6_on){LED6=ledon;tris6=tris_w;}\
 								if(nixie_z[1][0]&pin7_on){LED7=ledon;tris7=tris_w;}\
-								if(nixie_z[1][1]&pin0_on){LED8=ledon;tris8=tris_w;}\
 							}\
 							break;\
 						case 2:\
@@ -400,12 +399,18 @@ extern s8 ui_id;
 							if((nixie_z[8][0]&pin6_on)){LED6=ledon;tris6=tris_w;}\
 							if((nixie_z[8][0]&pin7_on)){LED7=ledon;tris7=tris_w;}}\
 							break;\
+						case 12:\
+							if(ui_ld.n>0){\
+							if(ui_ld.n<10){pme1=1;POLS=pols1;duty1=ui_ld.n<<3;uidelay}\
+							LED1=ledzon;\
+							tris1=tris_w;\
+							if(nixie_z[1][1]&pin0_on){LED8=ledon;tris8=tris_w;}}\
 						\
 						default:\
 							break;\
 						}\
 						tim_ui.cnt9++;\
-						if(tim_ui.cnt9>=12)\
+						if(tim_ui.cnt9>=13)\
 						{\
 							tim_ui.cnt9=0;\
 						}
